@@ -32,4 +32,4 @@ jobs:
           pipenv install --deploy --dev
       - name: Run test suite
         run: |
-          python -m pytest -v tests/test_generator.py
+          pipenv run test -v
