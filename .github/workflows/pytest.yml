@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - uses: ./.github/actions/insalvenv.yml
       - name: Check out repository code
         uses: actions/checkout@v2
 
