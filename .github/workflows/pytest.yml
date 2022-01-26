@@ -1,11 +1,10 @@
-name: PyTest
-on: push
+name: CI
+on: [push, pull_request]
 
 jobs:
-  test:
+  preprocesing:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -24,6 +23,19 @@ jobs:
         with:
           path: ~/.local/share/virtualenvs
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+
+  mypy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Run mypy
+        run: |
+          python -m mypy nir_project/generator.py 
+
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
       - name: Run test suite
         run: |
           python -m pytest -v tests/test_generator.py
