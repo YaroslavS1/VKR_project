@@ -5,6 +5,8 @@ __all__ = [
     'generate_buzz'
 ]
 
+from typing import Tuple
+
 buzz = ('continuous testing', 'continuous integration',
         'continuous deployment', 'continuous improvement', 'devops')
 
@@ -15,8 +17,8 @@ adverbs = ('remarkably', 'enormously', 'substantially', 'significantly',
 verbs = ('accelerates', 'improves', 'enhances', 'revamps', 'boosts')
 
 
-def sample(l, n = 1):
-    result = random.sample(l, n)
+def sample(buzz: Tuple[str, ...], n: int = 1):
+    result = random.sample(buzz, n)
     if n == 1:
         return result[0]
     return result
@@ -24,7 +26,8 @@ def sample(l, n = 1):
 
 def generate_buzz():
     buzz_terms = sample(buzz, 2)
-    phrase = ' '.join([sample(adjectives), buzz_terms[0], sample(adverbs), sample(verbs), buzz_terms[1]])
+    phrase = ' '.join([sample(adjectives), buzz_terms[0],
+                       sample(adverbs), sample(verbs), buzz_terms[1]])
     return phrase.title()
 
 
