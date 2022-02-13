@@ -5,7 +5,6 @@ __all__ = [
     'generate_buzz'
 ]
 
-
 buzz = ('continuous testing', 'continuous integration',
         'continuous deployment', 'continuous improvement', 'devops')
 
