@@ -52,5 +52,5 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Run test suite
         run: |
-          python -m pytest -v tests/test_generator.py
+          python -m pytest -v vkr_project_tests/test_generator.py
 
