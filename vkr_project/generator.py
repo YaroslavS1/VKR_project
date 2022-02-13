@@ -1,5 +1,10 @@
 import random
 
+__all__ = [
+    'sample',
+    'generate_buzz'
+]
+
 
 buzz = ('continuous testing', 'continuous integration',
         'continuous deployment', 'continuous improvement', 'devops')
