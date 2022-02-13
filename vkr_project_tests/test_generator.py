@@ -1,6 +1,4 @@
-import pytest
-
-from nir_project.generator import sample, generate_buzz
+from vkr_project.generator import sample, generate_buzz
 
 
 def test_sample_single_word():
