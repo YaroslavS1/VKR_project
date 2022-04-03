@@ -5,9 +5,11 @@ from vkr_project.generator import sample, generate_buzz
 
 
 @allure.feature('Random dog')
+@allure.story('Получение фото случайной собаки и вложенные друг в друга шаги')
 @pytest.mark.parametrize("value", ['foo', 'bar', 'foobar'])
 def test_sample_single_word(value):
-    word = sample(value)
+    with allure.step('step 1'):
+        word = sample(value)
     assert word in value
 
 
