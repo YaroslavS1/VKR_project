@@ -1,10 +1,14 @@
+import allure
+import pytest
+
 from vkr_project.generator import sample, generate_buzz
 
 
-def test_sample_single_word():
-    l = ('foo', 'bar', 'foobar')
-    word = sample(l)
-    assert word in l
+@allure.feature('Random dog')
+@pytest.mark.parametrize("value", ['foo', 'bar', 'foobar'])
+def test_sample_single_word(value):
+    word = sample(value)
+    assert word in value
 
 
 def test_sample_multiple_words():
