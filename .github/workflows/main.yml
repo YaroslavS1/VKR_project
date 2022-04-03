@@ -27,7 +27,6 @@ jobs:
       - name: Mypy
         run: |
           python -m pytest -v vkr_project_tests/test_generator.py
-      - uses: actions/checkout@v2
 
       - name: Get Allure history
         uses: actions/checkout@v2
