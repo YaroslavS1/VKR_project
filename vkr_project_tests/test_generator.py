@@ -1,91 +1,30 @@
+# -*- coding: utf-8 -*-
+ # @ Время: 17.08.2008 10:10
+# @Author  : WangJuan
+# @File    : test_case.py
 import allure
 import pytest
 
 
-@allure.title("Fixture title")
-@pytest.fixture
-def titled_fixture():
-    pass
+ @ allure.step ("Добавление строки: {0}, {1}") # Шаг теста, параметры функции могут быть автоматически получены с помощью механизма форматирования
+def str_add(str1, str2):
+    print('hello')
+    if not isinstance(str1, str):
+        return "%s is not a string" % str1
+    if not isinstance(str2, str):
+        return "%s is not a string" % str2
+    return str1 + str2
+
+@allure.feature('test_module_01')
+@allure.story('test_story_01')
+@allure.severity('blocker')
+@allure.issue("http://www.baidu.com")
+@allure.testcase("http://www.testlink.com")
+def test_case():
+    str1 = 'hello'
+    str2 = 'world'
+    assert str_add(str1, str2) == 'helloworld'
 
 
-def test_with_fixture_title(titled_fixture):
-    pass
-
-
-@pytest.fixture(scope="session")
-def session_level_yield_fixture():
-    with allure.step("Step inside session level fixture"):
-        pass
-
-    yield
-
-    with allure.step("Step inside finalizer session level fixture"):
-        pass
-
-
-@pytest.fixture(scope="module")
-def module_level_yield_fixture():
-    with allure.step("Step inside module level fixture"):
-        pass
-
-    yield
-
-    with allure.step("Step inside finalizer module level fixture"):
-        pass
-
-
-@pytest.fixture
-def function_level_yield_fixture():
-    with allure.step("Step inside function level fixture"):
-        pass
-
-    yield
-
-    with allure.step("Step inside finalizer function level fixture"):
-        pass
-
-
-@pytest.fixture(scope="session")
-def session_level_fixture(request):
-    with allure.step("Step inside session level fixture"):
-        pass
-
-    def finalizer():
-        with allure.step("Step inside finalizer session level fixture"):
-            pass
-
-    request.addfinalizer(finalizer)
-
-
-@pytest.fixture
-def module_level_fixture(request):
-    with allure.step("Step inside module level fixture"):
-        pass
-
-    def finalizer():
-        with allure.step("Step inside finalizer module level fixture"):
-            pass
-
-    request.addfinalizer(finalizer)
-
-
-@pytest.fixture
-def function_level_fixture(request):
-    with allure.step("Step inside function level fixture"):
-        pass
-
-    def finalizer():
-        with allure.step("Step inside finalizer function level fixture"):
-            pass
-
-    request.addfinalizer(finalizer)
-
-
-def test_allure_yield_fixture(session_level_yield_fixture, module_level_yield_fixture, function_level_yield_fixture):
-    with allure.step("Step inside test_allure_yield_fixture"):
-        pass
-
-
-def test_allure_fixture_with_finalizer(session_level_fixture, module_level_fixture, function_level_fixture):
-    with allure.step("Step inside test_allure_fixture_with_finalizer"):
-        pass
+if __name__ == '__main__':
+    pytest.main(['-s', '-q', '--alluredir', './report/xml'])
