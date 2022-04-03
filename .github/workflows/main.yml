@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 
 jobs:
-  smoke:
+  Smoke:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -85,7 +85,7 @@ jobs:
   Add-data-test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs: [mypy, flake8]
+    needs: [mypy, flake8, Smoke]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -112,7 +112,7 @@ jobs:
   Data-preparation-test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs: [mypy, flake8]
+    needs: [mypy, flake8, Smoke]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -139,7 +139,7 @@ jobs:
   Synthetic-test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs: [ mypy, flake8 ]
+    needs: [mypy, flake8, Smoke]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -166,7 +166,7 @@ jobs:
   KPI-calculation-test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs: [ mypy, flake8 ]
+    needs: [mypy, flake8, Smoke]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
