@@ -106,7 +106,7 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Unittest
         run: |
-          time sleep 78
+          time sleep 178
           python -m pytest -v vkr_project_tests/test_generator.py
 
   Data-preparation-test:
@@ -133,7 +133,7 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Unittest
         run: |
-          time sleep 76
+          time sleep 190
           python -m pytest -v vkr_project_tests/test_generator.py
 
   Synthetic-test:
@@ -160,7 +160,7 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Unittest
         run: |
-          time sleep 98
+          time sleep 220
           python -m pytest -v vkr_project_tests/test_generator.py
 
   KPI-calculation-test:
@@ -187,7 +187,7 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Unittest
         run: |
-          time sleep 70
+          time sleep 140
           python -m pytest -v vkr_project_tests/test_generator.py
   Sphinx:
     runs-on: ubuntu-latest
