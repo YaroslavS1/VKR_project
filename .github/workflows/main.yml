@@ -117,7 +117,7 @@ jobs:
   Add-data-test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs: [Smoke]
+    needs: [mypy, flake8]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -139,12 +139,12 @@ jobs:
       - name: Unittest
         run: |
           time sleep 178
-          python -m pytest -v vkr_project_tests/test_generator.py
+          python -m pytest -v vkr_project_tests/test_attach.py
 
   Data-preparation-test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs: [Smoke]
+    needs: [mypy, flake8]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -171,7 +171,7 @@ jobs:
   Synthetic-test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs: [Smoke]
+    needs: [mypy, flake8]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -194,11 +194,15 @@ jobs:
         run: |
           time sleep 220
           python -m pytest -v vkr_project_tests/test_generator.py
+      - name: coverage
+        run: |
+          pytest vkr_project_tests/test_generator.py --cov=vkr_project
+          
 
   KPI-calculation-test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs: [Smoke]
+    needs: [mypy, flake8]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -221,6 +225,7 @@ jobs:
         run: |
           time sleep 140
           python -m pytest -v vkr_project_tests/test_generator.py
+
   Sphinx:
     runs-on: ubuntu-latest
     timeout-minutes: 10
