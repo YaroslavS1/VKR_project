@@ -41,6 +41,7 @@ jobs:
         if: always()
         id: allure-report
         with:
+          GITHUB_PAGES_WEBSITE_URL: https://github.com/YaroslavS1/VKR_project
           allure_results: allure-results
           allure_history: allure-history
 #          keep_reports: 20
@@ -62,7 +63,7 @@ jobs:
           context: 'Test report'
           state: 'success'
           sha: ${{github.event.pull_request.head.sha || github.sha}}
-          target_url: https://yaroslavs1.github.io/${{ github.run_number }}/index.html
+          target_url: https://yaroslavs1.github.io/${{ github.run_number }}/
 
   mypy:
     runs-on: ubuntu-latest
