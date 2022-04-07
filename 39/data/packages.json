@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "vkr_project_tests.test_attach",
+    "children" : [ {
+      "name" : "test_xfail_expected_failure",
+      "uid" : "95b0799d9cb71618",
+      "parentUid" : "1a4f363c7d412bae5e8f6ce5e4f010f4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1649368400357,
+        "stop" : 1649368400358,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_xfail_unexpected_pass",
+      "uid" : "f475be7e709ffe5d",
+      "parentUid" : "1a4f363c7d412bae5e8f6ce5e4f010f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649368400382,
+        "stop" : 1649368400382,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "vkr_project_tests.test_attach"
+  } ],
+  "name" : "packages"
+}
