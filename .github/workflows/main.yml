@@ -54,7 +54,7 @@ jobs:
           EXTERNAL_REPOSITORY: YaroslavS1/YaroslavS1.github.io
           PUBLISH_BRANCH: gh_pages
           PUBLISH_DIR: allure-history
-          destination_dir: VKR_project
+          destination_dir: ./VKR_project
 
       - name: Post the link to the report
         if: always()
