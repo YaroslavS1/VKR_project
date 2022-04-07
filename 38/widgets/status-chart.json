@@ -1,0 +1,21 @@
+[ {
+  "uid" : "ae1003bde8dd1817",
+  "name" : "test_xfail_unexpected_pass",
+  "time" : {
+    "start" : 1649367904506,
+    "stop" : 1649367904507,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f964f545b220d7e",
+  "name" : "test_xfail_expected_failure",
+  "time" : {
+    "start" : 1649367904473,
+    "stop" : 1649367904474,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]
