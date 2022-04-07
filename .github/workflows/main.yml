@@ -61,7 +61,7 @@ jobs:
           context: 'Test report'
           state: 'success'
           sha: ${{github.event.pull_request.head.sha || github.sha}}
-          target_url: https://yaroslavs1.github.io/github-allure-history/${{ github.run_number }/index.html}
+          target_url: https://yaroslavs1.github.io/github-allure-history/${{ github.run_number }}/index.html
 
   mypy:
     runs-on: ubuntu-latest
