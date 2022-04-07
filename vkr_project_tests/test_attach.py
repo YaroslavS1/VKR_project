@@ -1,14 +1,14 @@
 import pytest
 
 
-class Static_DataFrame:
-    def __init__(self, value):
-        self.value = value
+@pytest.mark.xfail(condition=lambda: True, reason='this test is expecting failure')
+def test_xfail_expected_failure():
+    """this test is an xfail that will be marked as expected failure"""
+    assert False
 
 
-@pytest.mark.parametrize('test_case', [Static_DataFrame(10), Static_DataFrame(20), Static_DataFrame(30), Static_DataFrame(40)])
-def test_atach(test_case):
-    if test_case.value < 29:
-        pass
-    else:
-        raise ValueError
+@pytest.mark.xfail(condition=lambda: True, reason='this test is expecting failure')
+def test_xfail_unexpected_pass():
+    """this test is an xfail that will be marked as unexpected success"""
+    assert True
+
