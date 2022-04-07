@@ -41,7 +41,7 @@ jobs:
         if: always()
         id: allure-report
         with:
-          GITHUB_PAGES_WEBSITE_URL: https://github.com/YaroslavS1/VKR_project
+          INPUT_REPORT_URL: https://github.com/YaroslavS1/VKR_project
           allure_results: allure-results
           allure_history: allure-history
 #          keep_reports: 20
