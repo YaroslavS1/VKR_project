@@ -1,9 +1,9 @@
-name: CI
+name: Allure
 on: [push, pull_request]
 
 
 jobs:
-  mypy:
+  Smoke:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -26,11 +26,77 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Mypy
         run: |
+          python -m pytest vkr_project_tests/test_attach.py --alluredir=allure-results
+
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Allure Report action from marketplace
+        uses: simple-elf/allure-report-action@master
+        if: always()
+#        id: allure-report
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+          subfolder: Smoke
+#          keep_reports: 20
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          EXTERNAL_REPOSITORY: YaroslavS1/YaroslavS1.github.io
+          PUBLISH_BRANCH: gh_pages
+          PUBLISH_DIR: allure-history
+#          destination_dir: ./VKR_project
+
+      - name: Post the link to the report
+        if: always()
+        uses: Sibz/github-status-action@v1
+        with:
+          authToken: ${{secrets.GITHUB_TOKEN}}
+          context: 'Test report'
+          state: 'success'
+          sha: ${{github.event.pull_request.head.sha || github.sha}}
+          target_url: https://yaroslavs1.github.io/${{ github.run_number }}/
+
+  mypy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [Smoke]
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      # Setup Python (faster than using Python container)
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Install requirements
+        run: |
+          python -m pip install -r requirements.txt
+      - id: cache-pipenv
+        uses: actions/cache@v1
+        with:
+          path: ~/.local/share/virtualenvs
+          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+      - name: Mypy
+        run: |
+            time sleep 30
             python -m mypy vkr_project/generator.py
 
   flake8:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    needs: [Smoke]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -51,9 +117,10 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Flake8
         run: |
+          time sleep 30
           python -m flake8 vkr_project/generator.py
 
-  tests:
+  Add-data-test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     needs: [mypy, flake8]
@@ -77,4 +144,116 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Unittest
         run: |
+          time sleep 178
+          python -m pytest -v vkr_project_tests/test_attach.py
+
+  Data-preparation-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [mypy, flake8]
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      # Setup Python (faster than using Python container)
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Install requirements
+        run: |
+          python -m pip install -r requirements.txt
+      - id: cache-pipenv
+        uses: actions/cache@v1
+        with:
+          path: ~/.local/share/virtualenvs
+          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+      - name: Unittest
+        run: |
+          time sleep 190
+          python -m pytest -v vkr_project_tests/test_generator.py
+
+  Synthetic-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [mypy, flake8]
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      # Setup Python (faster than using Python container)
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Install requirements
+        run: |
+          python -m pip install -r requirements.txt
+      - id: cache-pipenv
+        uses: actions/cache@v1
+        with:
+          path: ~/.local/share/virtualenvs
+          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+      - name: Unittest
+        run: |
+          time sleep 220
+          python -m pytest -v vkr_project_tests/test_generator.py
+      - name: coverage
+        run: |
+          pytest vkr_project_tests/test_generator.py --cov=vkr_project
+          
+
+  KPI-calculation-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [mypy, flake8]
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      # Setup Python (faster than using Python container)
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Install requirements
+        run: |
+          python -m pip install -r requirements.txt
+      - id: cache-pipenv
+        uses: actions/cache@v1
+        with:
+          path: ~/.local/share/virtualenvs
+          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+      - name: Unittest
+        run: |
+          time sleep 140
+          python -m pytest -v vkr_project_tests/test_generator.py
+
+  Sphinx:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      # Setup Python (faster than using Python container)
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Install requirements
+        run: |
+          python -m pip install -r requirements.txt
+      - id: cache-pipenv
+        uses: actions/cache@v1
+        with:
+          path: ~/.local/share/virtualenvs
+          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+      - name: Unittest
+        run: |
+          time sleep 40
           python -m pytest -v vkr_project_tests/test_generator.py
