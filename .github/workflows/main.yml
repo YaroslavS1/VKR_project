@@ -33,9 +33,7 @@ jobs:
         if: always()
         continue-on-error: true
         with:
-          repository: YaroslavS1/YaroslavS1.github.io
-          token: ${{ secrets.GH_PAT }}
-#          ref: gh-pages
+          ref: gh-pages
           path: gh-pages
 
       - name: Allure Report action from marketplace
@@ -48,14 +46,13 @@ jobs:
 #          subfolder: VKR_project
 #          keep_reports: 20
 
-#      - name: Deploy report to Github Pages__
-#        if: always()
-#        uses: peaceiris/actions-gh-pages@v2
-#        env:
-#          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#          PUBLISH_BRANCH: gh-pages
-#          PUBLISH_DIR: allure-history
-#          destination_dir: ./VKR_project
+      - name: Deploy to Branch
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
 
       - name: Deploy report to Github Pages
         if: always()
