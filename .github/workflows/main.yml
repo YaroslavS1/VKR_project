@@ -41,11 +41,10 @@ jobs:
         if: always()
         id: allure-report
         with:
-          INPUT_REPORT_URL: https://github.com/YaroslavS1/VKR_project
           allure_results: allure-results
           allure_history: allure-history
           subfolder: VKR_project
-          keep_reports: 20
+          keep_reports: 0
 
       - name: Deploy report to Github Pages
         if: always()
