@@ -73,7 +73,7 @@ jobs:
           context: 'Test report'
           state: 'success'
           sha: ${{github.event.pull_request.head.sha || github.sha}}
-          target_url: https://yaroslavs1.github.io/VKR_project/Smoke/${{ github.run_number }}/
+          target_url: https://yaroslavs1.github.io/VKR_project/${{ github.run_number }}/
 
   mypy:
     runs-on: ubuntu-latest
