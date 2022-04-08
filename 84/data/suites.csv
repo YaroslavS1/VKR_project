@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Apr 08 20:09:49 GMT 2022","Fri Apr 08 20:09:49 GMT 2022","0","vkr_project_tests","test_attach","","","","test_xfail_unexpected_pass__","this test is an xfail that will be marked as unexpected success"
+"skipped","Fri Apr 08 20:09:49 GMT 2022","Fri Apr 08 20:09:49 GMT 2022","1","vkr_project_tests","test_attach","","","","test_xfail_expected_failure","this test is an xfail that will be marked as expected failure"
+"skipped","Fri Apr 08 20:09:49 GMT 2022","Fri Apr 08 20:09:49 GMT 2022","0","vkr_project_tests","test_attach","","","","test_xfail_unexpected_pass___","this test is an xfail that will be marked as unexpected success"
+"passed","Fri Apr 08 20:09:49 GMT 2022","Fri Apr 08 20:09:49 GMT 2022","1","vkr_project_tests","test_attach","","","","test_xfail_unexpected_pass","this test is an xfail that will be marked as unexpected success"
