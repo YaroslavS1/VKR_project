@@ -45,7 +45,7 @@ jobs:
           allure_results: allure-results
           allure_history: allure-history
           subfolder: VKR_project
-#          keep_reports: 20
+          keep_reports: 20
 
       - name: Deploy report to Github Pages
         if: always()
