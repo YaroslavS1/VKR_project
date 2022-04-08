@@ -1,4 +1,4 @@
-name: Allure
+name: CI
 on: [push, pull_request]
 
 
