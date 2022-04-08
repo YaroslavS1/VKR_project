@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"skipped","Thu Apr 07 21:21:31 GMT 2022","Thu Apr 07 21:21:31 GMT 2022","0","vkr_project_tests","test_attach","","","","test_xfail_expected_failure","this test is an xfail that will be marked as expected failure"
-"passed","Thu Apr 07 21:21:31 GMT 2022","Thu Apr 07 21:21:31 GMT 2022","0","vkr_project_tests","test_attach","","","","test_xfail_unexpected_pass","this test is an xfail that will be marked as unexpected success"
