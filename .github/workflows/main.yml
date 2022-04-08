@@ -41,7 +41,7 @@ jobs:
         if: always()
         id: allure-report
         with:
-          allure_results: allure-results
+          allure_results: VKR_project/allure-results
           allure_history: VKR_project/allure-history
           subfolder: VKR_project
 #          keep_reports: 20
