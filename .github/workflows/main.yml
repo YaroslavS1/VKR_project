@@ -33,6 +33,7 @@ jobs:
         if: always()
         continue-on-error: true
         with:
+          repository: YaroslavS1/YaroslavS1.github.io
           ref: gh-pages
           path: gh-pages
 
