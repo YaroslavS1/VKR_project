@@ -41,10 +41,10 @@ jobs:
         if: always()
 #        id: allure-report
         with:
-#          allure_results: allure-results
+          allure_results: allure-results
           allure_history: allure-history
           subfolder: VKR_project
-          keep_reports: 65
+          keep_reports: 20
 
       - name: Deploy report to Github Pages
         if: always()
@@ -64,7 +64,7 @@ jobs:
           context: 'Test report'
           state: 'success'
           sha: ${{github.event.pull_request.head.sha || github.sha}}
-          target_url: https://yaroslavs1.github.io/VKR_project/${{ github.run_number }}/
+          target_url: https://yaroslavs1.github.io/${{ github.run_number }}/
 
   mypy:
     runs-on: ubuntu-latest
