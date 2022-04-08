@@ -62,7 +62,7 @@ jobs:
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           EXTERNAL_REPOSITORY: YaroslavS1/YaroslavS1.github.io
           PUBLISH_BRANCH: gh_pages
-          PUBLISH_DIR: VKR_project/allure-history
+          PUBLISH_DIR: allure-history
 #          destination_dir: ./VKR_project
 
       - name: Post the link to the report
