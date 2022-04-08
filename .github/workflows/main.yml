@@ -34,6 +34,7 @@ jobs:
         continue-on-error: true
         with:
           repository: YaroslavS1/YaroslavS1.github.io
+          token: ${{ secrets.GH_PAT }}
           ref: gh-pages
           path: gh-pages
 
