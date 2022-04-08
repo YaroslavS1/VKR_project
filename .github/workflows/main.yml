@@ -35,7 +35,7 @@ jobs:
         with:
           repository: YaroslavS1/YaroslavS1.github.io
           token: ${{ secrets.GH_PAT }}
-          ref: gh-pages
+#          ref: gh-pages
           path: gh-pages
 
       - name: Allure Report action from marketplace
