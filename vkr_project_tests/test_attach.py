@@ -1,11 +1,9 @@
 import tempfile
 
 import allure
-import pytest
 import pandas as pd
-from plotly.subplots import make_subplots
-import plotly.graph_objects as go
 import plotly.express as px
+import pytest
 
 
 @pytest.mark.xfail(condition=lambda: True, reason='this test is expecting failure')
