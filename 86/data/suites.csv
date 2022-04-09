@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Apr 09 18:58:14 GMT 2022","Sat Apr 09 18:58:14 GMT 2022","0","vkr_project_tests","test_attach","","","","test_xfail_unexpected_pass","this test is an xfail that will be marked as unexpected success"
+"skipped","Sat Apr 09 18:58:14 GMT 2022","Sat Apr 09 18:58:14 GMT 2022","0","vkr_project_tests","test_attach","","","","test_xfail_unexpected_pass___","this test is an xfail that will be marked as unexpected success"
+"skipped","Sat Apr 09 18:58:14 GMT 2022","Sat Apr 09 18:58:14 GMT 2022","2","vkr_project_tests","test_attach","","","","test_count_summary_cost_ads","Calculation of the total cost of advertising"
+"passed","Sat Apr 09 18:58:14 GMT 2022","Sat Apr 09 18:58:14 GMT 2022","0","vkr_project_tests","test_attach","","","","test_xfail_unexpected_pass__","this test is an xfail that will be marked as unexpected success"
