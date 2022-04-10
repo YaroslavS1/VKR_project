@@ -1,0 +1,121 @@
+[ {
+  "uid" : "23e571bf5fd9ede2",
+  "name" : "test_count_summary_cost_ads[cashe2.csv]",
+  "time" : {
+    "start" : 1649610366375,
+    "stop" : 1649610366453,
+    "duration" : 78
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "46330d7df28d879c",
+  "name" : "test_api_direct[]",
+  "time" : {
+    "start" : 1649610458960,
+    "stop" : 1649610487990,
+    "duration" : 29030
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a9e7ac34ae043d9",
+  "name" : "test_api_direct[3]",
+  "time" : {
+    "start" : 1649610580481,
+    "stop" : 1649610602499,
+    "duration" : 22018
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db4aeba6a58a4c21",
+  "name" : "test_api_direct[6]",
+  "time" : {
+    "start" : 1649610651556,
+    "stop" : 1649610707602,
+    "duration" : 56046
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63837ba4561363ce",
+  "name" : "test_api_direct[2]",
+  "time" : {
+    "start" : 1649610540446,
+    "stop" : 1649610580478,
+    "duration" : 40032
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ff138cb0f813c2",
+  "name" : "test_api_direct[general request]",
+  "time" : {
+    "start" : 1649610366888,
+    "stop" : 1649610402898,
+    "duration" : 36010
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d6289414918f09c",
+  "name" : "test_api_direct[5]",
+  "time" : {
+    "start" : 1649610627529,
+    "stop" : 1649610651553,
+    "duration" : 24024
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a2b055f3e7fa0a0",
+  "name" : "test_count_summary_cost_ads[cashe0.csv]",
+  "time" : {
+    "start" : 1649610365769,
+    "stop" : 1649610366293,
+    "duration" : 524
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5272b1466c3810e2",
+  "name" : "test_api_direct[4]",
+  "time" : {
+    "start" : 1649610602502,
+    "stop" : 1649610627526,
+    "duration" : 25024
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6ac4799296f00b7",
+  "name" : "test_count_summary_cost_ads[cashe1.csv]",
+  "time" : {
+    "start" : 1649610366296,
+    "stop" : 1649610366372,
+    "duration" : 76
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd298c0f1db6a286",
+  "name" : "test_api_direct[query by day]",
+  "time" : {
+    "start" : 1649610402900,
+    "stop" : 1649610458957,
+    "duration" : 56057
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2fc5589cd65c8f1",
+  "name" : "test_api_direct[1]",
+  "time" : {
+    "start" : 1649610488389,
+    "stop" : 1649610540442,
+    "duration" : 52053
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
