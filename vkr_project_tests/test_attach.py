@@ -20,7 +20,7 @@ def test_count_summary_cost_ads():
     '''
     LOGGER.debug(f'{os. getcwd()}')
     print(os. getcwd())
-    f_data = pd.read_csv("../case/cashe.csv", header=1, sep='	', index_col=0, )
+    f_data = pd.read_csv("./case/cashe.csv", header=1, sep='	', index_col=0, )
     f_data['Cost'] = pd.to_numeric(f_data["Cost"], downcast='float')
     f_data['Cost'] = f_data['Cost'] / 1000000
     summary_cost = float(f_data.groupby('CampaignName').sum().reset_index()['Cost'])
