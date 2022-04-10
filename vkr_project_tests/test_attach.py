@@ -1,9 +1,13 @@
+import logging
+import os
 import tempfile
 
 import allure
 import pandas as pd
 import plotly.express as px
 import pytest
+
+LOGGER = logging.getLogger(__name__)
 
 
 @pytest.mark.xfail(condition=lambda: True, reason='this test is expecting failure')
@@ -29,6 +33,7 @@ def test_count_summary_cost_ads():
     # fig.update_layout(xaxis=dict(tickangle=90))
     temp = tempfile.NamedTemporaryFile()
     print(temp.name)
+    LOGGER.debug(f'{os. getcwd()}')
     # fp.write()
     trace1.write_html(f'{temp.name}')
     allure.attach.file('temp.name', attachment_type=allure.attachment_type.HTML)
