@@ -1,0 +1,61 @@
+[ {
+  "uid" : "d9ec51f0b8ac834f",
+  "name" : "test_xfail_unexpected_pass__",
+  "time" : {
+    "start" : 1649588999133,
+    "stop" : 1649588999133,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "818eb2594fcfa723",
+  "name" : "test_count_summary_cost_ads[cashe0.csv]",
+  "time" : {
+    "start" : 1649588998552,
+    "stop" : 1649588998968,
+    "duration" : 416
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c10a08afd1d855f8",
+  "name" : "test_count_summary_cost_ads[cashe1.csv]",
+  "time" : {
+    "start" : 1649588998970,
+    "stop" : 1649588999047,
+    "duration" : 77
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b92284f1f2f4d83f",
+  "name" : "test_count_summary_cost_ads[cashe2.csv]",
+  "time" : {
+    "start" : 1649588999050,
+    "stop" : 1649588999129,
+    "duration" : 79
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd578dfb1e0a4907",
+  "name" : "test_xfail_unexpected_pass",
+  "time" : {
+    "start" : 1649588999131,
+    "stop" : 1649588999131,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "588627daf57098eb",
+  "name" : "test_xfail_unexpected_pass___",
+  "time" : {
+    "start" : 1649588999135,
+    "stop" : 1649588999135,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]

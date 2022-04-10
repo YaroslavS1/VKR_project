@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Apr 10 11:09:59 GMT 2022","Sun Apr 10 11:09:59 GMT 2022","0","vkr_project_tests","test_attach","","","","test_xfail_unexpected_pass__","this test is an xfail that will be marked as unexpected success"
+"passed","Sun Apr 10 11:09:58 GMT 2022","Sun Apr 10 11:09:58 GMT 2022","416","vkr_project_tests","test_attach","","","","test_count_summary_cost_ads[cashe0.csv]","Calculation of the total cost of advertising"
+"passed","Sun Apr 10 11:09:58 GMT 2022","Sun Apr 10 11:09:59 GMT 2022","77","vkr_project_tests","test_attach","","","","test_count_summary_cost_ads[cashe1.csv]","Calculation of the total cost of advertising"
+"passed","Sun Apr 10 11:09:59 GMT 2022","Sun Apr 10 11:09:59 GMT 2022","79","vkr_project_tests","test_attach","","","","test_count_summary_cost_ads[cashe2.csv]","Calculation of the total cost of advertising"
+"passed","Sun Apr 10 11:09:59 GMT 2022","Sun Apr 10 11:09:59 GMT 2022","0","vkr_project_tests","test_attach","","","","test_xfail_unexpected_pass","this test is an xfail that will be marked as unexpected success"
+"skipped","Sun Apr 10 11:09:59 GMT 2022","Sun Apr 10 11:09:59 GMT 2022","0","vkr_project_tests","test_attach","","","","test_xfail_unexpected_pass___","this test is an xfail that will be marked as unexpected success"
