@@ -37,7 +37,7 @@ def test_count_summary_cost_ads():
     print(temp.name)
     # fp.write()
     trace1.write_html(f'{temp.name}')
-    allure.attach.file('temp.name', attachment_type=allure.attachment_type.HTML)
+    allure.attach.file(f'{temp.name}', attachment_type=allure.attachment_type.HTML)
     print((sum(f['Cost'])))
     print(summary_cost)
     # assert False
