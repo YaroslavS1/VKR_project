@@ -1,0 +1,31 @@
+[ {
+  "uid" : "52548524eb8bfb03",
+  "name" : "test_count_summary_cost_ads[3]",
+  "time" : {
+    "start" : 1649608386412,
+    "stop" : 1649608386413,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ecfdda41de5c5a9b",
+  "name" : "test_count_summary_cost_ads[1]",
+  "time" : {
+    "start" : 1649608386409,
+    "stop" : 1649608386409,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eda453db15b03e33",
+  "name" : "test_count_summary_cost_ads[2]",
+  "time" : {
+    "start" : 1649608386411,
+    "stop" : 1649608386411,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
