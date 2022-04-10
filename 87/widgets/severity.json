@@ -1,0 +1,41 @@
+[ {
+  "uid" : "d81bb171b2f1135",
+  "name" : "test_xfail_unexpected_pass__",
+  "time" : {
+    "start" : 1649585048767,
+    "stop" : 1649585048767,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ac0a3c01d4381135",
+  "name" : "test_xfail_unexpected_pass",
+  "time" : {
+    "start" : 1649585048765,
+    "stop" : 1649585048765,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3ad293c5fa92e3b",
+  "name" : "test_count_summary_cost_ads",
+  "time" : {
+    "start" : 1649585048630,
+    "stop" : 1649585048631,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "d75fb1774f15f1eb",
+  "name" : "test_xfail_unexpected_pass___",
+  "time" : {
+    "start" : 1649585048768,
+    "stop" : 1649585048769,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]
