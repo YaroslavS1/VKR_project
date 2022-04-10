@@ -33,5 +33,5 @@ def test_count_summary_cost_ads(file):
 
 @allure.step('API Direct test')
 @pytest.mark.parametrize('step', ['1', '2', '3'])
-def test_count_summary_cost_ads(step):
+def test_api_direct(step):
     assert step in ['1', '2', '3']
