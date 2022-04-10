@@ -9,7 +9,7 @@ import pytest
 
 LOGGER = logging.getLogger(__name__)
 
-
+@allure.step('test csv')
 @pytest.mark.parametrize('file', ['cashe0.csv', 'cashe1.csv', 'cashe2.csv'])
 def test_count_summary_cost_ads(file):
     """Calculation of the total cost of advertising"""
@@ -31,19 +31,7 @@ def test_count_summary_cost_ads(file):
     assert round(summary_cost, 5) == round(sum(f['Cost']), 5)
 
 
-@pytest.mark.xfail(condition=lambda: True, reason='this test is expecting failure')
-def test_xfail_unexpected_pass():
-    """this test is an xfail that will be marked as unexpected success"""
-    assert True
-
-@pytest.mark.xfail(condition=lambda: True, reason='this test is expecting failure')
-def test_xfail_unexpected_pass__():
-    """this test is an xfail that will be marked as unexpected success"""
-    assert True
-
-
-@pytest.mark.xfail(condition=lambda: True, reason='this test is expecting failure')
-def test_xfail_unexpected_pass___():
-    """this test is an xfail that will be marked as unexpected success"""
-    assert False
-
+@allure.step('API Direct test')
+@pytest.mark.parametrize('step', ['1', '2', '3'])
+def test_count_summary_cost_ads(step):
+    assert step in ['1', '2', '3']
