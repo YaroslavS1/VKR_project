@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Apr 10 16:50:35 GMT 2022","Sun Apr 10 16:50:35 GMT 2022","0","vkr_project_tests","test_attach","","","","test_api_direct[2]",""
+"passed","Sun Apr 10 16:50:35 GMT 2022","Sun Apr 10 16:50:35 GMT 2022","329","vkr_project_tests","test_attach","","","","test_count_summary_cost_ads[cashe0.csv]","Calculation of the total cost of advertising"
+"passed","Sun Apr 10 16:50:35 GMT 2022","Sun Apr 10 16:50:35 GMT 2022","1","vkr_project_tests","test_attach","","","","test_api_direct[3]",""
+"passed","Sun Apr 10 16:50:35 GMT 2022","Sun Apr 10 16:50:35 GMT 2022","58","vkr_project_tests","test_attach","","","","test_count_summary_cost_ads[cashe2.csv]","Calculation of the total cost of advertising"
+"passed","Sun Apr 10 16:50:35 GMT 2022","Sun Apr 10 16:50:35 GMT 2022","58","vkr_project_tests","test_attach","","","","test_count_summary_cost_ads[cashe1.csv]","Calculation of the total cost of advertising"
+"passed","Sun Apr 10 16:50:35 GMT 2022","Sun Apr 10 16:50:35 GMT 2022","0","vkr_project_tests","test_attach","","","","test_api_direct[1]",""
