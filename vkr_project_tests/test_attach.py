@@ -18,6 +18,8 @@ def test_count_summary_cost_ads():
     распечатать это 
     и ссумировать 
     '''
+    LOGGER.debug(f'{os. getcwd()}')
+    print(os. getcwd())
     f_data = pd.read_csv("../case/cashe.csv", header=1, sep='	', index_col=0, )
     f_data['Cost'] = pd.to_numeric(f_data["Cost"], downcast='float')
     f_data['Cost'] = f_data['Cost'] / 1000000
@@ -33,7 +35,6 @@ def test_count_summary_cost_ads():
     # fig.update_layout(xaxis=dict(tickangle=90))
     temp = tempfile.NamedTemporaryFile()
     print(temp.name)
-    LOGGER.debug(f'{os. getcwd()}')
     # fp.write()
     trace1.write_html(f'{temp.name}')
     allure.attach.file('temp.name', attachment_type=allure.attachment_type.HTML)
