@@ -1,0 +1,41 @@
+[ {
+  "uid" : "aad32a1c16c5f9b2",
+  "name" : "test_count_summary_cost_ads",
+  "time" : {
+    "start" : 1649585828371,
+    "stop" : 1649585828372,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f07fc3d182b4c412",
+  "name" : "test_xfail_unexpected_pass___",
+  "time" : {
+    "start" : 1649585828521,
+    "stop" : 1649585828521,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "8a39d02e81703f00",
+  "name" : "test_xfail_unexpected_pass",
+  "time" : {
+    "start" : 1649585828517,
+    "stop" : 1649585828517,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40cadbd5e51b0580",
+  "name" : "test_xfail_unexpected_pass__",
+  "time" : {
+    "start" : 1649585828519,
+    "stop" : 1649585828519,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
