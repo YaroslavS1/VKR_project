@@ -1,0 +1,61 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "vkr_project_tests.test_attach",
+    "children" : [ {
+      "name" : "test_count_summary_cost_ads",
+      "uid" : "2b28b5a87181c1ca",
+      "parentUid" : "1a4f363c7d412bae5e8f6ce5e4f010f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649586384141,
+        "stop" : 1649586384574,
+        "duration" : 433
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_xfail_unexpected_pass",
+      "uid" : "f141e9ea293d5f34",
+      "parentUid" : "1a4f363c7d412bae5e8f6ce5e4f010f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649586384577,
+        "stop" : 1649586384577,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_xfail_unexpected_pass__",
+      "uid" : "2eb1ccae1553300e",
+      "parentUid" : "1a4f363c7d412bae5e8f6ce5e4f010f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649586384579,
+        "stop" : 1649586384579,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_xfail_unexpected_pass___",
+      "uid" : "5632e47d985b1c2b",
+      "parentUid" : "1a4f363c7d412bae5e8f6ce5e4f010f4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1649586384580,
+        "stop" : 1649586384581,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "vkr_project_tests.test_attach"
+  } ],
+  "name" : "packages"
+}
