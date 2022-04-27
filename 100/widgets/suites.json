@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "531db35c088acd01adfa191c76559ce1",
+    "name" : "tests_vkr.proto",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 82,
+      "unknown" : 0,
+      "total" : 82
+    }
+  } ]
+}
