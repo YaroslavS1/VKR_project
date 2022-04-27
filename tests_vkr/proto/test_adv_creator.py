@@ -5,7 +5,7 @@ from VKR_project.tests_vkr.tools.ADV import AvgCampaign
 
 
 @allure.feature('ADV campaign')
-@allure.story('Тест создания рекламной компании с заданной ценой')
+@allure.story('Test of creating an advertising company with a given price')
 @pytest.mark.parametrize(
     'end_date', [
         '24.10.2010',

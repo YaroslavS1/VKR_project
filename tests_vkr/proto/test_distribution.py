@@ -9,7 +9,7 @@ from VKR_project.tests_vkr.tools.ADV import AvgCampaign
 
 
 @allure.feature('Distributions')
-@allure.story('Построить график с основными показателями рекламной компании')
+@allure.story('Test draws a graph with the main indicators of an advertising campaign')
 @pytest.mark.parametrize('start_date', ['01.01.2010'])
 @pytest.mark.parametrize('end_date', ['10.01.2010'])
 @pytest.mark.parametrize('sum_cost', [8000])
