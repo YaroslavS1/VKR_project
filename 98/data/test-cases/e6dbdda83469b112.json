@@ -1,0 +1,62 @@
+{
+  "uid" : "e6dbdda83469b112",
+  "name" : "test_create_adv_compaign[0-25.11.2010-01.01.2000]",
+  "fullName" : "tests_vkr.test_create_crm_reprort#test_create_adv_compaign",
+  "historyId" : "5723a29e1804ac29d9e76c13befbe1c8",
+  "time" : {
+    "start" : 1651062910761,
+    "stop" : 1651062910837,
+    "duration" : 76
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests_vkr"
+  }, {
+    "name" : "suite",
+    "value" : "test_create_crm_reprort"
+  }, {
+    "name" : "host",
+    "value" : "fv-az72-448"
+  }, {
+    "name" : "thread",
+    "value" : "2253-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.test_create_crm_reprort"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'25.11.2010'"
+  }, {
+    "name" : "start_date",
+    "value" : "'01.01.2000'"
+  }, {
+    "name" : "sum_cost",
+    "value" : "0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e6dbdda83469b112.json",
+  "parameterValues" : [ "'25.11.2010'", "'01.01.2000'", "0" ]
+}
