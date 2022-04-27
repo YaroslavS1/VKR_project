@@ -2,7 +2,7 @@ import datetime
 import random
 from typing import Union, Tuple
 
-from VKR_project.vkr_tests.tools import BaseTime
+from VKR_project.tests_vkr.tools import BaseTime
 
 """
 Средняя сумма, которую вы платите за клик по вашему объявлению.
@@ -57,28 +57,18 @@ class AvgCampaign(BaseTime):
         # проанализировать какие KPI какие параметры используют
         self.campaign = self.create_campaign()
 
-    def foo(self):
-        """
-        функция которая дает распределение по сумарной стоимости по дням, в зависисмости от количества дней
-        0 ...
-        1 ......
-        2 ......
-        3 ......
-        4 .....
-        5 ......
-        6 ...
-        Чтобы не получалось так что где-то 0 где то все
-        """
-
     @staticmethod
     def constrained_sum_sample_pos(n, total):
         """Return a randomly chosen list of n positive integers summing to total.
         Each such list is equally likely to occur."""
-
-        dividers = sorted(random.sample(range(1, total), n - 1))
-        for a in [a - b for a, b in zip(dividers + [total], [0] + dividers)]:
-            print('->', a)
-            yield a
+        arr = []
+        for i in range(n):
+            if i == n - 1:
+                arr.append(total - sum(arr))
+            else:
+                arr.append(random.randint(0, total - sum(arr)))
+        assert total == sum(arr)
+        return iter(arr)
 
     def create_campaign(self) -> Tuple[Record]:
         """campaign creation method"""
