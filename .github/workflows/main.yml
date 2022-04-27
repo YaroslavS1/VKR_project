@@ -26,7 +26,8 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Mypy
         run: |
-          python -m pytest tests_vkr/test_create_crm_reprort.py --alluredir=allure-results
+          python -m pytest tests_vkr/proto/test_create_crm_reprort.py --alluredir=allure-results
+          python -m pytest tests_vkr/proto/test_distribution.py --alluredir=allure-results
 
       - name: Get Allure history
         uses: actions/checkout@v2

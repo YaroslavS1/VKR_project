@@ -61,14 +61,21 @@ class AvgCampaign(BaseTime):
     def constrained_sum_sample_pos(n, total):
         """Return a randomly chosen list of n positive integers summing to total.
         Each such list is equally likely to occur."""
-        arr = []
-        for i in range(n):
-            if i == n - 1:
-                arr.append(total - sum(arr))
-            else:
-                arr.append(random.randint(0, total - sum(arr)))
-        assert total == sum(arr)
-        return iter(arr)
+        try:
+            """
+            this method gives a more equal distribution but has limitations
+            """
+            dividers = sorted(random.sample(range(1, total), n - 1))
+            finnaly_list = [a - b for a, b in zip(dividers + [total], [0] + dividers)]
+        except ValueError:
+            finnaly_list = []
+            for i in range(n):
+                if i == n - 1:
+                    finnaly_list.append(total - sum(finnaly_list))
+                else:
+                    finnaly_list.append(random.randint(0, total - sum(finnaly_list)))
+        for a in finnaly_list:
+            yield a
 
     def create_campaign(self) -> Tuple[Record]:
         """campaign creation method"""
