@@ -9,7 +9,7 @@ from VKR_project.tests_vkr.tools import BaseTime
 Средняя цена за клик (средняя цена за клик) рассчитывается путем деления общей стоимости ваших кликов на общее количество кликов.
 """
 __all__ = [
-    'AvgCampaign'
+    'AdvCampaign'
 ]
 
 
@@ -20,7 +20,7 @@ class Record:
                  # avg_click_position: float,
                  impressions: int,
                  clicks: int,
-                 cost: int,
+                 cost: float,
                  # placement: str
                  ):
         self.date = date
@@ -48,35 +48,26 @@ class Record:
                f'clicks: {self.clicks}'
 
 
-class AvgCampaign(BaseTime):
+class AdvCampaign(BaseTime):
     def __init__(self, name: str, sum_cost: int, start_date: Union[str, datetime.date], end_date: Union[str, datetime.date]):
         super().__init__(start_date=start_date, end_date=end_date)
         self.name = name
+        assert sum_cost > 0
         self.sum_cost = sum_cost
         # impressions количество показов
         # проанализировать какие KPI какие параметры используют
         self.campaign = self.create_campaign()
+        self.type_adv = 0
 
     @staticmethod
     def constrained_sum_sample_pos(n, total):
         """Return a randomly chosen list of n positive integers summing to total.
         Each such list is equally likely to occur."""
-        try:
-            """
-            this method gives a more equal distribution but has limitations
-            """
-            dividers = sorted(random.sample(range(1, total), n - 1))
-            finnaly_list = [a - b for a, b in zip(dividers + [total], [0] + dividers)]
-        except ValueError:
-            finnaly_list = []
-            for i in range(n):
-                if i == n - 1:
-                    finnaly_list.append(total - sum(finnaly_list))
-                else:
-                    finnaly_list.append(random.randint(0, total - sum(finnaly_list)))
-        for a in finnaly_list:
-            yield a
+        values = [0.0] + [round(random.triangular(0, total), 2) for i in range(n - 1)] + [total]
+        values.sort()
+        return iter([values[i + 1] - values[i] for i in range(len(values) - 1)])
 
+    # @property
     def create_campaign(self) -> Tuple[Record]:
         """campaign creation method"""
         campaign = list()

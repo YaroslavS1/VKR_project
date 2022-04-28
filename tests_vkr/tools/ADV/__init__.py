@@ -1,6 +1,6 @@
-from .adv_creator import AvgCampaign
+from .adv_creator import AdvCampaign
 
 
 __all__ = [
-    'AvgCampaign'
+    'AdvCampaign'
 ]

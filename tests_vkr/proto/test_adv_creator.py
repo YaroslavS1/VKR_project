@@ -1,7 +1,7 @@
 import allure
 import pytest
 
-from VKR_project.tests_vkr.tools.ADV import AvgCampaign
+from VKR_project.tests_vkr.tools.ADV import AdvCampaign
 
 
 @allure.feature('ADV campaign')
@@ -20,7 +20,7 @@ from VKR_project.tests_vkr.tools.ADV import AvgCampaign
     ])
 @pytest.mark.parametrize('sum_cost', [8000, 1200, 3000, 5000, 10000, 1, 0, 10000000000, 123])
 def test_create_adv_campaign(start_date, end_date, sum_cost):
-    a = AvgCampaign(
+    a = AdvCampaign(
         name='Test campain',
         start_date=start_date,
         end_date=end_date,
