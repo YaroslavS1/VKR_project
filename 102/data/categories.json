@@ -1,0 +1,130 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "test_create_adv_campaign[0-24.05.2010-24.10.2010]",
+        "uid" : "5b2a7dcc930fa250",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651190928311,
+          "stop" : 1651190928311,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "'24.10.2010'", "'24.05.2010'", "0" ]
+      }, {
+        "name" : "test_create_adv_campaign[0-24.05.2010-25.11.2010]",
+        "uid" : "44f1506d53919101",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651190928339,
+          "stop" : 1651190928340,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "'25.11.2010'", "'24.05.2010'", "0" ]
+      }, {
+        "name" : "test_create_adv_campaign[0-24.05.2010-01.01.2022]",
+        "uid" : "f184e27c7a25721b",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651190928345,
+          "stop" : 1651190928346,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "'01.01.2022'", "'24.05.2010'", "0" ]
+      }, {
+        "name" : "test_create_adv_campaign[0-25.05.2010-24.10.2010]",
+        "uid" : "97815c28275d4816",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651190928351,
+          "stop" : 1651190928351,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "'24.10.2010'", "'25.05.2010'", "0" ]
+      }, {
+        "name" : "test_create_adv_campaign[0-25.05.2010-25.11.2010]",
+        "uid" : "abd4a3d122fc5f30",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651190928367,
+          "stop" : 1651190928368,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "'25.11.2010'", "'25.05.2010'", "0" ]
+      }, {
+        "name" : "test_create_adv_campaign[0-25.05.2010-01.01.2022]",
+        "uid" : "4f6c5344d4264f4f",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651190928373,
+          "stop" : 1651190928373,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "'01.01.2022'", "'25.05.2010'", "0" ]
+      }, {
+        "name" : "test_create_adv_campaign[0-01.01.2000-24.10.2010]",
+        "uid" : "69828188ed045000",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651190928379,
+          "stop" : 1651190928379,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "'24.10.2010'", "'01.01.2000'", "0" ]
+      }, {
+        "name" : "test_create_adv_campaign[0-01.01.2000-25.11.2010]",
+        "uid" : "31b072eed5195096",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651190928384,
+          "stop" : 1651190928384,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "'25.11.2010'", "'01.01.2000'", "0" ]
+      }, {
+        "name" : "test_create_adv_campaign[0-01.01.2000-01.01.2022]",
+        "uid" : "67ed114290618d60",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651190928390,
+          "stop" : 1651190928390,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "'01.01.2022'", "'01.01.2000'", "0" ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
