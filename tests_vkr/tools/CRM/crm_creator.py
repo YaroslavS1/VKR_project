@@ -1,14 +1,26 @@
 import datetime
+import random
 from typing import Union, Tuple
 
 from VKR_project.tests_vkr.tools import BaseTime
 
 
-class Record:
+class RecordCrm:
     # Отображает запись в CRM
-    def __init__(self):
-        self.srm_id = object()
-        pass
+    def __init__(self,
+                 date: datetime.date,):
+        self.date = date  # date_time?
+        self.srm_id = object()  # до момента регистрации не существует
+        self.other_id = object()
+        self.action = object()
+        self.mapped_event = object()
+        self.profit = object()
+
+        # utm_source
+        # utm_medium
+        # utm_campaign
+        # utm_content
+        # utm_term
 
 
 class Event:
@@ -33,7 +45,20 @@ class CrmReport(BaseTime):
         # пришел зарегистировался купил
         # и прочее
 
+    @staticmethod
+    def constrained_sum_sample_pos(n, total):
+        """Return a randomly chosen list of n positive integers summing to total.
+        Each such list is equally likely to occur."""
+        values = [0.0] + [round(random.triangular(0, total), 2) for i in range(n - 1)] + [total]
+        values.sort()
+        return iter([values[i + 1] - values[i] for i in range(len(values) - 1)])
+
     def create_records(self):
-        pass
-
-
+        records = list()
+        number_days = int((self.end_date - self.start_date).days)+1
+        cost_allocation = self.constrained_sum_sample_pos(number_days, self.sum_profit)
+        for date in self.daterange:
+            records.append(
+                RecordCrm(
+                    date=date,
+                ))

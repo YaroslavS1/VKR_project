@@ -33,16 +33,17 @@ def test_create_adv_compaign(start_date, end_date, sum_cost):
         statistic_cpc.append(i.avg_cpc)
         statistic_clicks.append(i.clicks)
 
-    fig = make_subplots(specs=[[{"secondary_y": True}]])
-    fig.add_trace(go.Scatter(x=statistic_date, y=statistic_cpc,
-                             mode='lines',
-                             name='cpc',
-                             ), secondary_y=True,)
-    fig.add_trace(go.Bar(x=statistic_date, y=statistic_cost, name='cost'))
-    fig.add_trace(go.Bar(x=statistic_date, y=statistic_clicks, name='clicks'))
-    fig.add_trace(go.Bar(x=statistic_date, y=statistic_impressions, name='impressions'))
-
-    fig.show()
+    # FIXME
+    # fig = make_subplots(specs=[[{"secondary_y": True}]])
+    # fig.add_trace(go.Scatter(x=statistic_date, y=statistic_cpc,
+    #                          mode='lines',
+    #                          name='cpc',
+    #                          ), secondary_y=True,)
+    # fig.add_trace(go.Bar(x=statistic_date, y=statistic_cost, name='cost'))
+    # fig.add_trace(go.Bar(x=statistic_date, y=statistic_clicks, name='clicks'))
+    # fig.add_trace(go.Bar(x=statistic_date, y=statistic_impressions, name='impressions'))
+    #
+    # fig.show()
 
     # temp = tempfile.NamedTemporaryFile()
     # fig.write_html(f'{temp.name}')

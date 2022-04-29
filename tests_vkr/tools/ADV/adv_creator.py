@@ -1,6 +1,7 @@
 import datetime
 import random
-from typing import Union, Tuple
+from typing import Union
+from typing import Tuple
 
 from VKR_project.tests_vkr.tools import BaseTime
 
@@ -13,7 +14,7 @@ __all__ = [
 ]
 
 
-class Record:
+class RecordAdv:
     def __init__(self,
                  date: datetime.date,
                  name: str,
@@ -57,7 +58,7 @@ class AdvCampaign(BaseTime):
         # impressions количество показов
         # проанализировать какие KPI какие параметры используют
         self.campaign = self.create_campaign()
-        self.type_adv = 0
+        self.type_adv = 'yandex'
 
     @staticmethod
     def constrained_sum_sample_pos(n, total):
@@ -68,14 +69,14 @@ class AdvCampaign(BaseTime):
         return iter([values[i + 1] - values[i] for i in range(len(values) - 1)])
 
     # @property
-    def create_campaign(self) -> Tuple[Record]:
+    def create_campaign(self) -> Tuple[RecordAdv]:
         """campaign creation method"""
         campaign = list()
         number_days = int((self.end_date - self.start_date).days)+1
         cost_allocation = self.constrained_sum_sample_pos(number_days, self.sum_cost)
         for date in self.daterange:
             campaign.append(
-                Record(
+                RecordAdv(
                     date=date,
                     name=self.name,
                     impressions=random.randint(10, 1000),

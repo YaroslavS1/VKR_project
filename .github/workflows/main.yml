@@ -28,6 +28,7 @@ jobs:
         run: |
           python -m pytest tests_vkr/proto/test_adv_creator.py --alluredir=allure-results
           python -m pytest tests_vkr/proto/test_distribution.py --alluredir=allure-results
+          python -m pytest tests_vkr/proto/test_trivial_crm.py --alluredir=allure-results
 
       - name: Get Allure history
         uses: actions/checkout@v2
