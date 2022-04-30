@@ -1,0 +1,26 @@
+{
+  "total" : 2,
+  "items" : [ {
+    "uid" : "531db35c088acd01adfa191c76559ce1",
+    "name" : "tests_vkr.proto",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 126,
+      "unknown" : 0,
+      "total" : 126
+    }
+  }, {
+    "uid" : "0cfaa3c73170be1a6e3f49e792ff54ae",
+    "name" : "tests_vkr.visualization",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  } ]
+}
