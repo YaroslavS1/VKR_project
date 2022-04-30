@@ -62,12 +62,12 @@ def test_tests_funnel(start_date, end_date, n_compaign):
                                         # concurrent_adv[i_c][2],
                                         crm[i_c][2]], стадии=stages))
         # print(i_c)
-        df_['Рекламная компания'] = i_c[0] + i_c[1]
+        df_['Рекламная кампания'] = i_c[0] + i_c[1]
         # df_toronto = pd.DataFrame(dict(number=[52, 36, 18, 14, 5], stage=stages))
         # df_toronto['office'] = 'Toronto'
         df_s.append(df_)
     df = pd.concat(df_s, axis=0)
-    fig = px.funnel(df, x='количество', y='стадии', color='Рекламная компания',)
+    fig = px.funnel(df, x='количество', y='стадии', color='Рекламная кампания',)
     fig.show()
 
     temp = tempfile.NamedTemporaryFile()
