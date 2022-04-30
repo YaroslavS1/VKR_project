@@ -48,4 +48,4 @@ def test_trivial_crm(start_date, end_date, n_compaign):
     for i, i_c, adv in zip(range(n_compaign), crm, adv_campaigns):
         concurrent_adv = count_adv(adv)
         assert round(concurrent_adv[i_c]) == round(sum_cost[i])
-        assert ((crm[i_c]-count_adv(adv)[i_c])/concurrent_adv[i_c])*100 == ((profit[i] - sum_cost[i])/sum_cost[i])*100
+        assert round(((crm[i_c]-count_adv(adv)[i_c])/concurrent_adv[i_c])*100) == round(((profit[i] - sum_cost[i])/sum_cost[i])*100)
