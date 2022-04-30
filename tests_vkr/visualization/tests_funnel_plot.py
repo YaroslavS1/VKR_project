@@ -43,7 +43,7 @@ def test_tests_funnel(start_date, end_date, n_compaign):
     sum_cost = [random.randint(10000, 90000) for _ in range(n_compaign)]
     profit = [random.randint(10000, 1000000) for _ in range(n_compaign)]
     visits = [random.randint(1000, 2000) for _ in range(n_compaign)]
-    purchases = [random.randint(500, 1000) for _ in range(n_compaign)]
+    purchases = [random.randint(1000, 1500) for _ in range(n_compaign)]
     for i in range(n_compaign):
         adv_campaigns.append(
             AdvCampaign(
@@ -54,7 +54,7 @@ def test_tests_funnel(start_date, end_date, n_compaign):
 
     crm = {('yandex', f'Test_campain{i}'): (profit[i], visits[i], purchases[i]) for i in range(n_compaign)}
 
-    stages = ["Количество показов реламы", "Клики по рекламным обьявлениям", "Покупки"]
+    stages = ["Количество показов рекламы", "Клики по рекламным обьявлениям", "Покупки"]
     df_s = []
     for i, i_c, adv in zip(range(n_compaign), crm, adv_campaigns):
         concurrent_adv = count_adv(adv)
