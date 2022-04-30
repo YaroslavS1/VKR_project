@@ -37,7 +37,7 @@ def count_adv(adv: AdvCampaign):
         # '01.01.2000',
     ])
 @pytest.mark.parametrize('n_compaign', [3])
-def test_trivial_crm(start_date, end_date, n_compaign):
+def test_tests_funnel(start_date, end_date, n_compaign):
     # TODO: тест не полный и довольно тревиальный, нужно дополнить
     adv_campaigns = list()
     sum_cost = [random.randint(10000, 90000) for _ in range(n_compaign)]
