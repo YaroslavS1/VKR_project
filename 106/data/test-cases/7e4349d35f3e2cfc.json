@@ -1,0 +1,97 @@
+{
+  "uid" : "7e4349d35f3e2cfc",
+  "name" : "test_trivial_crm[10-24.05.2010-01.01.2022]",
+  "fullName" : "tests_vkr.proto.test_trivial_crm#test_trivial_crm",
+  "historyId" : "43ecc1e3dda35be3d59db4666f784b33",
+  "time" : {
+    "start" : 1651330781514,
+    "stop" : 1651330781747,
+    "duration" : 233
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "ADV campaign"
+  }, {
+    "name" : "story",
+    "value" : "Test of creating an advertising company with a given price"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests_vkr.proto"
+  }, {
+    "name" : "suite",
+    "value" : "test_trivial_crm"
+  }, {
+    "name" : "host",
+    "value" : "fv-az135-890"
+  }, {
+    "name" : "thread",
+    "value" : "2314-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.proto.test_trivial_crm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'01.01.2022'"
+  }, {
+    "name" : "n_compaign",
+    "value" : "10"
+  }, {
+    "name" : "start_date",
+    "value" : "'24.05.2010'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "7e91d8366ba2fba9",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/105//#testresult/7e91d8366ba2fba9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651330307186,
+          "stop" : 1651330307427,
+          "duration" : 241
+        }
+      }, {
+        "uid" : "f28dbd3eb360cbfb",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/104//#testresult/f28dbd3eb360cbfb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651330257105,
+          "stop" : 1651330257389,
+          "duration" : 284
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7e4349d35f3e2cfc.json",
+  "parameterValues" : [ "'01.01.2022'", "10", "'24.05.2010'" ]
+}
