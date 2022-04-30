@@ -1,0 +1,1697 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "tests_vkr",
+    "children" : [ {
+      "name" : "proto",
+      "children" : [ {
+        "name" : "test_adv_creator",
+        "children" : [ {
+          "name" : "test_create_adv_campaign[8000-24.05.2010-24.10.2010]",
+          "uid" : "29b462ae103f2381",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291738,
+            "stop" : 1651330291746,
+            "duration" : 8
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'24.05.2010'", "8000" ]
+        }, {
+          "name" : "test_create_adv_campaign[8000-24.05.2010-25.11.2010]",
+          "uid" : "e7eae775bf190cea",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291748,
+            "stop" : 1651330291750,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'24.05.2010'", "8000" ]
+        }, {
+          "name" : "test_create_adv_campaign[8000-24.05.2010-01.01.2022]",
+          "uid" : "27dbbf5dbb55f3e4",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291752,
+            "stop" : 1651330291777,
+            "duration" : 25
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'24.05.2010'", "8000" ]
+        }, {
+          "name" : "test_create_adv_campaign[8000-25.05.2010-24.10.2010]",
+          "uid" : "39ce11ef75c1f5ff",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291779,
+            "stop" : 1651330291780,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'25.05.2010'", "8000" ]
+        }, {
+          "name" : "test_create_adv_campaign[8000-25.05.2010-25.11.2010]",
+          "uid" : "23bb6354fa86b636",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291783,
+            "stop" : 1651330291784,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'25.05.2010'", "8000" ]
+        }, {
+          "name" : "test_create_adv_campaign[8000-25.05.2010-01.01.2022]",
+          "uid" : "3095f5d5729e71ad",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291786,
+            "stop" : 1651330291818,
+            "duration" : 32
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'25.05.2010'", "8000" ]
+        }, {
+          "name" : "test_create_adv_campaign[8000-01.01.2000-24.10.2010]",
+          "uid" : "9a4d3efe174280af",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291820,
+            "stop" : 1651330291842,
+            "duration" : 22
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'01.01.2000'", "8000" ]
+        }, {
+          "name" : "test_create_adv_campaign[8000-01.01.2000-25.11.2010]",
+          "uid" : "7b9049557f1e53",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291844,
+            "stop" : 1651330291865,
+            "duration" : 21
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'01.01.2000'", "8000" ]
+        }, {
+          "name" : "test_create_adv_campaign[8000-01.01.2000-01.01.2022]",
+          "uid" : "758fd691a6c6d856",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291868,
+            "stop" : 1651330291911,
+            "duration" : 43
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'01.01.2000'", "8000" ]
+        }, {
+          "name" : "test_create_adv_campaign[1200-24.05.2010-24.10.2010]",
+          "uid" : "3062ea1ed97e4c38",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291913,
+            "stop" : 1651330291914,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'24.05.2010'", "1200" ]
+        }, {
+          "name" : "test_create_adv_campaign[1200-24.05.2010-25.11.2010]",
+          "uid" : "8498dbd081b23ad1",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291917,
+            "stop" : 1651330291918,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'24.05.2010'", "1200" ]
+        }, {
+          "name" : "test_create_adv_campaign[1200-24.05.2010-01.01.2022]",
+          "uid" : "b296cb05ad882590",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291920,
+            "stop" : 1651330291943,
+            "duration" : 23
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'24.05.2010'", "1200" ]
+        }, {
+          "name" : "test_create_adv_campaign[1200-25.05.2010-24.10.2010]",
+          "uid" : "ee67243fd51f2dec",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291945,
+            "stop" : 1651330291946,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'25.05.2010'", "1200" ]
+        }, {
+          "name" : "test_create_adv_campaign[1200-25.05.2010-25.11.2010]",
+          "uid" : "9e9cce864f25ad7f",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291949,
+            "stop" : 1651330291950,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'25.05.2010'", "1200" ]
+        }, {
+          "name" : "test_create_adv_campaign[1200-25.05.2010-01.01.2022]",
+          "uid" : "683fcd3b9496d832",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291953,
+            "stop" : 1651330291975,
+            "duration" : 22
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'25.05.2010'", "1200" ]
+        }, {
+          "name" : "test_create_adv_campaign[1200-01.01.2000-24.10.2010]",
+          "uid" : "4c4b22423b815957",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330291978,
+            "stop" : 1651330291998,
+            "duration" : 20
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'01.01.2000'", "1200" ]
+        }, {
+          "name" : "test_create_adv_campaign[1200-01.01.2000-25.11.2010]",
+          "uid" : "597ccaa35e3955f0",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292001,
+            "stop" : 1651330292021,
+            "duration" : 20
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'01.01.2000'", "1200" ]
+        }, {
+          "name" : "test_create_adv_campaign[1200-01.01.2000-01.01.2022]",
+          "uid" : "6dfa7f432ab72d86",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292024,
+            "stop" : 1651330292067,
+            "duration" : 43
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'01.01.2000'", "1200" ]
+        }, {
+          "name" : "test_create_adv_campaign[3000-24.05.2010-24.10.2010]",
+          "uid" : "8e52e1d6e134dfb6",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292070,
+            "stop" : 1651330292071,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'24.05.2010'", "3000" ]
+        }, {
+          "name" : "test_create_adv_campaign[3000-24.05.2010-25.11.2010]",
+          "uid" : "c8bf9c9f3ee56979",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292074,
+            "stop" : 1651330292075,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'24.05.2010'", "3000" ]
+        }, {
+          "name" : "test_create_adv_campaign[3000-24.05.2010-01.01.2022]",
+          "uid" : "3ef3a6132f11c5a2",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292078,
+            "stop" : 1651330292101,
+            "duration" : 23
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'24.05.2010'", "3000" ]
+        }, {
+          "name" : "test_create_adv_campaign[3000-25.05.2010-24.10.2010]",
+          "uid" : "beb147e385d0c24f",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292103,
+            "stop" : 1651330292104,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'25.05.2010'", "3000" ]
+        }, {
+          "name" : "test_create_adv_campaign[3000-25.05.2010-25.11.2010]",
+          "uid" : "4774b020c8d98e70",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292107,
+            "stop" : 1651330292108,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'25.05.2010'", "3000" ]
+        }, {
+          "name" : "test_create_adv_campaign[3000-25.05.2010-01.01.2022]",
+          "uid" : "c2bcf4bba436655d",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292111,
+            "stop" : 1651330292141,
+            "duration" : 30
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'25.05.2010'", "3000" ]
+        }, {
+          "name" : "test_create_adv_campaign[3000-01.01.2000-24.10.2010]",
+          "uid" : "a69a0524213f609b",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292144,
+            "stop" : 1651330292164,
+            "duration" : 20
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'01.01.2000'", "3000" ]
+        }, {
+          "name" : "test_create_adv_campaign[3000-01.01.2000-25.11.2010]",
+          "uid" : "6dcd0f33589ca1ba",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292167,
+            "stop" : 1651330292188,
+            "duration" : 21
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'01.01.2000'", "3000" ]
+        }, {
+          "name" : "test_create_adv_campaign[3000-01.01.2000-01.01.2022]",
+          "uid" : "e89f300d15dd0fe3",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292191,
+            "stop" : 1651330292233,
+            "duration" : 42
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'01.01.2000'", "3000" ]
+        }, {
+          "name" : "test_create_adv_campaign[5000-24.05.2010-24.10.2010]",
+          "uid" : "86d2249e79921caa",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292236,
+            "stop" : 1651330292237,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'24.05.2010'", "5000" ]
+        }, {
+          "name" : "test_create_adv_campaign[5000-24.05.2010-25.11.2010]",
+          "uid" : "bd4d6ec0d46a74c4",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292239,
+            "stop" : 1651330292240,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'24.05.2010'", "5000" ]
+        }, {
+          "name" : "test_create_adv_campaign[5000-24.05.2010-01.01.2022]",
+          "uid" : "c2ea888da5b66d48",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292243,
+            "stop" : 1651330292265,
+            "duration" : 22
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'24.05.2010'", "5000" ]
+        }, {
+          "name" : "test_create_adv_campaign[5000-25.05.2010-24.10.2010]",
+          "uid" : "e084fce4ac787a03",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292268,
+            "stop" : 1651330292269,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'25.05.2010'", "5000" ]
+        }, {
+          "name" : "test_create_adv_campaign[5000-25.05.2010-25.11.2010]",
+          "uid" : "97be2d65bcaf02b",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292271,
+            "stop" : 1651330292272,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'25.05.2010'", "5000" ]
+        }, {
+          "name" : "test_create_adv_campaign[5000-25.05.2010-01.01.2022]",
+          "uid" : "2ec68d8a97b09f7f",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292275,
+            "stop" : 1651330292299,
+            "duration" : 24
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'25.05.2010'", "5000" ]
+        }, {
+          "name" : "test_create_adv_campaign[5000-01.01.2000-24.10.2010]",
+          "uid" : "e6cdce59357c7234",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292301,
+            "stop" : 1651330292323,
+            "duration" : 22
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'01.01.2000'", "5000" ]
+        }, {
+          "name" : "test_create_adv_campaign[5000-01.01.2000-25.11.2010]",
+          "uid" : "e84b19aeeae94188",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292326,
+            "stop" : 1651330292347,
+            "duration" : 21
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'01.01.2000'", "5000" ]
+        }, {
+          "name" : "test_create_adv_campaign[5000-01.01.2000-01.01.2022]",
+          "uid" : "9a769fb24d37c7f0",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292349,
+            "stop" : 1651330292391,
+            "duration" : 42
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'01.01.2000'", "5000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000-24.05.2010-24.10.2010]",
+          "uid" : "40c4450c3ba37e1a",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292395,
+            "stop" : 1651330292396,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'24.05.2010'", "10000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000-24.05.2010-25.11.2010]",
+          "uid" : "bf0eaa6d3cf709b6",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292398,
+            "stop" : 1651330292399,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'24.05.2010'", "10000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000-24.05.2010-01.01.2022]",
+          "uid" : "e5601ae61d52f624",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292402,
+            "stop" : 1651330292433,
+            "duration" : 31
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'24.05.2010'", "10000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000-25.05.2010-24.10.2010]",
+          "uid" : "a1a4893ccf45256a",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292435,
+            "stop" : 1651330292436,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'25.05.2010'", "10000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000-25.05.2010-25.11.2010]",
+          "uid" : "c14336ae2b1a2c00",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292439,
+            "stop" : 1651330292440,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'25.05.2010'", "10000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000-25.05.2010-01.01.2022]",
+          "uid" : "c834704ae9112fdf",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292443,
+            "stop" : 1651330292465,
+            "duration" : 22
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'25.05.2010'", "10000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000-01.01.2000-24.10.2010]",
+          "uid" : "6a1bd510525b2e0",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292468,
+            "stop" : 1651330292490,
+            "duration" : 22
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'01.01.2000'", "10000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000-01.01.2000-25.11.2010]",
+          "uid" : "505afb8101ec5aa8",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292492,
+            "stop" : 1651330292513,
+            "duration" : 21
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'01.01.2000'", "10000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000-01.01.2000-01.01.2022]",
+          "uid" : "e181d418a4cb7c85",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292516,
+            "stop" : 1651330292569,
+            "duration" : 53
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'01.01.2000'", "10000" ]
+        }, {
+          "name" : "test_create_adv_campaign[1-24.05.2010-24.10.2010]",
+          "uid" : "148d0496440d250f",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292572,
+            "stop" : 1651330292573,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'24.05.2010'", "1" ]
+        }, {
+          "name" : "test_create_adv_campaign[1-24.05.2010-25.11.2010]",
+          "uid" : "9475f368a22a96c8",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292576,
+            "stop" : 1651330292577,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'24.05.2010'", "1" ]
+        }, {
+          "name" : "test_create_adv_campaign[1-24.05.2010-01.01.2022]",
+          "uid" : "3d26798152ffffa5",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292579,
+            "stop" : 1651330292602,
+            "duration" : 23
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'24.05.2010'", "1" ]
+        }, {
+          "name" : "test_create_adv_campaign[1-25.05.2010-24.10.2010]",
+          "uid" : "6eacf6dbf60f1985",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292604,
+            "stop" : 1651330292605,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'25.05.2010'", "1" ]
+        }, {
+          "name" : "test_create_adv_campaign[1-25.05.2010-25.11.2010]",
+          "uid" : "9370e4082e1e192c",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292608,
+            "stop" : 1651330292609,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'25.05.2010'", "1" ]
+        }, {
+          "name" : "test_create_adv_campaign[1-25.05.2010-01.01.2022]",
+          "uid" : "b27dfda5a45b9d78",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292611,
+            "stop" : 1651330292633,
+            "duration" : 22
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'25.05.2010'", "1" ]
+        }, {
+          "name" : "test_create_adv_campaign[1-01.01.2000-24.10.2010]",
+          "uid" : "755f5ea10816265a",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292636,
+            "stop" : 1651330292658,
+            "duration" : 22
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'01.01.2000'", "1" ]
+        }, {
+          "name" : "test_create_adv_campaign[1-01.01.2000-25.11.2010]",
+          "uid" : "2e170f8f175fc310",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292661,
+            "stop" : 1651330292682,
+            "duration" : 21
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'01.01.2000'", "1" ]
+        }, {
+          "name" : "test_create_adv_campaign[1-01.01.2000-01.01.2022]",
+          "uid" : "577c04e5dc84f5d0",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292685,
+            "stop" : 1651330292726,
+            "duration" : 41
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'01.01.2000'", "1" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000000000-24.05.2010-24.10.2010]",
+          "uid" : "6929a04452cf0444",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292729,
+            "stop" : 1651330292730,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'24.05.2010'", "10000000000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000000000-24.05.2010-25.11.2010]",
+          "uid" : "993c44a90c90f6e1",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292740,
+            "stop" : 1651330292741,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'24.05.2010'", "10000000000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000000000-24.05.2010-01.01.2022]",
+          "uid" : "7dbef05b1683d3fa",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292744,
+            "stop" : 1651330292776,
+            "duration" : 32
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'24.05.2010'", "10000000000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000000000-25.05.2010-24.10.2010]",
+          "uid" : "519b187b9b9fad23",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292778,
+            "stop" : 1651330292779,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'25.05.2010'", "10000000000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000000000-25.05.2010-25.11.2010]",
+          "uid" : "cfdbe1b5ea3d8be7",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292782,
+            "stop" : 1651330292783,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'25.05.2010'", "10000000000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000000000-25.05.2010-01.01.2022]",
+          "uid" : "b7edeb7f05675f34",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292786,
+            "stop" : 1651330292809,
+            "duration" : 23
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'25.05.2010'", "10000000000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000000000-01.01.2000-24.10.2010]",
+          "uid" : "2d9d033d77fea95c",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292811,
+            "stop" : 1651330292832,
+            "duration" : 21
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'01.01.2000'", "10000000000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000000000-01.01.2000-25.11.2010]",
+          "uid" : "4b98d3ec8c430f60",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292835,
+            "stop" : 1651330292856,
+            "duration" : 21
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'01.01.2000'", "10000000000" ]
+        }, {
+          "name" : "test_create_adv_campaign[10000000000-01.01.2000-01.01.2022]",
+          "uid" : "f7c274a17225b45a",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292859,
+            "stop" : 1651330292902,
+            "duration" : 43
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'01.01.2000'", "10000000000" ]
+        }, {
+          "name" : "test_create_adv_campaign[123-24.05.2010-24.10.2010]",
+          "uid" : "f1461df80276fb3b",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292904,
+            "stop" : 1651330292905,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'24.05.2010'", "123" ]
+        }, {
+          "name" : "test_create_adv_campaign[123-24.05.2010-25.11.2010]",
+          "uid" : "fa141311194c897",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292908,
+            "stop" : 1651330292909,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'24.05.2010'", "123" ]
+        }, {
+          "name" : "test_create_adv_campaign[123-24.05.2010-01.01.2022]",
+          "uid" : "6e42e71edacb820e",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292911,
+            "stop" : 1651330292934,
+            "duration" : 23
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'24.05.2010'", "123" ]
+        }, {
+          "name" : "test_create_adv_campaign[123-25.05.2010-24.10.2010]",
+          "uid" : "7f308f52643b36bd",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292936,
+            "stop" : 1651330292937,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'25.05.2010'", "123" ]
+        }, {
+          "name" : "test_create_adv_campaign[123-25.05.2010-25.11.2010]",
+          "uid" : "fba637158ac63686",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292940,
+            "stop" : 1651330292941,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'25.05.2010'", "123" ]
+        }, {
+          "name" : "test_create_adv_campaign[123-25.05.2010-01.01.2022]",
+          "uid" : "bac964f26c7673ba",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292943,
+            "stop" : 1651330292966,
+            "duration" : 23
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'25.05.2010'", "123" ]
+        }, {
+          "name" : "test_create_adv_campaign[123-01.01.2000-24.10.2010]",
+          "uid" : "a75f65a6e58038ef",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292968,
+            "stop" : 1651330292990,
+            "duration" : 22
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "'01.01.2000'", "123" ]
+        }, {
+          "name" : "test_create_adv_campaign[123-01.01.2000-25.11.2010]",
+          "uid" : "6fe74e4582ca14c7",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330292993,
+            "stop" : 1651330293014,
+            "duration" : 21
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "'01.01.2000'", "123" ]
+        }, {
+          "name" : "test_create_adv_campaign[123-01.01.2000-01.01.2022]",
+          "uid" : "383d02ee6281ee57",
+          "parentUid" : "ea86efa7022417756f698a9ef6fea2c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330293016,
+            "stop" : 1651330293072,
+            "duration" : 56
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "'01.01.2000'", "123" ]
+        } ],
+        "uid" : "ea86efa7022417756f698a9ef6fea2c7"
+      }, {
+        "name" : "test_trivial_crm",
+        "children" : [ {
+          "name" : "test_trivial_crm[40-24.05.2010-24.10.2010]",
+          "uid" : "6be62d12f852308c",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330293397,
+            "stop" : 1651330293435,
+            "duration" : 38
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "40", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[40-24.05.2010-25.11.2010]",
+          "uid" : "bc145810525d20a7",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330293438,
+            "stop" : 1651330293488,
+            "duration" : 50
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "40", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[40-24.05.2010-01.01.2022]",
+          "uid" : "e51f5e968591439a",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330293490,
+            "stop" : 1651330294522,
+            "duration" : 1032
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "40", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[40-25.05.2010-24.10.2010]",
+          "uid" : "5e482e1ff035593b",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330294525,
+            "stop" : 1651330294560,
+            "duration" : 35
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "40", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[40-25.05.2010-25.11.2010]",
+          "uid" : "a287e9131186a2b6",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330294563,
+            "stop" : 1651330294606,
+            "duration" : 43
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "40", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[40-25.05.2010-01.01.2022]",
+          "uid" : "4a7ddb7a3f7b7bdd",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330294608,
+            "stop" : 1651330295629,
+            "duration" : 1021
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "40", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[40-01.01.2000-24.10.2010]",
+          "uid" : "f183d6bdd421a5b0",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330295632,
+            "stop" : 1651330296580,
+            "duration" : 948
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "40", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[40-01.01.2000-25.11.2010]",
+          "uid" : "f8c5519ff2c6eb51",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330296583,
+            "stop" : 1651330297540,
+            "duration" : 957
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "40", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[40-01.01.2000-01.01.2022]",
+          "uid" : "1244f0d50ca0c3f5",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330297543,
+            "stop" : 1651330299560,
+            "duration" : 2017
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "40", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[30-24.05.2010-24.10.2010]",
+          "uid" : "c3531086e73f5af8",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330299564,
+            "stop" : 1651330299590,
+            "duration" : 26
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "30", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[30-24.05.2010-25.11.2010]",
+          "uid" : "9fcb5d943288a8b3",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330299592,
+            "stop" : 1651330299624,
+            "duration" : 32
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "30", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[30-24.05.2010-01.01.2022]",
+          "uid" : "9cd312c7659b042b",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330299627,
+            "stop" : 1651330300376,
+            "duration" : 749
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "30", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[30-25.05.2010-24.10.2010]",
+          "uid" : "6fdfc250f4a1533d",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330300379,
+            "stop" : 1651330300406,
+            "duration" : 27
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "30", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[30-25.05.2010-25.11.2010]",
+          "uid" : "6335d6caff47d7de",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330300409,
+            "stop" : 1651330300440,
+            "duration" : 31
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "30", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[30-25.05.2010-01.01.2022]",
+          "uid" : "6bdcf37ebba70812",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330300443,
+            "stop" : 1651330301264,
+            "duration" : 821
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "30", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[30-01.01.2000-24.10.2010]",
+          "uid" : "d5159e817a4eea03",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330301267,
+            "stop" : 1651330301954,
+            "duration" : 687
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "30", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[30-01.01.2000-25.11.2010]",
+          "uid" : "e021eb284a032306",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330301958,
+            "stop" : 1651330302674,
+            "duration" : 716
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "30", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[30-01.01.2000-01.01.2022]",
+          "uid" : "f8e9b63bb0812198",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330302678,
+            "stop" : 1651330304141,
+            "duration" : 1463
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "30", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[20-24.05.2010-24.10.2010]",
+          "uid" : "a08408e0dc3393a4",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330304144,
+            "stop" : 1651330304162,
+            "duration" : 18
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "20", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[20-24.05.2010-25.11.2010]",
+          "uid" : "8ac737a25793057e",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330304164,
+            "stop" : 1651330304192,
+            "duration" : 28
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "20", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[20-24.05.2010-01.01.2022]",
+          "uid" : "65972a1b977111b8",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330304194,
+            "stop" : 1651330304679,
+            "duration" : 485
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "20", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[20-25.05.2010-24.10.2010]",
+          "uid" : "a4ffac200a3dd3a0",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330304682,
+            "stop" : 1651330304699,
+            "duration" : 17
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "20", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[20-25.05.2010-25.11.2010]",
+          "uid" : "193e4fd8c49c7cfd",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330304702,
+            "stop" : 1651330304723,
+            "duration" : 21
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "20", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[20-25.05.2010-01.01.2022]",
+          "uid" : "be3e126c3c1db3bd",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330304726,
+            "stop" : 1651330305217,
+            "duration" : 491
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "20", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[20-01.01.2000-24.10.2010]",
+          "uid" : "13c61a14e9783c95",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330305220,
+            "stop" : 1651330305679,
+            "duration" : 459
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "20", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[20-01.01.2000-25.11.2010]",
+          "uid" : "3c7816be08413db6",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330305683,
+            "stop" : 1651330306141,
+            "duration" : 458
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "20", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[20-01.01.2000-01.01.2022]",
+          "uid" : "555742c60e601226",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330306144,
+            "stop" : 1651330307155,
+            "duration" : 1011
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "20", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[10-24.05.2010-24.10.2010]",
+          "uid" : "1b923aa28ab57aeb",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330307158,
+            "stop" : 1651330307169,
+            "duration" : 11
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "10", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[10-24.05.2010-25.11.2010]",
+          "uid" : "7214ced2d1507faa",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330307172,
+            "stop" : 1651330307183,
+            "duration" : 11
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "10", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[10-24.05.2010-01.01.2022]",
+          "uid" : "7e91d8366ba2fba9",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330307186,
+            "stop" : 1651330307427,
+            "duration" : 241
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "10", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[10-25.05.2010-24.10.2010]",
+          "uid" : "3f31d3f142cb7345",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330307430,
+            "stop" : 1651330307439,
+            "duration" : 9
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "10", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[10-25.05.2010-25.11.2010]",
+          "uid" : "66eb54e881e3f936",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330307441,
+            "stop" : 1651330307452,
+            "duration" : 11
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "10", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[10-25.05.2010-01.01.2022]",
+          "uid" : "4d5c264c65a21ee6",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330307454,
+            "stop" : 1651330307704,
+            "duration" : 250
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "10", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[10-01.01.2000-24.10.2010]",
+          "uid" : "b96c3c26227c59ee",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330307707,
+            "stop" : 1651330307932,
+            "duration" : 225
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "10", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[10-01.01.2000-25.11.2010]",
+          "uid" : "7eb3dbc2602d7a77",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330307935,
+            "stop" : 1651330308163,
+            "duration" : 228
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "10", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[10-01.01.2000-01.01.2022]",
+          "uid" : "b6d82909c6d4ee15",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330308166,
+            "stop" : 1651330308614,
+            "duration" : 448
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "10", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[11-24.05.2010-24.10.2010]",
+          "uid" : "9c2209762d623113",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330308617,
+            "stop" : 1651330308635,
+            "duration" : 18
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "11", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[11-24.05.2010-25.11.2010]",
+          "uid" : "fb500a3e1a9bd6f7",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330308638,
+            "stop" : 1651330308650,
+            "duration" : 12
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "11", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[11-24.05.2010-01.01.2022]",
+          "uid" : "a5a4814059f4f73a",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330308652,
+            "stop" : 1651330308914,
+            "duration" : 262
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "11", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[11-25.05.2010-24.10.2010]",
+          "uid" : "eeda1b9a2f04fd26",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330308917,
+            "stop" : 1651330308926,
+            "duration" : 9
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "11", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[11-25.05.2010-25.11.2010]",
+          "uid" : "b9637755d491bc7f",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330308929,
+            "stop" : 1651330308941,
+            "duration" : 12
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "11", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[11-25.05.2010-01.01.2022]",
+          "uid" : "978b88a9ef3f8454",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330308943,
+            "stop" : 1651330309206,
+            "duration" : 263
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "11", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[11-01.01.2000-24.10.2010]",
+          "uid" : "2378bb60ab34830b",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330309209,
+            "stop" : 1651330309455,
+            "duration" : 246
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "11", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[11-01.01.2000-25.11.2010]",
+          "uid" : "1f7da90713bedc21",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330309457,
+            "stop" : 1651330309705,
+            "duration" : 248
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "11", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[11-01.01.2000-01.01.2022]",
+          "uid" : "35abb119de78a377",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330309708,
+            "stop" : 1651330310207,
+            "duration" : 499
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "11", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[49-24.05.2010-24.10.2010]",
+          "uid" : "28a87fe39cbeb9cf",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330310210,
+            "stop" : 1651330310264,
+            "duration" : 54
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "49", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[49-24.05.2010-25.11.2010]",
+          "uid" : "df1ac91f6ff85986",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330310266,
+            "stop" : 1651330310317,
+            "duration" : 51
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "49", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[49-24.05.2010-01.01.2022]",
+          "uid" : "56d0074a66ad69e1",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330310320,
+            "stop" : 1651330311526,
+            "duration" : 1206
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "49", "'24.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[49-25.05.2010-24.10.2010]",
+          "uid" : "a55a4fd0e6009d7e",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330311529,
+            "stop" : 1651330311570,
+            "duration" : 41
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "49", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[49-25.05.2010-25.11.2010]",
+          "uid" : "3b12ae89a1128983",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330311573,
+            "stop" : 1651330311629,
+            "duration" : 56
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "49", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[49-25.05.2010-01.01.2022]",
+          "uid" : "4a8026b88c4a2b2b",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330311632,
+            "stop" : 1651330312978,
+            "duration" : 1346
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "49", "'25.05.2010'" ]
+        }, {
+          "name" : "test_trivial_crm[49-01.01.2000-24.10.2010]",
+          "uid" : "218827318bd8c59e",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330312982,
+            "stop" : 1651330314118,
+            "duration" : 1136
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "49", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[49-01.01.2000-25.11.2010]",
+          "uid" : "b74039c94bd48659",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330314122,
+            "stop" : 1651330315254,
+            "duration" : 1132
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'25.11.2010'", "49", "'01.01.2000'" ]
+        }, {
+          "name" : "test_trivial_crm[49-01.01.2000-01.01.2022]",
+          "uid" : "feb9360fd004c2d0",
+          "parentUid" : "f0b0cfe96c1e886da2e1d68b8ca56929",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330315258,
+            "stop" : 1651330317636,
+            "duration" : 2378
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'01.01.2022'", "49", "'01.01.2000'" ]
+        } ],
+        "uid" : "f0b0cfe96c1e886da2e1d68b8ca56929"
+      } ],
+      "uid" : "afb0129022e1703494010c645e874197"
+    }, {
+      "name" : "visualization",
+      "children" : [ {
+        "name" : "test_distribution",
+        "children" : [ {
+          "name" : "test_create_adv_compaign[8000-30.01.2010-01.01.2010]",
+          "uid" : "91f611c9249ead16",
+          "parentUid" : "f215b42301352e55f2c7729100731225",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330317948,
+            "stop" : 1651330317950,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'30.01.2010'", "'01.01.2010'", "8000" ]
+        } ],
+        "uid" : "f215b42301352e55f2c7729100731225"
+      }, {
+        "name" : "tests_funnel_plot",
+        "children" : [ {
+          "name" : "test_tests_funnel[3-24.05.2010-24.10.2010]",
+          "uid" : "f3d39b4252c732b6",
+          "parentUid" : "34cbd16c94ad60d483403ee9f756da40",
+          "status" : "passed",
+          "time" : {
+            "start" : 1651330318699,
+            "stop" : 1651330319179,
+            "duration" : 480
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'24.10.2010'", "3", "'24.05.2010'" ]
+        } ],
+        "uid" : "34cbd16c94ad60d483403ee9f756da40"
+      } ],
+      "uid" : "b75fe17e9a06f28adbf5a9b1a0fd8245"
+    } ],
+    "uid" : "c444549970da80ed39dc9377a582b8f5"
+  } ],
+  "name" : "packages"
+}
