@@ -18,7 +18,7 @@ from VKR_project.tests_vkr.tools.ADV import AdvCampaign
         '25.05.2010',
         '01.01.2000',
     ])
-@pytest.mark.parametrize('sum_cost', [8000, 1200, 3000, 5000, 10000, 1, 0, 10000000000, 123])
+@pytest.mark.parametrize('sum_cost', [8000, 1200, 3000, 5000, 10000, 1, 10000000000, 123])
 def test_create_adv_campaign(start_date, end_date, sum_cost):
     a = AdvCampaign(
         name='Test campain',
