@@ -1,0 +1,65 @@
+{
+  "uid" : "ffbf8fcc044ad430",
+  "name" : "test_random_ints[1-780]",
+  "fullName" : "tests_vkr.basic_functionality.test_random_ints#test_random_ints",
+  "historyId" : "6a02f84cd06f90d97061e672e17896d6",
+  "time" : {
+    "start" : 1651382446294,
+    "stop" : 1651382446294,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test function for getting an iterable object of random int with a given sum"
+  }, {
+    "name" : "feature",
+    "value" : "Basic functionality"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests_vkr.basic_functionality"
+  }, {
+    "name" : "suite",
+    "value" : "test_random_ints"
+  }, {
+    "name" : "host",
+    "value" : "fv-az72-668"
+  }, {
+    "name" : "thread",
+    "value" : "2298-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.basic_functionality.test_random_ints"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "n",
+    "value" : "780"
+  }, {
+    "name" : "total",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ffbf8fcc044ad430.json",
+  "parameterValues" : [ "780", "1" ]
+}

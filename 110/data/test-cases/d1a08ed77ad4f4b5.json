@@ -1,0 +1,79 @@
+{
+  "uid" : "d1a08ed77ad4f4b5",
+  "name" : "test_split_campaign_crm[8000-1-0-1000000-01.01.2000-01.01.2022]",
+  "fullName" : "tests_vkr.generator.test_split_campaign#test_split_campaign_crm",
+  "historyId" : "c59f63caf06b3e1ffa65a1f27fe2ada5",
+  "time" : {
+    "start" : 1651382406147,
+    "stop" : 1651382406265,
+    "duration" : 118
+  },
+  "description" : "сделать более гибкое количество рекламных компаний",
+  "descriptionHtml" : "<p>сделать более гибкое количество рекламных компаний</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "CRM report"
+  }, {
+    "name" : "story",
+    "value" : "Test of creating CRM report"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_split_campaign"
+  }, {
+    "name" : "host",
+    "value" : "fv-az72-668"
+  }, {
+    "name" : "thread",
+    "value" : "2265-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.generator.test_split_campaign"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "clicks1",
+    "value" : "1"
+  }, {
+    "name" : "clicks2",
+    "value" : "8000"
+  }, {
+    "name" : "end_date",
+    "value" : "'01.01.2022'"
+  }, {
+    "name" : "profit1",
+    "value" : "1000000"
+  }, {
+    "name" : "profit2",
+    "value" : "0"
+  }, {
+    "name" : "start_date",
+    "value" : "'01.01.2000'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d1a08ed77ad4f4b5.json",
+  "parameterValues" : [ "1", "8000", "'01.01.2022'", "1000000", "0", "'01.01.2000'" ]
+}
