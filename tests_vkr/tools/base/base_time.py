@@ -24,3 +24,7 @@ class BaseTime:
     def daterange(self):
         for n in range(int((self.end_date - self.start_date).days)+1):
             yield self.start_date + datetime.timedelta(n)
+
+    @property
+    def number_days(self):
+        return int((self.end_date - self.start_date).days) + 1

@@ -1,7 +1,7 @@
 import allure
 import pytest
 
-from VKR_project.tests_vkr.tools.ADV import AdvCampaign
+from ..tools.ADV import AdvCampaign
 
 
 @allure.feature('ADV campaign')
@@ -29,4 +29,4 @@ def test_create_adv_campaign(start_date, end_date, sum_cost):
     cost_campaign = 0
     for i in a.campaign:
         cost_campaign += i.cost
-    assert cost_campaign == sum_cost
+    assert abs(cost_campaign - sum_cost) < 1e-4
