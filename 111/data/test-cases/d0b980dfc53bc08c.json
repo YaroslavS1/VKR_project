@@ -1,0 +1,85 @@
+{
+  "uid" : "d0b980dfc53bc08c",
+  "name" : "test_random_ints[10-49]",
+  "fullName" : "tests_vkr.basic_functionality.test_random_ints#test_random_ints",
+  "historyId" : "06f199352324478208717c8c8ed66247",
+  "time" : {
+    "start" : 1651382693572,
+    "stop" : 1651382693573,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Basic functionality"
+  }, {
+    "name" : "story",
+    "value" : "Test function for getting an iterable object of random int with a given sum"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests_vkr.basic_functionality"
+  }, {
+    "name" : "suite",
+    "value" : "test_random_ints"
+  }, {
+    "name" : "host",
+    "value" : "fv-az128-954"
+  }, {
+    "name" : "thread",
+    "value" : "2331-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.basic_functionality.test_random_ints"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "n",
+    "value" : "49"
+  }, {
+    "name" : "total",
+    "value" : "10"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "743128c410d1256e",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/110//#testresult/743128c410d1256e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651382446271,
+          "stop" : 1651382446272,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d0b980dfc53bc08c.json",
+  "parameterValues" : [ "49", "10" ]
+}

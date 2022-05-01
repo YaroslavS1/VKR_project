@@ -1,0 +1,99 @@
+{
+  "uid" : "c44f8fb5e5a6a77b",
+  "name" : "test_split_campaign_crm[1-1-1000000-9873-01.01.2000-01.01.2022]",
+  "fullName" : "tests_vkr.generator.test_split_campaign#test_split_campaign_crm",
+  "historyId" : "f1bcbf1cac2ab74fee23728170613e52",
+  "time" : {
+    "start" : 1651382666322,
+    "stop" : 1651382666400,
+    "duration" : 78
+  },
+  "description" : "сделать более гибкое количество рекламных компаний",
+  "descriptionHtml" : "<p>сделать более гибкое количество рекламных компаний</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "CRM report"
+  }, {
+    "name" : "story",
+    "value" : "Test of creating CRM report"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_split_campaign"
+  }, {
+    "name" : "host",
+    "value" : "fv-az128-954"
+  }, {
+    "name" : "thread",
+    "value" : "2304-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.generator.test_split_campaign"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "clicks1",
+    "value" : "1"
+  }, {
+    "name" : "clicks2",
+    "value" : "1"
+  }, {
+    "name" : "end_date",
+    "value" : "'01.01.2022'"
+  }, {
+    "name" : "profit1",
+    "value" : "9873"
+  }, {
+    "name" : "profit2",
+    "value" : "1000000"
+  }, {
+    "name" : "start_date",
+    "value" : "'01.01.2000'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "a164c855cf94237f",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/110//#testresult/a164c855cf94237f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651382413119,
+          "stop" : 1651382413213,
+          "duration" : 94
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c44f8fb5e5a6a77b.json",
+  "parameterValues" : [ "1", "1", "'01.01.2022'", "9873", "1000000", "'01.01.2000'" ]
+}
