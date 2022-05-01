@@ -1,0 +1,68 @@
+{
+  "uid" : "6f321fe5732d795b",
+  "name" : "test_create_adv_campaign[1-24.05.2010-01.01.2022]",
+  "fullName" : "tests_vkr.generator.test_adv_creator#test_create_adv_campaign",
+  "historyId" : "83618681f9e2e654390773c65c37c7de",
+  "time" : {
+    "start" : 1651381294232,
+    "stop" : 1651381294272,
+    "duration" : 40
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "ADV campaign"
+  }, {
+    "name" : "story",
+    "value" : "Test of creating an advertising company with a given price"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_adv_creator"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-45"
+  }, {
+    "name" : "thread",
+    "value" : "2260-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.generator.test_adv_creator"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'01.01.2022'"
+  }, {
+    "name" : "start_date",
+    "value" : "'24.05.2010'"
+  }, {
+    "name" : "sum_cost",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6f321fe5732d795b.json",
+  "parameterValues" : [ "'01.01.2022'", "'24.05.2010'", "1" ]
+}
