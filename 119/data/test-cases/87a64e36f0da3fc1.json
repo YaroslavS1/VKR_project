@@ -1,0 +1,142 @@
+{
+  "uid" : "87a64e36f0da3fc1",
+  "name" : "test_create_adv_campaign[123-25.05.2010-25.11.2010]",
+  "fullName" : "tests_vkr.generator.test_adv_creator#test_create_adv_campaign",
+  "historyId" : "15bba8f7fdef178e2923c9d2661492fe",
+  "time" : {
+    "start" : 1651610052253,
+    "stop" : 1651610052254,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "ADV campaign"
+  }, {
+    "name" : "story",
+    "value" : "Test of creating an advertising company with a given price"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_adv_creator"
+  }, {
+    "name" : "host",
+    "value" : "fv-az47-673"
+  }, {
+    "name" : "thread",
+    "value" : "2249-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.generator.test_adv_creator"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'25.11.2010'"
+  }, {
+    "name" : "start_date",
+    "value" : "'25.05.2010'"
+  }, {
+    "name" : "sum_cost",
+    "value" : "123"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "f380bbbb5d1b8467",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/118//#testresult/f380bbbb5d1b8467",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651547478713,
+          "stop" : 1651547478714,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "c82676d26c972334",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/117//#testresult/c82676d26c972334",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651542861577,
+          "stop" : 1651542861578,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "11759f1a2d1a1d63",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/116//#testresult/11759f1a2d1a1d63",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651542429876,
+          "stop" : 1651542429877,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "8037061cd6d189e9",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/115//#testresult/8037061cd6d189e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651537758330,
+          "stop" : 1651537758332,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "39f8d58799569125",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/111//#testresult/39f8d58799569125",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651382656716,
+          "stop" : 1651382656717,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "176ebb6745324a2a",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/110//#testresult/176ebb6745324a2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651382401021,
+          "stop" : 1651382401023,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "6f4b27c457f787ce",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/109//#testresult/6f4b27c457f787ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651381294669,
+          "stop" : 1651381294670,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "87a64e36f0da3fc1.json",
+  "parameterValues" : [ "'25.11.2010'", "'25.05.2010'", "123" ]
+}

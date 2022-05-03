@@ -1,0 +1,4051 @@
+[ {
+  "uid" : "64a44004ef5a017a",
+  "name" : "test_random_floats[90.9-20]",
+  "time" : {
+    "start" : 1651610198800,
+    "stop" : 1651610198800,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7546ef3d39c4171e",
+  "name" : "test_random_floats[100000000-11]",
+  "time" : {
+    "start" : 1651610198864,
+    "stop" : 1651610198864,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db962e7e2ac52aea",
+  "name" : "test_dummy_campaign_crm[4-01.10.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610080263,
+    "stop" : 1651610080836,
+    "duration" : 573
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d05f4554aac40768",
+  "name" : "test_dummy_campaign_crm[6-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610104710,
+    "stop" : 1651610106452,
+    "duration" : 1742
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "61260c4d23a50b2f",
+  "name" : "test_dummy_campaign_crm[4-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610082912,
+    "stop" : 1651610083984,
+    "duration" : 1072
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3f0a03bd3fa4a00",
+  "name" : "test_dummy_campaign_crm[6-01.01.2000-10.10.2010]",
+  "time" : {
+    "start" : 1651610101927,
+    "stop" : 1651610103339,
+    "duration" : 1412
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "919b4e98a39d1098",
+  "name" : "test_random_ints[10000-780]",
+  "time" : {
+    "start" : 1651610198905,
+    "stop" : 1651610198905,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63d6ebb3a3480246",
+  "name" : "test_conformity[yandex-Test campain-8998-1.5-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610060737,
+    "stop" : 1651610060981,
+    "duration" : 244
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2b8c7cf625fff2d8",
+  "name" : "test_conformity[yandex-Test campain-5432-1.5-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610065327,
+    "stop" : 1651610065471,
+    "duration" : 144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1fe3c11b190f946",
+  "name" : "test_dummy_campaign_crm[1-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610069088,
+    "stop" : 1651610069790,
+    "duration" : 702
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a31a89cbe8637fde",
+  "name" : "test_dummy_campaign_crm[7-01.10.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610106455,
+    "stop" : 1651610107575,
+    "duration" : 1120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15bbdeda7038dc52",
+  "name" : "test_trivial_crm[30-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610179717,
+    "stop" : 1651610180526,
+    "duration" : 809
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60191343f3b6cfd9",
+  "name" : "test_conformity[yandex-Test campain-9999-999.99-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610052974,
+    "stop" : 1651610053268,
+    "duration" : 294
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9739f63a0f7529ae",
+  "name" : "test_dummy_campaign_crm[9-01.01.2000-10.10.2010]",
+  "time" : {
+    "start" : 1651610145241,
+    "stop" : 1651610147122,
+    "duration" : 1881
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba4ac39624fd5a70",
+  "name" : "test_trivial_crm[11-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610188575,
+    "stop" : 1651610188585,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6828b7fb42fd692f",
+  "name" : "test_trivial_crm[10-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610187530,
+    "stop" : 1651610187783,
+    "duration" : 253
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9a45bee4e851c2f",
+  "name" : "test_random_ints[10000-11]",
+  "time" : {
+    "start" : 1651610198901,
+    "stop" : 1651610198901,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b851c51ab26e3ea3",
+  "name" : "test_conformity[yandex-Test campain-8998-7777-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610059289,
+    "stop" : 1651610059554,
+    "duration" : 265
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7776c1008d9cd3c1",
+  "name" : "test_random_floats[90.9-11]",
+  "time" : {
+    "start" : 1651610198804,
+    "stop" : 1651610198805,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "799d34bf68cf78f2",
+  "name" : "test_dump_crm[100-100-500-600-05.10.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610199873,
+    "stop" : 1651610199898,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "673432b4c911c99d",
+  "name" : "test_conformity[yandex-Test campain-400-2-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610066684,
+    "stop" : 1651610066698,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa8510b45ae3d27e",
+  "name" : "test_dummy_campaign_crm[4-25.05.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610081863,
+    "stop" : 1651610082284,
+    "duration" : 421
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d224631f4cfe617e",
+  "name" : "test_create_adv_campaign[8000-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610051051,
+    "stop" : 1651610051074,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3202a03067632993",
+  "name" : "test_trivial_crm[40-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610172124,
+    "stop" : 1651610172168,
+    "duration" : 44
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2702b128dde2e00",
+  "name" : "test_create_adv_campaign[10000-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610051713,
+    "stop" : 1651610051714,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c473b98061dbad38",
+  "name" : "test_create_adv_campaign[5000-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610051632,
+    "stop" : 1651610051678,
+    "duration" : 46
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "11c3aef90353130d",
+  "name" : "test_create_adv_campaign[1-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610051898,
+    "stop" : 1651610051899,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de008f525546a579",
+  "name" : "test_random_floats[10000-11]",
+  "time" : {
+    "start" : 1651610198742,
+    "stop" : 1651610198742,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a2e7fff3f5f6b9",
+  "name" : "test_trivial_crm[40-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610173339,
+    "stop" : 1651610173384,
+    "duration" : 45
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2d2f205a99d44e5",
+  "name" : "test_trivial_crm[49-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610190372,
+    "stop" : 1651610190417,
+    "duration" : 45
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6aa1b75a5b6ad407",
+  "name" : "test_random_floats[10000-1000]",
+  "time" : {
+    "start" : 1651610198747,
+    "stop" : 1651610198749,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8461e00a4b0caacf",
+  "name" : "test_create_adv_campaign[1-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610051869,
+    "stop" : 1651610051871,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "726e6dd289ae0eb9",
+  "name" : "test_dummy_campaign_crm[3-01.10.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610074583,
+    "stop" : 1651610075360,
+    "duration" : 777
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cfd71a9114b9f80d",
+  "name" : "test_conformity[yandex-Test campain-400-999.99-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610066511,
+    "stop" : 1651610066524,
+    "duration" : 13
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de1da4df605225cd",
+  "name" : "test_conformity[yandex-Test campain-5432-1.5-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610065765,
+    "stop" : 1651610065906,
+    "duration" : 141
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "649de205b0e1df3f",
+  "name" : "test_dummy_campaign_crm[2-25.05.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610070942,
+    "stop" : 1651610071268,
+    "duration" : 326
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "884fbb698a371383",
+  "name" : "test_create_adv_campaign[8000-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610051123,
+    "stop" : 1651610051169,
+    "duration" : 46
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c4317a4b2824598",
+  "name" : "test_create_adv_campaign[1200-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610051237,
+    "stop" : 1651610051258,
+    "duration" : 21
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b5c4efc2c028fb",
+  "name" : "test_random_floats[12.23-30]",
+  "time" : {
+    "start" : 1651610198778,
+    "stop" : 1651610198778,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5ba2af242d8e35f",
+  "name" : "test_trivial_crm[10-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610186935,
+    "stop" : 1651610186968,
+    "duration" : 33
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb9f8d0c0a679011",
+  "name" : "test_random_floats[10-49]",
+  "time" : {
+    "start" : 1651610198766,
+    "stop" : 1651610198766,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d3e3ec29792696b",
+  "name" : "test_dummy_campaign_crm[10-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610159575,
+    "stop" : 1651610162035,
+    "duration" : 2460
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6f08fa892b0c9a1",
+  "name" : "test_dummy_campaign_crm[8-01.01.2000-10.10.2010]",
+  "time" : {
+    "start" : 1651610128740,
+    "stop" : 1651610130787,
+    "duration" : 2047
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d43c67bc3659b8f8",
+  "name" : "test_conformity[yandex-Test campain-1400-2-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610063015,
+    "stop" : 1651610063047,
+    "duration" : 32
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef4dd2a42e584ea3",
+  "name" : "test_random_floats[12.23-40]",
+  "time" : {
+    "start" : 1651610198776,
+    "stop" : 1651610198776,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e3844a3e630e04b8",
+  "name" : "test_conformity[yandex-Test campain-5432-2-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610064769,
+    "stop" : 1651610064916,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8704a15bb033f58c",
+  "name" : "test_conformity[yandex-Test campain-9999-999.99-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610052673,
+    "stop" : 1651610052971,
+    "duration" : 298
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2ab369fc33e3116",
+  "name" : "test_random_floats[10-40]",
+  "time" : {
+    "start" : 1651610198755,
+    "stop" : 1651610198756,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6db8606cffb585dc",
+  "name" : "test_random_floats[90.9-30]",
+  "time" : {
+    "start" : 1651610198798,
+    "stop" : 1651610198798,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c95590838441aee",
+  "name" : "test_trivial_crm[40-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610174500,
+    "stop" : 1651610175537,
+    "duration" : 1037
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92b35b00ec87a80d",
+  "name" : "test_trivial_crm[10-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610188047,
+    "stop" : 1651610188572,
+    "duration" : 525
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "61af7ecaefa0d2b3",
+  "name" : "test_conformity[yandex-Test campain-1400-1.5-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610063152,
+    "stop" : 1651610063186,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6302c704c643fed",
+  "name" : "test_conformity[yandex-Test campain-9999-44.78-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610057236,
+    "stop" : 1651610057510,
+    "duration" : 274
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5209f5d30f8fb71f",
+  "name" : "test_dummy_campaign_crm[10-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610162038,
+    "stop" : 1651610164010,
+    "duration" : 1972
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cbbac5daa0578725",
+  "name" : "test_random_floats[10000-1010]",
+  "time" : {
+    "start" : 1651610198751,
+    "stop" : 1651610198753,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce912c0c8895a990",
+  "name" : "test_conformity[yandex-Test campain-5432-44.78-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610065910,
+    "stop" : 1651610066033,
+    "duration" : 123
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "61d59b48eda89859",
+  "name" : "test_dummy_campaign_crm[2-01.10.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610070102,
+    "stop" : 1651610070286,
+    "duration" : 184
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5cfdb7363419dff",
+  "name" : "test_dummy_campaign_crm[7-01.01.2000-10.10.2010]",
+  "time" : {
+    "start" : 1651610114282,
+    "stop" : 1651610115684,
+    "duration" : 1402
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ba6f40bdac8a25e",
+  "name" : "test_dummy_campaign_crm[4-01.10.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610079803,
+    "stop" : 1651610080260,
+    "duration" : 457
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3fe9e432ff12b94c",
+  "name" : "test_create_adv_campaign[3000-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610051471,
+    "stop" : 1651610051515,
+    "duration" : 44
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a968b55409994c9d",
+  "name" : "test_create_adv_campaign[10000-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610051680,
+    "stop" : 1651610051681,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc01f8231db111e0",
+  "name" : "test_dummy_campaign_crm[9-01.10.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610136561,
+    "stop" : 1651610137875,
+    "duration" : 1314
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e106965116bb75ed",
+  "name" : "test_create_adv_campaign[10000-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610051818,
+    "stop" : 1651610051864,
+    "duration" : 46
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "477bef0926a6e2c0",
+  "name" : "test_random_floats[0-10]",
+  "time" : {
+    "start" : 1651610198822,
+    "stop" : 1651610198822,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6eacf05374f0b27",
+  "name" : "test_create_adv_campaign[8000-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610051018,
+    "stop" : 1651610051019,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "999a1e2aa068f454",
+  "name" : "test_dummy_campaign_crm[9-25.05.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610140109,
+    "stop" : 1651610141330,
+    "duration" : 1221
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63b7023e1506ad8",
+  "name" : "test_conformity[yandex-Test campain-1400-2-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610062977,
+    "stop" : 1651610063012,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a80d29a3b5f2f267",
+  "name" : "test_random_ints[1-780]",
+  "time" : {
+    "start" : 1651610198934,
+    "stop" : 1651610198935,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cadc1547d7127643",
+  "name" : "test_conformity[yandex-Test campain-5432-2-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610065038,
+    "stop" : 1651610065180,
+    "duration" : 142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b77dc877e9919224",
+  "name" : "test_dummy_campaign_crm[9-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610141333,
+    "stop" : 1651610143070,
+    "duration" : 1737
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "268fa2a7e7b41898",
+  "name" : "test_conformity[yandex-Test campain-5432-7777-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610064299,
+    "stop" : 1651610064457,
+    "duration" : 158
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd4f456bbbebed8f",
+  "name" : "test_trivial_crm[40-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610172171,
+    "stop" : 1651610173296,
+    "duration" : 1125
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a38419cf8aa179a5",
+  "name" : "test_trivial_crm[49-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610193288,
+    "stop" : 1651610194504,
+    "duration" : 1216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4d4daa5257780a1",
+  "name" : "test_random_floats[100000000-20]",
+  "time" : {
+    "start" : 1651610198860,
+    "stop" : 1651610198860,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "959ddad4854a18b2",
+  "name" : "test_trivial_crm[30-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610178772,
+    "stop" : 1651610178805,
+    "duration" : 33
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf56f4ac0ecbca3",
+  "name" : "test_random_ints[10000000000-10]",
+  "time" : {
+    "start" : 1651610198943,
+    "stop" : 1651610198943,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "257f56fd2ba312ba",
+  "name" : "test_create_adv_campaign[10000000000-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610052066,
+    "stop" : 1651610052114,
+    "duration" : 48
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8fa57326f9773fd",
+  "name" : "test_trivial_crm[20-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610183707,
+    "stop" : 1651610183729,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92bcdf23c67e4bfc",
+  "name" : "test_dummy_campaign_crm[9-01.10.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610134576,
+    "stop" : 1651610136558,
+    "duration" : 1982
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3161fb54cdfadd24",
+  "name" : "test_create_adv_campaign[1200-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610051211,
+    "stop" : 1651610051234,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a80d510ce39d909",
+  "name" : "test_trivial_crm[49-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610191948,
+    "stop" : 1651610193285,
+    "duration" : 1337
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "180ee1afdc98f45b",
+  "name" : "test_dummy_campaign_crm[2-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610073258,
+    "stop" : 1651610073939,
+    "duration" : 681
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4fa86070451c79e5",
+  "name" : "test_random_ints[10-49]",
+  "time" : {
+    "start" : 1651610198918,
+    "stop" : 1651610198918,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2a6a51ab643d1da",
+  "name" : "test_conformity[yandex-Test campain-5432-1.5-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610065620,
+    "stop" : 1651610065761,
+    "duration" : 141
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "716cf007a593a382",
+  "name" : "test_dummy_campaign_crm[10-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610168670,
+    "stop" : 1651610171117,
+    "duration" : 2447
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "149157b45f86adf1",
+  "name" : "test_conformity[yandex-Test campain-8998-999.99-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610058294,
+    "stop" : 1651610058522,
+    "duration" : 228
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "534cc51b117eb906",
+  "name" : "test_random_ints[10-30]",
+  "time" : {
+    "start" : 1651610198909,
+    "stop" : 1651610198910,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "477ddb7144642490",
+  "name" : "test_conformity[yandex-Test campain-400-999.99-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610066527,
+    "stop" : 1651610066568,
+    "duration" : 41
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "507dad7b0c3cedef",
+  "name" : "test_dummy_campaign_crm[1-01.01.2000-10.10.2010]",
+  "time" : {
+    "start" : 1651610068148,
+    "stop" : 1651610068554,
+    "duration" : 406
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "57418ec450cc5820",
+  "name" : "test_dummy_campaign_crm[6-01.10.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610095531,
+    "stop" : 1651610096567,
+    "duration" : 1036
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dca1106dfdbbd800",
+  "name" : "test_random_floats[10-11]",
+  "time" : {
+    "start" : 1651610198764,
+    "stop" : 1651610198764,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d6fd06af96de71eb",
+  "name" : "test_create_adv_campaign[3000-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610051365,
+    "stop" : 1651610051366,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c609d22268d48324",
+  "name" : "test_dummy_campaign_crm[1-25.05.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610067670,
+    "stop" : 1651610067775,
+    "duration" : 105
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8edc42bc61d2507d",
+  "name" : "test_dummy_campaign_crm[1-01.10.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610067140,
+    "stop" : 1651610067667,
+    "duration" : 527
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7709db9372d8c12",
+  "name" : "test_conformity[yandex-Test campain-9999-1.5-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610056189,
+    "stop" : 1651610056456,
+    "duration" : 267
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b791e4c4e2dea658",
+  "name" : "test_end_to_end_crm[40000-30000-700-600-case10-case20-05.10.2010-06.10.2010]",
+  "time" : {
+    "start" : 1651610171121,
+    "stop" : 1651610171121,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "a2a3adc61f63b05a",
+  "name" : "test_conformity[yandex-Test campain-8998-44.78-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610062364,
+    "stop" : 1651610062610,
+    "duration" : 246
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "768d04508761df92",
+  "name" : "test_dummy_campaign_crm[6-01.10.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610097488,
+    "stop" : 1651610098975,
+    "duration" : 1487
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ccdc2a813b3121e8",
+  "name" : "test_dummy_campaign_crm[3-25.05.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610075363,
+    "stop" : 1651610075614,
+    "duration" : 251
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d8c4fd33051afa43",
+  "name" : "test_conformity[yandex-Test campain-9999-1.5-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610055676,
+    "stop" : 1651610055946,
+    "duration" : 270
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2d7f9587984228f",
+  "name" : "test_conformity[yandex-Test campain-400-2-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610066701,
+    "stop" : 1651610066713,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ee6b2136fade78",
+  "name" : "test_random_floats[10-10]",
+  "time" : {
+    "start" : 1651610198762,
+    "stop" : 1651610198762,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "226f638682bb29fc",
+  "name" : "test_create_adv_campaign[3000-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610051333,
+    "stop" : 1651610051334,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f336dba0871c8fb8",
+  "name" : "test_random_floats[0-30]",
+  "time" : {
+    "start" : 1651610198818,
+    "stop" : 1651610198818,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6770a3d67b2c7ffb",
+  "name" : "test_create_adv_campaign[5000-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610051521,
+    "stop" : 1651610051522,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9d18fdd8285cb2e",
+  "name" : "test_dummy_campaign_crm[1-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610067778,
+    "stop" : 1651610067793,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9e6cba3e1927cc0",
+  "name" : "test_conformity[yandex-Test campain-8998-1.5-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610061201,
+    "stop" : 1651610061417,
+    "duration" : 216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a1c522e724c0b3b2",
+  "name" : "test_random_floats[0.1-49]",
+  "time" : {
+    "start" : 1651610198846,
+    "stop" : 1651610198846,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7b561ad1c21ad6a",
+  "name" : "test_random_floats[0.1-10]",
+  "time" : {
+    "start" : 1651610198842,
+    "stop" : 1651610198842,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b37e2b2a91de8f44",
+  "name" : "test_create_adv_campaign[10000-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610051716,
+    "stop" : 1651610051718,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce8af85418bbc9fa",
+  "name" : "test_random_floats[10000-40]",
+  "time" : {
+    "start" : 1651610198733,
+    "stop" : 1651610198733,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd4c71c761bcafce",
+  "name" : "test_create_adv_campaign[5000-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610051557,
+    "stop" : 1651610051581,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "31a3a694545eb4e9",
+  "name" : "test_create_adv_campaign[3000-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610051372,
+    "stop" : 1651610051397,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ddb7f410b25b70",
+  "name" : "test_conformity[yandex-Test campain-8998-7777-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610059557,
+    "stop" : 1651610059825,
+    "duration" : 268
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "74746aa86a8b7e1d",
+  "name" : "test_create_adv_campaign[5000-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610051608,
+    "stop" : 1651610051630,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87a64e36f0da3fc1",
+  "name" : "test_create_adv_campaign[123-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610052253,
+    "stop" : 1651610052254,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15ab57fe38f84098",
+  "name" : "test_trivial_crm[11-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610189228,
+    "stop" : 1651610189505,
+    "duration" : 277
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d5419671046d25f",
+  "name" : "test_random_ints[1-30]",
+  "time" : {
+    "start" : 1651610198924,
+    "stop" : 1651610198924,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "866c8cb99534248e",
+  "name" : "test_dummy_campaign_crm[4-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610085915,
+    "stop" : 1651610087368,
+    "duration" : 1453
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d6883fcab31c45b",
+  "name" : "test_trivial_crm[30-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610180529,
+    "stop" : 1651610181315,
+    "duration" : 786
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1fb7c948116667a",
+  "name" : "test_conformity[yandex-Test campain-400-7777-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610066637,
+    "stop" : 1651610066649,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "679afd2006c7f7c2",
+  "name" : "test_random_floats[90.9-1000]",
+  "time" : {
+    "start" : 1651610198809,
+    "stop" : 1651610198811,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8242b73ec67d7e2f",
+  "name" : "test_trivial_crm[20-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610184287,
+    "stop" : 1651610184305,
+    "duration" : 18
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "709b74f6f5ac24d7",
+  "name" : "test_trivial_crm[30-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610179681,
+    "stop" : 1651610179714,
+    "duration" : 33
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c1556d546d9ed7ef",
+  "name" : "test_create_adv_campaign[5000-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610051583,
+    "stop" : 1651610051605,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "80a738d93f76e39c",
+  "name" : "test_random_ints[1-49]",
+  "time" : {
+    "start" : 1651610198932,
+    "stop" : 1651610198932,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b53355e3a69ed61b",
+  "name" : "test_create_adv_campaign[3000-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610051336,
+    "stop" : 1651610051337,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b820cdb053f1adf3",
+  "name" : "test_random_ints[10000000000-49]",
+  "time" : {
+    "start" : 1651610198947,
+    "stop" : 1651610198947,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4fb5f0ff4bc880d1",
+  "name" : "test_conformity[yandex-Test campain-400-44.78-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610066807,
+    "stop" : 1651610066821,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f79ac82a965e91",
+  "name" : "test_conformity[yandex-Test campain-1400-7777-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610062940,
+    "stop" : 1651610062974,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "12f7e15b07469be9",
+  "name" : "test_create_adv_campaign[10000000000-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610052029,
+    "stop" : 1651610052030,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48b80f659165a0f1",
+  "name" : "test_conformity[yandex-Test campain-9999-999.99-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610052378,
+    "stop" : 1651610052669,
+    "duration" : 291
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "329d1ebbe5f9ee4b",
+  "name" : "test_random_floats[0-1000]",
+  "time" : {
+    "start" : 1651610198828,
+    "stop" : 1651610198830,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58e88cdddd684fca",
+  "name" : "test_conformity[yandex-Test campain-8998-999.99-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610058526,
+    "stop" : 1651610058782,
+    "duration" : 256
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1aecbdd4afd31378",
+  "name" : "test_random_floats[10000-20]",
+  "time" : {
+    "start" : 1651610198738,
+    "stop" : 1651610198738,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eba4ee6510ae7141",
+  "name" : "test_trivial_crm[49-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610190419,
+    "stop" : 1651610190473,
+    "duration" : 54
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ee5a9655b6a908e",
+  "name" : "test_conformity[yandex-Test campain-1400-2-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610063051,
+    "stop" : 1651610063113,
+    "duration" : 62
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ec27296f932143e",
+  "name" : "test_conformity[yandex-Test campain-9999-7777-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610053560,
+    "stop" : 1651610053818,
+    "duration" : 258
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e8b2109dcfc1eb4a",
+  "name" : "test_conformity[yandex-Test campain-8998-7777-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610059054,
+    "stop" : 1651610059285,
+    "duration" : 231
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8195ceec46281369",
+  "name" : "test_dummy_campaign_crm[2-01.01.2000-10.10.2010]",
+  "time" : {
+    "start" : 1651610072269,
+    "stop" : 1651610072803,
+    "duration" : 534
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5389be6c43c98690",
+  "name" : "test_conformity[yandex-Test campain-1400-999.99-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610062614,
+    "stop" : 1651610062652,
+    "duration" : 38
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1cfa066fe847b792",
+  "name" : "test_random_ints[10-780]",
+  "time" : {
+    "start" : 1651610198920,
+    "stop" : 1651610198920,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5bbbd58da32e426e",
+  "name" : "test_conformity[yandex-Test campain-8998-2-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610060518,
+    "stop" : 1651610060733,
+    "duration" : 215
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3bd147a0ed2de679",
+  "name" : "test_random_ints[1-11]",
+  "time" : {
+    "start" : 1651610198930,
+    "stop" : 1651610198930,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "810b107788dba1ba",
+  "name" : "test_create_adv_campaign[1-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610051978,
+    "stop" : 1651610052022,
+    "duration" : 44
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6445a4ee1960afce",
+  "name" : "test_create_adv_campaign[123-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610052331,
+    "stop" : 1651610052376,
+    "duration" : 45
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "382224bd9a3822ff",
+  "name" : "test_dummy_campaign_crm[5-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610090297,
+    "stop" : 1651610091113,
+    "duration" : 816
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2aa91d2d1548c9c6",
+  "name" : "test_trivial_crm[11-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610188588,
+    "stop" : 1651610188600,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23b29625779b6b1e",
+  "name" : "test_dummy_campaign_crm[3-01.10.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610073942,
+    "stop" : 1651610074262,
+    "duration" : 320
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c623672f8226504",
+  "name" : "test_random_floats[0-40]",
+  "time" : {
+    "start" : 1651610198816,
+    "stop" : 1651610198816,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "816f825bdf12056a",
+  "name" : "test_create_adv_campaign[5000-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610051524,
+    "stop" : 1651610051548,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ea63e45cc2879f6d",
+  "name" : "test_dummy_campaign_crm[7-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610115687,
+    "stop" : 1651610117350,
+    "duration" : 1663
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78b5b92ae3ac1770",
+  "name" : "test_dummy_campaign_crm[2-01.10.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610070289,
+    "stop" : 1651610070939,
+    "duration" : 650
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72b41def98f3ec7e",
+  "name" : "test_conformity[yandex-Test campain-9999-1.5-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610055950,
+    "stop" : 1651610056186,
+    "duration" : 236
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cea33cae183e90e",
+  "name" : "test_create_adv_campaign[10000-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610051683,
+    "stop" : 1651610051685,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8fcec0693994be6",
+  "name" : "test_dummy_campaign_crm[6-25.05.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610098978,
+    "stop" : 1651610099659,
+    "duration" : 681
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "59e9c0cec28ad0e3",
+  "name" : "test_random_ints[10-40]",
+  "time" : {
+    "start" : 1651610198907,
+    "stop" : 1651610198908,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34a96067dcf0f89d",
+  "name" : "test_conformity[yandex-Test campain-9999-1.5-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610056460,
+    "stop" : 1651610056697,
+    "duration" : 237
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "74dc63aff575145c",
+  "name" : "test_conformity[yandex-Test campain-400-2-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610066652,
+    "stop" : 1651610066666,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "77c0cee7ebce824c",
+  "name" : "test_trivial_crm[20-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610184307,
+    "stop" : 1651610184329,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "29a33949d9e68117",
+  "name" : "test_conformity[yandex-Test campain-400-2-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610066669,
+    "stop" : 1651610066681,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca071a48d27823d0",
+  "name" : "test_conformity[yandex-Test campain-5432-999.99-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610063667,
+    "stop" : 1651610063819,
+    "duration" : 152
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f0f4126ce00cb6f9",
+  "name" : "test_dummy_campaign_crm[2-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610071271,
+    "stop" : 1651610071501,
+    "duration" : 230
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2afe5d2fed6dae43",
+  "name" : "test_conformity[yandex-Test campain-9999-2-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610054906,
+    "stop" : 1651610055167,
+    "duration" : 261
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e7d2802347bbe9d",
+  "name" : "test_conformity[yandex-Test campain-9999-7777-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610054379,
+    "stop" : 1651610054662,
+    "duration" : 283
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75d87e3942da70be",
+  "name" : "test_conformity[yandex-Test campain-5432-999.99-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610063508,
+    "stop" : 1651610063663,
+    "duration" : 155
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9abdeaee8aad95e5",
+  "name" : "test_random_floats[100000000-1010]",
+  "time" : {
+    "start" : 1651610198888,
+    "stop" : 1651610198890,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e53b8d51766a9b2",
+  "name" : "test_conformity[yandex-Test campain-5432-2-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610065183,
+    "stop" : 1651610065323,
+    "duration" : 140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8bd3877e753b575",
+  "name" : "test_random_ints[10000-20]",
+  "time" : {
+    "start" : 1651610198897,
+    "stop" : 1651610198897,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7506fb8f09324809",
+  "name" : "test_trivial_crm[11-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610188602,
+    "stop" : 1651610188898,
+    "duration" : 296
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9192ae7b74c37387",
+  "name" : "test_conformity[yandex-Test campain-400-44.78-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610066857,
+    "stop" : 1651610066868,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "317cf9653fbddfbb",
+  "name" : "test_conformity[yandex-Test campain-5432-7777-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610064136,
+    "stop" : 1651610064295,
+    "duration" : 159
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc4e6db1c38db028",
+  "name" : "test_create_adv_campaign[123-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610052217,
+    "stop" : 1651610052218,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd0f196b612594c0",
+  "name" : "test_conformity[yandex-Test campain-1400-44.78-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610063366,
+    "stop" : 1651610063400,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50c667789959465a",
+  "name" : "test_conformity[yandex-Test campain-8998-999.99-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610058032,
+    "stop" : 1651610058291,
+    "duration" : 259
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "387f0a5660a393f6",
+  "name" : "test_conformity[yandex-Test campain-9999-2-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610054665,
+    "stop" : 1651610054903,
+    "duration" : 238
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c92eec485aaf6461",
+  "name" : "test_trivial_crm[11-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610188928,
+    "stop" : 1651610189225,
+    "duration" : 297
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "57bd7ecf53a65020",
+  "name" : "test_trivial_crm[30-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610179626,
+    "stop" : 1651610179679,
+    "duration" : 53
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca024b56b66c5698",
+  "name" : "test_create_adv_campaign[10000000000-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610052142,
+    "stop" : 1651610052165,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd611ebf007d5493",
+  "name" : "test_conformity[yandex-Test campain-1400-7777-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610062877,
+    "stop" : 1651610062937,
+    "duration" : 60
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62b8fd703db712a1",
+  "name" : "test_random_floats[90.9-10]",
+  "time" : {
+    "start" : 1651610198802,
+    "stop" : 1651610198802,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e81128cfe8ba79e",
+  "name" : "test_random_floats[0.1-30]",
+  "time" : {
+    "start" : 1651610198838,
+    "stop" : 1651610198838,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60acb91942cc33ec",
+  "name" : "test_conformity[yandex-Test campain-8998-44.78-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610061891,
+    "stop" : 1651610062135,
+    "duration" : 244
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2b717c754056dd6",
+  "name" : "test_conformity[yandex-Test campain-8998-1.5-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610060984,
+    "stop" : 1651610061198,
+    "duration" : 214
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17f79bd9afc67d49",
+  "name" : "test_create_adv_campaign[10000000000-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610052032,
+    "stop" : 1651610052057,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c11943b57f523137",
+  "name" : "test_dummy_campaign_crm[10-01.01.2000-10.10.2010]",
+  "time" : {
+    "start" : 1651610164013,
+    "stop" : 1651610166421,
+    "duration" : 2408
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "437a27990828cea6",
+  "name" : "test_random_floats[100000000-49]",
+  "time" : {
+    "start" : 1651610198866,
+    "stop" : 1651610198866,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58131b0206f50325",
+  "name" : "test_trivial_crm[10-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610186971,
+    "stop" : 1651610186982,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eab7181437032850",
+  "name" : "test_create_adv_campaign[1200-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610051204,
+    "stop" : 1651610051205,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f52cec5713769ff8",
+  "name" : "test_dummy_campaign_crm[10-01.10.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610151702,
+    "stop" : 1651610153414,
+    "duration" : 1712
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a34cd3e888f0769d",
+  "name" : "test_create_adv_campaign[1-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610051930,
+    "stop" : 1651610051952,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "995a1ddb69393e02",
+  "name" : "test_create_adv_campaign[10000-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610051793,
+    "stop" : 1651610051816,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abfa966a64ea816a",
+  "name" : "test_create_adv_campaign[10000000000-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610052025,
+    "stop" : 1651610052026,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d084df7aa5664bc",
+  "name" : "test_conformity[yandex-Test campain-9999-2-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610055171,
+    "stop" : 1651610055406,
+    "duration" : 235
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e4510aa0851e249",
+  "name" : "test_conformity[yandex-Test campain-9999-999.99-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610053271,
+    "stop" : 1651610053556,
+    "duration" : 285
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9eedb07e2c1b4fb4",
+  "name" : "test_conformity[yandex-Test campain-9999-44.78-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610057514,
+    "stop" : 1651610057786,
+    "duration" : 272
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f4fa72bd248f461",
+  "name" : "test_dummy_campaign_crm[1-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610067795,
+    "stop" : 1651610068146,
+    "duration" : 351
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d7e0a4461301978",
+  "name" : "test_dummy_campaign_crm[10-01.10.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610153417,
+    "stop" : 1651610155182,
+    "duration" : 1765
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4982270b0a4d573",
+  "name" : "test_split_campaign_crm[8000-8000-8764-9873-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610171125,
+    "stop" : 1651610172079,
+    "duration" : 954
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3226f9a0752f37a6",
+  "name" : "test_random_floats[0.1-40]",
+  "time" : {
+    "start" : 1651610198836,
+    "stop" : 1651610198836,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71fa7a3071ceb95d",
+  "name" : "test_random_floats[12.23-11]",
+  "time" : {
+    "start" : 1651610198784,
+    "stop" : 1651610198784,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a1b5a4c55838cb0",
+  "name" : "test_trivial_crm[30-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610178741,
+    "stop" : 1651610178769,
+    "duration" : 28
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a93f82f2e43df092",
+  "name" : "test_create_adv_campaign[3000-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610051339,
+    "stop" : 1651610051363,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18e186d642f50d0c",
+  "name" : "test_trivial_crm[10-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610187269,
+    "stop" : 1651610187280,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba927159270c3982",
+  "name" : "test_create_adv_campaign[10000000000-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610052167,
+    "stop" : 1651610052215,
+    "duration" : 48
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba853215953f7d89",
+  "name" : "test_trivial_crm[30-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610178808,
+    "stop" : 1651610179623,
+    "duration" : 815
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2efbed5359113ad9",
+  "name" : "test_dummy_campaign_crm[6-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610100485,
+    "stop" : 1651610101925,
+    "duration" : 1440
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cebfbbb79960e6fd",
+  "name" : "test_conformity[yandex-Test campain-400-7777-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610066620,
+    "stop" : 1651610066634,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0c774bb037ce06d",
+  "name" : "test_dummy_campaign_crm[1-01.10.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610066871,
+    "stop" : 1651610066967,
+    "duration" : 96
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "16497f840142089d",
+  "name" : "test_random_floats[12.23-49]",
+  "time" : {
+    "start" : 1651610198786,
+    "stop" : 1651610198787,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "41f7a15077dc7469",
+  "name" : "test_dummy_campaign_crm[4-01.10.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610080839,
+    "stop" : 1651610081860,
+    "duration" : 1021
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb8b4fabbc76be7",
+  "name" : "test_random_floats[10-20]",
+  "time" : {
+    "start" : 1651610198760,
+    "stop" : 1651610198760,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "957a2db9eb5ec3a5",
+  "name" : "test_create_adv_campaign[5000-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610051550,
+    "stop" : 1651610051551,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "525945f821a24a86",
+  "name" : "test_trivial_crm[40-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610176623,
+    "stop" : 1651610178738,
+    "duration" : 2115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e8912c0ddfb4e38a",
+  "name" : "test_trivial_crm[20-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610183731,
+    "stop" : 1651610184284,
+    "duration" : 553
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2ce66fcdda2f6e8",
+  "name" : "test_dummy_campaign_crm[5-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610091116,
+    "stop" : 1651610091947,
+    "duration" : 831
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "797333d30c0c8b16",
+  "name" : "test_create_adv_campaign[123-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610052224,
+    "stop" : 1651610052248,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de8d3503ce0f58f7",
+  "name" : "test_create_adv_campaign[5000-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610051518,
+    "stop" : 1651610051519,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d61a0bf3ef7afdd",
+  "name" : "test_create_adv_campaign[1200-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610051171,
+    "stop" : 1651610051172,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd525f8ebce428c6",
+  "name" : "test_dummy_campaign_crm[9-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610143073,
+    "stop" : 1651610145239,
+    "duration" : 2166
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a3774e7c4d25d58",
+  "name" : "test_dummy_campaign_crm[2-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610072806,
+    "stop" : 1651610073255,
+    "duration" : 449
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "928114dadb01c661",
+  "name" : "test_dummy_campaign_crm[10-01.10.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610155185,
+    "stop" : 1651610157679,
+    "duration" : 2494
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "894a5f6447875d75",
+  "name" : "test_dummy_campaign_crm[1-01.10.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610066970,
+    "stop" : 1651610067137,
+    "duration" : 167
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd5d1381cd7c895e",
+  "name" : "test_dummy_campaign_crm[5-01.01.2000-10.10.2010]",
+  "time" : {
+    "start" : 1651610091950,
+    "stop" : 1651610093010,
+    "duration" : 1060
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f5efc256f0ed930",
+  "name" : "test_random_floats[10-1010]",
+  "time" : {
+    "start" : 1651610198772,
+    "stop" : 1651610198774,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3409bd537b6372ba",
+  "name" : "test_conformity[yandex-Test campain-1400-7777-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610062840,
+    "stop" : 1651610062873,
+    "duration" : 33
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a304f3cf16baea1f",
+  "name" : "test_dummy_campaign_crm[3-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610078584,
+    "stop" : 1651610079800,
+    "duration" : 1216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9930f8944439011",
+  "name" : "test_create_adv_campaign[3000-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610051368,
+    "stop" : 1651610051370,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9171bc7fa229a6c",
+  "name" : "test_random_floats[90.9-40]",
+  "time" : {
+    "start" : 1651610198796,
+    "stop" : 1651610198796,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43c3ebfb396a4e5f",
+  "name" : "test_dummy_campaign_crm[2-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610071504,
+    "stop" : 1651610072266,
+    "duration" : 762
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dfe76e1a13cb39ff",
+  "name" : "test_conformity[yandex-Test campain-8998-999.99-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610057790,
+    "stop" : 1651610058028,
+    "duration" : 238
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "971878960393ab2b",
+  "name" : "test_create_adv_campaign[1200-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610051285,
+    "stop" : 1651610051330,
+    "duration" : 45
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5c27b300171d70e",
+  "name" : "test_random_floats[100000000-30]",
+  "time" : {
+    "start" : 1651610198858,
+    "stop" : 1651610198858,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94c104250a002bcf",
+  "name" : "test_conformity[yandex-Test campain-1400-1.5-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610063226,
+    "stop" : 1651610063287,
+    "duration" : 61
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9233c294aedf9f9",
+  "name" : "test_dummy_campaign_crm[8-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610127147,
+    "stop" : 1651610128737,
+    "duration" : 1590
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "578ab96a23da1ad3",
+  "name" : "test_dummy_campaign_crm[8-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610132301,
+    "stop" : 1651610134573,
+    "duration" : 2272
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85a91e6b954ed758",
+  "name" : "test_dummy_campaign_crm[8-01.10.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610119508,
+    "stop" : 1651610120995,
+    "duration" : 1487
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ca273d902789869",
+  "name" : "test_conformity[yandex-Test campain-1400-999.99-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610062656,
+    "stop" : 1651610062691,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8293f56d48f25e0d",
+  "name" : "test_dummy_campaign_crm[7-01.10.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610108821,
+    "stop" : 1651610110783,
+    "duration" : 1962
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ee0c3b76f67b0ac3",
+  "name" : "test_trivial_crm[49-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610190476,
+    "stop" : 1651610191815,
+    "duration" : 1339
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48a611c8e34466c9",
+  "name" : "test_random_floats[0-20]",
+  "time" : {
+    "start" : 1651610198820,
+    "stop" : 1651610198820,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2671e5e3b94faabf",
+  "name" : "test_random_floats[100000000-10]",
+  "time" : {
+    "start" : 1651610198862,
+    "stop" : 1651610198862,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af28bd3beb9af31d",
+  "name" : "test_conformity[yandex-Test campain-1400-1.5-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610063190,
+    "stop" : 1651610063223,
+    "duration" : 33
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "171d4f5b4ef2221a",
+  "name" : "test_conformity[yandex-Test campain-5432-44.78-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610066037,
+    "stop" : 1651610066186,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45ea355e216a2a01",
+  "name" : "test_dummy_campaign_crm[8-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610125776,
+    "stop" : 1651610127144,
+    "duration" : 1368
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1dce4da0378fa56e",
+  "name" : "test_dummy_campaign_crm[1-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610068557,
+    "stop" : 1651610069085,
+    "duration" : 528
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c95dba9bb39d921c",
+  "name" : "test_random_floats[12.23-1000]",
+  "time" : {
+    "start" : 1651610198788,
+    "stop" : 1651610198790,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6400cd48d65421b7",
+  "name" : "test_random_floats[10-1000]",
+  "time" : {
+    "start" : 1651610198768,
+    "stop" : 1651610198770,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7fd3e19cda29e30c",
+  "name" : "test_random_floats[100000000-40]",
+  "time" : {
+    "start" : 1651610198855,
+    "stop" : 1651610198855,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71f0cbcc484945f3",
+  "name" : "test_random_ints[10000000000-11]",
+  "time" : {
+    "start" : 1651610198945,
+    "stop" : 1651610198945,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70e4476a4ddc92c3",
+  "name" : "test_random_ints[1-10]",
+  "time" : {
+    "start" : 1651610198928,
+    "stop" : 1651610198928,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd00a29bb8fed13b",
+  "name" : "test_create_adv_campaign[1-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610051954,
+    "stop" : 1651610051976,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b96f83888c713bb",
+  "name" : "test_conformity[yandex-Test campain-400-999.99-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610066571,
+    "stop" : 1651610066583,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1675143c9199a93",
+  "name" : "test_conformity[yandex-Test campain-5432-44.78-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610066341,
+    "stop" : 1651610066490,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eb752fa591af8a82",
+  "name" : "test_trivial_crm[10-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610187786,
+    "stop" : 1651610188044,
+    "duration" : 258
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "185f6fe230ce9128",
+  "name" : "test_conformity[yandex-Test campain-400-999.99-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610066493,
+    "stop" : 1651610066508,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40edcf0a61156bd4",
+  "name" : "test_conformity[yandex-Test campain-1400-44.78-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610063471,
+    "stop" : 1651610063505,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60ce3bbcbd34b189",
+  "name" : "test_dummy_campaign_crm[7-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610112458,
+    "stop" : 1651610114279,
+    "duration" : 1821
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6932b27159a4b942",
+  "name" : "test_random_floats[12.23-10]",
+  "time" : {
+    "start" : 1651610198782,
+    "stop" : 1651610198782,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf7e48590f170ed0",
+  "name" : "test_create_adv_campaign[8000-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610050964,
+    "stop" : 1651610050985,
+    "duration" : 21
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "917c93e2c94aa920",
+  "name" : "test_create_adv_campaign[1-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610051904,
+    "stop" : 1651610051928,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f82aecf87769b5b0",
+  "name" : "test_random_ints[10000-10]",
+  "time" : {
+    "start" : 1651610198899,
+    "stop" : 1651610198899,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c9fed4d37f76fe5",
+  "name" : "test_trivial_crm[20-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610185384,
+    "stop" : 1651610185901,
+    "duration" : 517
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "709a949f539bbbac",
+  "name" : "test_create_adv_campaign[8000-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610050988,
+    "stop" : 1651610050989,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d8d49e25bc62a5ed",
+  "name" : "test_create_adv_campaign[123-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610052282,
+    "stop" : 1651610052304,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b7e82460b7a8e666",
+  "name" : "test_dummy_campaign_crm[7-01.10.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610107578,
+    "stop" : 1651610108818,
+    "duration" : 1240
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e8e898c0572b3f47",
+  "name" : "test_create_adv_campaign[1200-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610051178,
+    "stop" : 1651610051202,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "444e0cf25db36aac",
+  "name" : "test_conformity[yandex-Test campain-400-1.5-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610066775,
+    "stop" : 1651610066789,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df450ca1f3c24025",
+  "name" : "test_conformity[yandex-Test campain-400-44.78-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610066824,
+    "stop" : 1651610066837,
+    "duration" : 13
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b65f0e1570115ab8",
+  "name" : "test_create_adv_campaign[1-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610051866,
+    "stop" : 1651610051867,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4e2a4756619ca74b",
+  "name" : "test_dummy_campaign_crm[5-01.10.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610088831,
+    "stop" : 1651610089629,
+    "duration" : 798
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7448eb3e089b0c0d",
+  "name" : "test_conformity[yandex-Test campain-1400-44.78-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610063404,
+    "stop" : 1651610063467,
+    "duration" : 63
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7495b3b9f2a545d1",
+  "name" : "test_create_adv_campaign[3000-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610051399,
+    "stop" : 1651610051444,
+    "duration" : 45
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c13ab8296e9c8971",
+  "name" : "test_conformity[yandex-Test campain-400-7777-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610066586,
+    "stop" : 1651610066601,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bad60a5652b1f90c",
+  "name" : "test_create_adv_campaign[3000-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610051446,
+    "stop" : 1651610051468,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c0b5ff9e357f4409",
+  "name" : "test_random_ints[10000000000-780]",
+  "time" : {
+    "start" : 1651610198949,
+    "stop" : 1651610198949,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "342b8136f1845b15",
+  "name" : "test_conformity[yandex-Test campain-1400-44.78-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610063326,
+    "stop" : 1651610063363,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aedccc640318a48b",
+  "name" : "test_dummy_campaign_crm[5-01.10.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610088343,
+    "stop" : 1651610088828,
+    "duration" : 485
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8cddc3607a1a4a7",
+  "name" : "test_trivial_crm[20-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610185904,
+    "stop" : 1651610186932,
+    "duration" : 1028
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "237c1fd76c15d76e",
+  "name" : "test_dummy_campaign_crm[3-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610076107,
+    "stop" : 1651610077106,
+    "duration" : 999
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "30567e5f2cd63501",
+  "name" : "test_conformity[yandex-Test campain-400-44.78-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610066840,
+    "stop" : 1651610066854,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e8ce343a1d5358db",
+  "name" : "test_dummy_campaign_crm[8-01.10.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610120998,
+    "stop" : 1651610122621,
+    "duration" : 1623
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48388a33584a56c6",
+  "name" : "test_random_floats[0-49]",
+  "time" : {
+    "start" : 1651610198826,
+    "stop" : 1651610198827,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4797247fe7d190cb",
+  "name" : "test_random_floats[10000-30]",
+  "time" : {
+    "start" : 1651610198736,
+    "stop" : 1651610198736,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17092559665f05d",
+  "name" : "test_conformity[yandex-Test campain-8998-44.78-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610061661,
+    "stop" : 1651610061887,
+    "duration" : 226
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa69c3ac0dc31a96",
+  "name" : "test_trivial_crm[49-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610191865,
+    "stop" : 1651610191945,
+    "duration" : 80
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89fef2beed73041d",
+  "name" : "test_create_adv_campaign[8000-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610051025,
+    "stop" : 1651610051049,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "97ca205a59dcd25",
+  "name" : "test_random_floats[12.23-1010]",
+  "time" : {
+    "start" : 1651610198792,
+    "stop" : 1651610198794,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f801d65561e00463",
+  "name" : "test_dummy_campaign_crm[9-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610149194,
+    "stop" : 1651610151700,
+    "duration" : 2506
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "284aec291073a9a5",
+  "name" : "test_dummy_campaign_crm[5-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610093013,
+    "stop" : 1651610094045,
+    "duration" : 1032
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dac008c196b17749",
+  "name" : "test_random_ints[10-20]",
+  "time" : {
+    "start" : 1651610198911,
+    "stop" : 1651610198912,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3796886da7030373",
+  "name" : "test_dummy_campaign_crm[7-25.05.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610110786,
+    "stop" : 1651610111788,
+    "duration" : 1002
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a550b8c5cadcd5cf",
+  "name" : "test_dummy_campaign_crm[4-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610082287,
+    "stop" : 1651610082909,
+    "duration" : 622
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "47ed856a65a51ebe",
+  "name" : "test_create_adv_campaign[8000-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610051022,
+    "stop" : 1651610051023,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a073eff54d9257",
+  "name" : "test_trivial_crm[49-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610195765,
+    "stop" : 1651610198313,
+    "duration" : 2548
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "35a6c2b35e0065d8",
+  "name" : "test_conformity[yandex-Test campain-9999-44.78-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610056700,
+    "stop" : 1651610056978,
+    "duration" : 278
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c70f3e4b206bc0b8",
+  "name" : "test_dummy_campaign_crm[7-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610117353,
+    "stop" : 1651610119505,
+    "duration" : 2152
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ba30245a38b04ea",
+  "name" : "test_conformity[yandex-Test campain-8998-2-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610060269,
+    "stop" : 1651610060514,
+    "duration" : 245
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1263821182d8faa",
+  "name" : "test_dummy_campaign_crm[7-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610111791,
+    "stop" : 1651610112455,
+    "duration" : 664
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dbb5c86d3d35219b",
+  "name" : "test_trivial_crm[49-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610194507,
+    "stop" : 1651610195762,
+    "duration" : 1255
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9dee5099535a534",
+  "name" : "test_conformity[yandex-Test campain-5432-1.5-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610065474,
+    "stop" : 1651610065616,
+    "duration" : 142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca3173e3b9a57047",
+  "name" : "test_dummy_campaign_crm[4-01.01.2000-10.10.2010]",
+  "time" : {
+    "start" : 1651610083987,
+    "stop" : 1651610085133,
+    "duration" : 1146
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82d79b92990052d8",
+  "name" : "test_create_adv_campaign[1-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610051901,
+    "stop" : 1651610051902,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60b7740b8ac479ee",
+  "name" : "test_create_adv_campaign[1200-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610051261,
+    "stop" : 1651610051283,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "824bbe9218cf979d",
+  "name" : "test_trivial_crm[11-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610189793,
+    "stop" : 1651610190369,
+    "duration" : 576
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2e645db48bcaac69",
+  "name" : "test_dummy_campaign_crm[6-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610099662,
+    "stop" : 1651610100482,
+    "duration" : 820
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6037b9978fd6e63c",
+  "name" : "test_conformity[yandex-Test campain-5432-7777-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610064461,
+    "stop" : 1651610064613,
+    "duration" : 152
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ff21e7c5d93590a",
+  "name" : "test_create_adv_campaign[5000-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610051554,
+    "stop" : 1651610051555,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d177c9cdde9b4a8a",
+  "name" : "test_dummy_campaign_crm[3-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610077690,
+    "stop" : 1651610078581,
+    "duration" : 891
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "47391d7ea9d51867",
+  "name" : "test_conformity[yandex-Test campain-1400-1.5-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610063291,
+    "stop" : 1651610063323,
+    "duration" : 32
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "641e9295ed1c2816",
+  "name" : "test_conformity[yandex-Test campain-1400-999.99-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610062694,
+    "stop" : 1651610062757,
+    "duration" : 63
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec7da76cf67cb8d2",
+  "name" : "test_create_adv_campaign[123-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610052307,
+    "stop" : 1651610052329,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70d516b96cec3f9a",
+  "name" : "test_conformity[yandex-Test campain-9999-7777-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610053821,
+    "stop" : 1651610054093,
+    "duration" : 272
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bda7d9b3e1d5c8e0",
+  "name" : "test_create_adv_campaign[10000000000-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610052116,
+    "stop" : 1651610052140,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1614351261e26e2b",
+  "name" : "test_conformity[yandex-Test campain-1400-999.99-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610062760,
+    "stop" : 1651610062796,
+    "duration" : 36
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "247f70e5bd0b17ae",
+  "name" : "test_conformity[yandex-Test campain-8998-44.78-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610062139,
+    "stop" : 1651610062360,
+    "duration" : 221
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9ae8dda5607bd4d",
+  "name" : "test_trivial_crm[49-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610191818,
+    "stop" : 1651610191862,
+    "duration" : 44
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "47d454ffb743be12",
+  "name" : "test_create_adv_campaign[8000-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610051076,
+    "stop" : 1651610051120,
+    "duration" : 44
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abb914a0cb65cb14",
+  "name" : "test_create_adv_campaign[1-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610051873,
+    "stop" : 1651610051896,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e3a1f2909c9d652d",
+  "name" : "test_dummy_campaign_crm[2-01.10.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610069793,
+    "stop" : 1651610070099,
+    "duration" : 306
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1efec1ada458ae1a",
+  "name" : "test_conformity[yandex-Test campain-8998-7777-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610058785,
+    "stop" : 1651610059051,
+    "duration" : 266
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f36ad11713e251b8",
+  "name" : "test_conformity[yandex-Test campain-1400-2-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610063116,
+    "stop" : 1651610063149,
+    "duration" : 33
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "867317a43564e871",
+  "name" : "test_create_adv_campaign[8000-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610050991,
+    "stop" : 1651610051016,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bae84748663c2396",
+  "name" : "test_trivial_crm[10-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610187282,
+    "stop" : 1651610187527,
+    "duration" : 245
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4dab026e72c44d09",
+  "name" : "test_dummy_campaign_crm[8-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610130789,
+    "stop" : 1651610132296,
+    "duration" : 1507
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3450f0a175e71164",
+  "name" : "test_random_ints[10000-40]",
+  "time" : {
+    "start" : 1651610198892,
+    "stop" : 1651610198893,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b40120e56d2d45d",
+  "name" : "test_conformity[yandex-Test campain-5432-7777-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610064616,
+    "stop" : 1651610064766,
+    "duration" : 150
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d2f252ca9992e99",
+  "name" : "test_dummy_campaign_crm[9-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610147125,
+    "stop" : 1651610149191,
+    "duration" : 2066
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17216a3237755af0",
+  "name" : "test_create_adv_campaign[10000-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610051687,
+    "stop" : 1651610051711,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d70fd198d44b1eed",
+  "name" : "test_random_ints[10000000000-20]",
+  "time" : {
+    "start" : 1651610198941,
+    "stop" : 1651610198941,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "556941d56ebc770a",
+  "name" : "test_conformity[yandex-Test campain-9999-7777-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610054097,
+    "stop" : 1651610054375,
+    "duration" : 278
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78e2d05b0e076ab1",
+  "name" : "test_read_crm",
+  "time" : {
+    "start" : 1651610199901,
+    "stop" : 1651610199902,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "fe35f54825ad72a7",
+  "name" : "test_conformity[yandex-Test campain-400-1.5-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610066792,
+    "stop" : 1651610066804,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "872e2e5d69a9b195",
+  "name" : "test_random_floats[10-30]",
+  "time" : {
+    "start" : 1651610198758,
+    "stop" : 1651610198758,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6b1047139545beb",
+  "name" : "test_create_adv_campaign[123-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610052250,
+    "stop" : 1651610052251,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6dc3705f674326c6",
+  "name" : "test_random_floats[0.1-1010]",
+  "time" : {
+    "start" : 1651610198851,
+    "stop" : 1651610198853,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "86874bef2fabd2b6",
+  "name" : "test_dummy_campaign_crm[10-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610166424,
+    "stop" : 1651610168668,
+    "duration" : 2244
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3bd169c92fbf6ac",
+  "name" : "test_conformity[yandex-Test campain-8998-2-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610060051,
+    "stop" : 1651610060265,
+    "duration" : 214
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "64c62c052f95ea36",
+  "name" : "test_conformity[yandex-Test campain-5432-999.99-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610063822,
+    "stop" : 1651610063976,
+    "duration" : 154
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52fb4b4b1fe35dec",
+  "name" : "test_conformity[yandex-Test campain-9999-44.78-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610056982,
+    "stop" : 1651610057232,
+    "duration" : 250
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7465542f7269e0d6",
+  "name" : "test_trivial_crm[20-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610184894,
+    "stop" : 1651610185381,
+    "duration" : 487
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "91662d5a208c6f3f",
+  "name" : "test_dummy_campaign_crm[9-01.10.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610137878,
+    "stop" : 1651610140106,
+    "duration" : 2228
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f2373bb4045b8088",
+  "name" : "test_random_ints[10-11]",
+  "time" : {
+    "start" : 1651610198916,
+    "stop" : 1651610198916,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d816e3a6a9ca2627",
+  "name" : "test_random_floats[90.9-1010]",
+  "time" : {
+    "start" : 1651610198812,
+    "stop" : 1651610198814,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "295f39bc1b48133b",
+  "name" : "test_conformity[yandex-Test campain-8998-1.5-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610061420,
+    "stop" : 1651610061657,
+    "duration" : 237
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "289afe1b7629f103",
+  "name" : "test_random_ints[10000-49]",
+  "time" : {
+    "start" : 1651610198903,
+    "stop" : 1651610198903,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dbd8e467e13cc870",
+  "name" : "test_trivial_crm[20-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610184332,
+    "stop" : 1651610184891,
+    "duration" : 559
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "578ed3a8ebf1ab7c",
+  "name" : "test_random_floats[10000-10]",
+  "time" : {
+    "start" : 1651610198740,
+    "stop" : 1651610198740,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c75260aced9298ba",
+  "name" : "test_random_floats[0.1-1000]",
+  "time" : {
+    "start" : 1651610198848,
+    "stop" : 1651610198850,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b64023b70b6f0d89",
+  "name" : "test_trivial_crm[11-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610188901,
+    "stop" : 1651610188912,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8391185108a1a7e4",
+  "name" : "test_create_adv_campaign[10000000000-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610052062,
+    "stop" : 1651610052063,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa49649fa81de28c",
+  "name" : "test_dummy_campaign_crm[5-25.05.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610089631,
+    "stop" : 1651610090294,
+    "duration" : 663
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75cff7063a6f258b",
+  "name" : "test_trivial_crm[40-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610173386,
+    "stop" : 1651610174497,
+    "duration" : 1111
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ccb03218cb86d62",
+  "name" : "test_conformity[yandex-Test campain-5432-2-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610064919,
+    "stop" : 1651610065034,
+    "duration" : 115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2dac92d858de43",
+  "name" : "test_dummy_campaign_crm[5-01.10.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610087371,
+    "stop" : 1651610088340,
+    "duration" : 969
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a08282b0c393fb7",
+  "name" : "test_random_ints[10000-30]",
+  "time" : {
+    "start" : 1651610198895,
+    "stop" : 1651610198895,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5aa3175897b0e84",
+  "name" : "test_trivial_crm[40-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610172083,
+    "stop" : 1651610172121,
+    "duration" : 38
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb15fe3a4f8b98d8",
+  "name" : "test_random_floats[10000-49]",
+  "time" : {
+    "start" : 1651610198745,
+    "stop" : 1651610198745,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "590d1fa4398b3731",
+  "name" : "test_random_floats[90.9-49]",
+  "time" : {
+    "start" : 1651610198807,
+    "stop" : 1651610198807,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1dc48a604daa0af8",
+  "name" : "test_conformity[yandex-Test campain-5432-44.78-30.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610066190,
+    "stop" : 1651610066337,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1620765da0696696",
+  "name" : "test_conformity[yandex-Test campain-400-7777-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610066604,
+    "stop" : 1651610066616,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd4eb70bc9c9e777",
+  "name" : "test_trivial_crm[10-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610187234,
+    "stop" : 1651610187267,
+    "duration" : 33
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b1e976738c37001b",
+  "name" : "test_trivial_crm[30-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610182118,
+    "stop" : 1651610183683,
+    "duration" : 1565
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f1ab22bcfe6cc39",
+  "name" : "test_random_ints[10000000000-40]",
+  "time" : {
+    "start" : 1651610198936,
+    "stop" : 1651610198937,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9837922f159a0255",
+  "name" : "test_conformity[yandex-Test campain-1400-7777-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610062799,
+    "stop" : 1651610062837,
+    "duration" : 38
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a60a1c1f54469d92",
+  "name" : "test_random_floats[12.23-20]",
+  "time" : {
+    "start" : 1651610198780,
+    "stop" : 1651610198780,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6bdb384ca31665a3",
+  "name" : "test_create_adv_campaign[123-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610052256,
+    "stop" : 1651610052280,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8349700359c0eca0",
+  "name" : "test_conformity[yandex-Test campain-9999-2-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610055410,
+    "stop" : 1651610055672,
+    "duration" : 262
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18e934d2a40025a5",
+  "name" : "test_random_floats[0-11]",
+  "time" : {
+    "start" : 1651610198824,
+    "stop" : 1651610198825,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1aee8277558e460",
+  "name" : "test_dummy_campaign_crm[3-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610075617,
+    "stop" : 1651610076104,
+    "duration" : 487
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "10e473845e14597e",
+  "name" : "test_trivial_crm[11-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610188914,
+    "stop" : 1651610188926,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "768a61883f4a253b",
+  "name" : "test_random_floats[0.1-20]",
+  "time" : {
+    "start" : 1651610198840,
+    "stop" : 1651610198840,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60e5f6e56878f54a",
+  "name" : "test_create_adv_campaign[10000-01.01.2000-24.10.2010]",
+  "time" : {
+    "start" : 1651610051746,
+    "stop" : 1651610051791,
+    "duration" : 45
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b2d8332d2255b0d",
+  "name" : "test_dummy_campaign_crm[8-25.05.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610124539,
+    "stop" : 1651610125774,
+    "duration" : 1235
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18bea9e56de4bf2a",
+  "name" : "test_conformity[yandex-Test campain-8998-2-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610059829,
+    "stop" : 1651610060048,
+    "duration" : 219
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d0711a3259071ee",
+  "name" : "test_random_floats[100000000-1000]",
+  "time" : {
+    "start" : 1651610198868,
+    "stop" : 1651610198870,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae432225e9430f4c",
+  "name" : "test_trivial_crm[10-24.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610186984,
+    "stop" : 1651610187231,
+    "duration" : 247
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5be9749c64fe5138",
+  "name" : "test_create_adv_campaign[123-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610052221,
+    "stop" : 1651610052222,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b1f5ef1e77f8b41",
+  "name" : "test_dummy_campaign_crm[3-01.01.2000-10.10.2010]",
+  "time" : {
+    "start" : 1651610077109,
+    "stop" : 1651610077687,
+    "duration" : 578
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f74001371fa03401",
+  "name" : "test_conformity[yandex-Test campain-400-1.5-25.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610066734,
+    "stop" : 1651610066772,
+    "duration" : 38
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "930f0ad9ebb4d463",
+  "name" : "test_dummy_campaign_crm[3-01.10.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610074265,
+    "stop" : 1651610074580,
+    "duration" : 315
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b98173bf4715b4a",
+  "name" : "test_create_adv_campaign[10000-25.05.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610051720,
+    "stop" : 1651610051743,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d794461f20d97020",
+  "name" : "test_random_floats[0-1010]",
+  "time" : {
+    "start" : 1651610198832,
+    "stop" : 1651610198834,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8aabd2c73ccf6cd5",
+  "name" : "test_dummy_campaign_crm[5-01.01.2000-01.01.2022]",
+  "time" : {
+    "start" : 1651610094048,
+    "stop" : 1651610095528,
+    "duration" : 1480
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62a3fb542eb587eb",
+  "name" : "test_dummy_campaign_crm[6-01.10.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610096570,
+    "stop" : 1651610097485,
+    "duration" : 915
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c995f3e2bf08c01e",
+  "name" : "test_random_ints[10000000000-30]",
+  "time" : {
+    "start" : 1651610198938,
+    "stop" : 1651610198939,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd90369bfa0734c2",
+  "name" : "test_create_adv_compaign[8000-30.01.2010-01.01.2010]",
+  "time" : {
+    "start" : 1651610199317,
+    "stop" : 1651610199319,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "745fba3fa839c727",
+  "name" : "test_dummy_campaign_crm[8-01.10.2010-01.01.2022]",
+  "time" : {
+    "start" : 1651610122624,
+    "stop" : 1651610124536,
+    "duration" : 1912
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a170df040a5d382",
+  "name" : "test_conformity[yandex-Test campain-5432-999.99-30.10.2010-30.11.2010]",
+  "time" : {
+    "start" : 1651610063980,
+    "stop" : 1651610064132,
+    "duration" : 152
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "11502496d92594cd",
+  "name" : "test_dummy_campaign_crm[10-25.05.2010-10.10.2010]",
+  "time" : {
+    "start" : 1651610157682,
+    "stop" : 1651610159572,
+    "duration" : 1890
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5409cb4721452972",
+  "name" : "test_random_ints[1-20]",
+  "time" : {
+    "start" : 1651610198926,
+    "stop" : 1651610198926,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5221838ba3d526d4",
+  "name" : "test_random_ints[1-40]",
+  "time" : {
+    "start" : 1651610198922,
+    "stop" : 1651610198922,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e84e118442bf2958",
+  "name" : "test_dummy_campaign_crm[4-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610085136,
+    "stop" : 1651610085912,
+    "duration" : 776
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6112793cb3a0df9d",
+  "name" : "test_trivial_crm[40-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610173299,
+    "stop" : 1651610173336,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c696fb4854f2d23b",
+  "name" : "test_create_adv_campaign[1200-25.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610051207,
+    "stop" : 1651610051208,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed7dfbd89fc5feef",
+  "name" : "test_random_floats[0.1-11]",
+  "time" : {
+    "start" : 1651610198844,
+    "stop" : 1651610198844,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "91571d7f190f89bd",
+  "name" : "test_create_adv_campaign[1200-24.05.2010-25.11.2010]",
+  "time" : {
+    "start" : 1651610051175,
+    "stop" : 1651610051176,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c71d6c0ae63b9a32",
+  "name" : "test_random_ints[10-10]",
+  "time" : {
+    "start" : 1651610198914,
+    "stop" : 1651610198914,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2cebcb2f52c3565",
+  "name" : "test_dummy_campaign_crm[6-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610103342,
+    "stop" : 1651610104707,
+    "duration" : 1365
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ac0b43651a414b3b",
+  "name" : "test_trivial_crm[11-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610189508,
+    "stop" : 1651610189790,
+    "duration" : 282
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7ab0e70fda7ed38",
+  "name" : "test_trivial_crm[40-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610175540,
+    "stop" : 1651610176620,
+    "duration" : 1080
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "32149168f2626e93",
+  "name" : "test_create_adv_campaign[10000000000-25.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610052059,
+    "stop" : 1651610052060,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "551f16f9b100bf22",
+  "name" : "test_conformity[yandex-Test campain-400-1.5-25.10.2010-30.12.2010]",
+  "time" : {
+    "start" : 1651610066716,
+    "stop" : 1651610066730,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7f80577fda6428a5",
+  "name" : "test_trivial_crm[20-24.05.2010-24.10.2010]",
+  "time" : {
+    "start" : 1651610183686,
+    "stop" : 1651610183705,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5697287e9c6d200a",
+  "name" : "test_trivial_crm[30-01.01.2000-25.11.2010]",
+  "time" : {
+    "start" : 1651610181318,
+    "stop" : 1651610182115,
+    "duration" : 797
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
