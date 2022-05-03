@@ -1,0 +1,93 @@
+{
+  "uid" : "a04ab70b31d9a7b8",
+  "name" : "test_conformity[yandex-Test campain-1000-8000-25.10.2010-30.10.2010]",
+  "fullName" : "tests_vkr.generator.test_conformity#test_conformity",
+  "historyId" : "a2a54dd003764d27a2176ce5e62ce570",
+  "time" : {
+    "start" : 1651537758486,
+    "stop" : 1651537758791,
+    "duration" : 305
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "49201c0b4e4a691",
+      "name" : "stdout",
+      "source" : "49201c0b4e4a691.txt",
+      "type" : "text/plain",
+      "size" : 126
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "CRM_ADV"
+  }, {
+    "name" : "story",
+    "value" : "Test compliance of the report and the advertising company"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_conformity"
+  }, {
+    "name" : "host",
+    "value" : "fv-az82-228"
+  }, {
+    "name" : "thread",
+    "value" : "2292-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.generator.test_conformity"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "clicks",
+    "value" : "1000"
+  }, {
+    "name" : "end_date",
+    "value" : "'30.10.2010'"
+  }, {
+    "name" : "name",
+    "value" : "'Test campain'"
+  }, {
+    "name" : "source",
+    "value" : "'yandex'"
+  }, {
+    "name" : "start_date",
+    "value" : "'25.10.2010'"
+  }, {
+    "name" : "sum_cost",
+    "value" : "8000"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a04ab70b31d9a7b8.json",
+  "parameterValues" : [ "1000", "'30.10.2010'", "'Test campain'", "'yandex'", "'25.10.2010'", "8000" ]
+}

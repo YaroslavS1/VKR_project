@@ -1,0 +1,85 @@
+{
+  "uid" : "add7e95edbad1ac5",
+  "name" : "test_end_to_end_crm[40000-30000-700-600-case10-case20-05.10.2010-06.10.2010]",
+  "fullName" : "tests_vkr.generator.test_end_to_end_crm#test_end_to_end_crm",
+  "historyId" : "082b84b7280129be8e41d828c23a2c87",
+  "time" : {
+    "start" : 1651537818416,
+    "stop" : 1651537818417,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable for CI",
+  "statusTrace" : "('/home/runner/work/VKR_project/VKR_project/tests_vkr/generator/test_end_to_end_crm.py', 31, 'Skipped: Not suitable for CI')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test dump read CRM report"
+  }, {
+    "name" : "feature",
+    "value" : "CRM report"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_end_to_end_crm"
+  }, {
+    "name" : "host",
+    "value" : "fv-az82-228"
+  }, {
+    "name" : "thread",
+    "value" : "2292-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.generator.test_end_to_end_crm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case1",
+    "value" : "('yandex', 'test_campaign1')"
+  }, {
+    "name" : "case2",
+    "value" : "('yandex', 'test_campaign2')"
+  }, {
+    "name" : "click1",
+    "value" : "700"
+  }, {
+    "name" : "click2",
+    "value" : "600"
+  }, {
+    "name" : "end_date",
+    "value" : "'06.10.2010'"
+  }, {
+    "name" : "profit1",
+    "value" : "40000"
+  }, {
+    "name" : "profit2",
+    "value" : "30000"
+  }, {
+    "name" : "start_date",
+    "value" : "'05.10.2010'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "add7e95edbad1ac5.json",
+  "parameterValues" : [ "('yandex', 'test_campaign1')", "('yandex', 'test_campaign2')", "700", "600", "'06.10.2010'", "40000", "30000", "'05.10.2010'" ]
+}

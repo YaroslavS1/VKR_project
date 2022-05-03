@@ -1,0 +1,94 @@
+{
+  "uid" : "23f47be68ee5fff8",
+  "name" : "test_random_floats[100000000-49]",
+  "fullName" : "tests_vkr.basic_functionality.test_random_floats#test_random_floats",
+  "historyId" : "29e9f5ebd089f20bfcaa9364e1411b30",
+  "time" : {
+    "start" : 1651537851336,
+    "stop" : 1651537851336,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test function for getting an iterable object of random float with a given sum"
+  }, {
+    "name" : "feature",
+    "value" : "Basic functionality"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests_vkr.basic_functionality"
+  }, {
+    "name" : "suite",
+    "value" : "test_random_floats"
+  }, {
+    "name" : "host",
+    "value" : "fv-az82-228"
+  }, {
+    "name" : "thread",
+    "value" : "2355-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.basic_functionality.test_random_floats"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "n",
+    "value" : "49"
+  }, {
+    "name" : "total",
+    "value" : "100000000"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "9522ec5f8a8aa90c",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/111//#testresult/9522ec5f8a8aa90c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651382693530,
+          "stop" : 1651382693531,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "dd026d6210c83431",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/110//#testresult/dd026d6210c83431",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651382446214,
+          "stop" : 1651382446214,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "23f47be68ee5fff8.json",
+  "parameterValues" : [ "49", "100000000" ]
+}
