@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 44.36 == 44.78\n +  where 44.36 = round(44.35999999999998, 2)\n +  and   44.78 = round(44.78000000000001, 2)",
+      "children" : [ {
+        "name" : "test_conformity[yandex-Test campain-400-44.78-25.10.2010-30.12.2010]",
+        "uid" : "702a252a56b5c5d1",
+        "parentUid" : "c482bc1b430e3349c07636d45f6e94dc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651547497460,
+          "stop" : 1651547497478,
+          "duration" : 18
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "400", "'30.12.2010'", "'Test campain'", "44.78", "'yandex'", "'25.10.2010'" ]
+      } ],
+      "uid" : "c482bc1b430e3349c07636d45f6e94dc"
+    }, {
+      "name" : "AssertionError: assert 44.73 == 44.78\n +  where 44.73 = round(44.730000000000004, 2)\n +  and   44.78 = round(44.78, 2)",
+      "children" : [ {
+        "name" : "test_conformity[yandex-Test campain-400-44.78-25.10.2010-30.11.2010]",
+        "uid" : "df5e226424265f0d",
+        "parentUid" : "610deb74e25145bc85d7aed1399d3d8a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651547497542,
+          "stop" : 1651547497558,
+          "duration" : 16
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "400", "'30.11.2010'", "'Test campain'", "44.78", "'yandex'", "'25.10.2010'" ]
+      } ],
+      "uid" : "610deb74e25145bc85d7aed1399d3d8a"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
