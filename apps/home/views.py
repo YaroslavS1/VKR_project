@@ -12,10 +12,8 @@ from django.urls import reverse
 
 @login_required(login_url="/login/")
 def index(request):
-    print(request.method)
 
     import plotly.express as px
-    from base64 import b64encode
     import io
 
     buffer = io.StringIO()
@@ -27,10 +25,24 @@ def index(request):
     fig.update_layout(paper_bgcolor='#F2F4F6')
     fig.write_html(buffer, config={'displaylogo': False})
     html_bytes = buffer.getvalue()
-    # encoded = b64encode(html_bytes).decode()
     context = {'segment': 'index', 'aaee': html_bytes}
 
     html_template = loader.get_template('home/dashboard.html')
+
+    return HttpResponse(html_template.render(context, request))
+
+
+@login_required(login_url="/login/")
+def campaigns(request):
+    context = {'segment': 'campaigns'}
+    html_template = loader.get_template('home/campaigns.html')
+    return HttpResponse(html_template.render(context, request))
+
+
+@login_required(login_url="/login/")
+def funnel(request):
+    html_template = loader.get_template('home/funnel.html')
+    context = {'segment': 'funnel'}
 
     return HttpResponse(html_template.render(context, request))
 
@@ -40,6 +52,8 @@ def pages(request):
     context = {}
     # All resource paths end in .html.
     # Pick out the html file name from the url. And load that template.
+    # if request.path.split('/')[1] == 'django_plotly_dash':
+    #     return None
     try:
 
         load_template = request.path.split('/')[-1]

@@ -30,6 +30,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
+    'channels',
+    'channels_redis',
     'apps.home'  # Enable the inner home (home)
 ]
 
@@ -107,6 +110,20 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+ASGI_APPLICATION = 'core.routing.application'
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            'hosts': [('0.0.0.0', 6379)],
+        }
+    }
+}
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+X_FRAME_OPTIONS = 'ALLOWALL'
+
+XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
 
 #############################################################
 # SRC: https://devcenter.heroku.com/articles/django-assets

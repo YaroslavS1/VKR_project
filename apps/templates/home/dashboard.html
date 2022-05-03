@@ -6,6 +6,7 @@
 {% block stylesheets %}{% endblock stylesheets %}
 
 {% block content %}
+{% load plotly_dash %}
 
 <div class="py-4">
     <!--        <div class="dropdown">-->
@@ -57,7 +58,7 @@
                 </div>
             </div>
             <div class="card-body p-2">
-                {{ aaee | safe }}
+                    {{ aaee | safe }}
             </div>
         </div>
     </div>
