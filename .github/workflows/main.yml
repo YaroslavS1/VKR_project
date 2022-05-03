@@ -25,6 +25,7 @@ jobs:
           path: ~/.local/share/virtualenvs
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Mypy
+        continue-on-error: true
         run: |
           python -m pytest tests_vkr/generator/ --alluredir=allure-results
           python -m pytest tests_vkr/basic_functionality --alluredir=allure-results
