@@ -1,0 +1,88 @@
+{
+  "uid" : "47a31e0b78318bd4",
+  "name" : "test_dummy_campaign_crm[4-25.05.2010-10.10.2010]",
+  "fullName" : "tests_vkr.generator.test_dummy_campaign_crm#test_dummy_campaign_crm",
+  "historyId" : "e58371466da71b41bc806f98987db29f",
+  "time" : {
+    "start" : 1651542501533,
+    "stop" : 1651542501863,
+    "duration" : 330
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test of creating CRM report"
+  }, {
+    "name" : "feature",
+    "value" : "CRM report"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_dummy_campaign_crm"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-289"
+  }, {
+    "name" : "thread",
+    "value" : "2247-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.generator.test_dummy_campaign_crm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'10.10.2010'"
+  }, {
+    "name" : "n",
+    "value" : "4"
+  }, {
+    "name" : "start_date",
+    "value" : "'25.05.2010'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "8e8df92b6210b10e",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/115//#testresult/8e8df92b6210b10e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651537769319,
+          "stop" : 1651537770192,
+          "duration" : 873
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "47a31e0b78318bd4.json",
+  "parameterValues" : [ "'10.10.2010'", "4", "'25.05.2010'" ]
+}
