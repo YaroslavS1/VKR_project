@@ -19,9 +19,9 @@ from ..tools.CRM import CrmReport
     'start_date', [
         '01.10.2010',
         '25.05.2010',
-        # '01.01.2000',
+        '01.01.2000',
     ])
-@pytest.mark.parametrize('n', [1, 2, 3, 4, 5, 6, 7, 8, 9])
+@pytest.mark.parametrize('n', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 def test_dummy_campaign_crm(start_date, end_date, n):
     clicks = []
     profits = []
