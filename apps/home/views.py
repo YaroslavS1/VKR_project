@@ -25,7 +25,7 @@ def index(request):
         df, x="sepal_width", y="sepal_length",
         color="species")
     fig.update_layout(paper_bgcolor='#F2F4F6')
-    fig.write_html(buffer)
+    fig.write_html(buffer, config={'displaylogo': False})
     html_bytes = buffer.getvalue()
     # encoded = b64encode(html_bytes).decode()
     context = {'segment': 'index', 'aaee': html_bytes}
