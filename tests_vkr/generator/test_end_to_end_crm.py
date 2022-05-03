@@ -26,7 +26,7 @@ from ...apps.home.core_convert import CRMRepr
     ])
 @pytest.mark.parametrize('profit1, profit2, click1, click2, case1, case2', [
     (40000, 30000, 700, 600, ('yandex', 'test_campaign1'), ('yandex', 'test_campaign2'))])
-@pytest.xfail(f'Not suitable for CI')
+@pytest.skip(f'Not suitable for CI')
 def test_end_to_end_crm(start_date, end_date, profit1: float, profit2: float, click1: int,
                         click2: int, case1: Tuple[str, str], case2: Tuple[str, str]) -> None:
     cam1 = AdvContextCRM(case1[0], case1[1], profit1, click1)

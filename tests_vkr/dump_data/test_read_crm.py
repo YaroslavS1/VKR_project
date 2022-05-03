@@ -6,7 +6,7 @@ from ...apps.home.core_convert import CRMRepr
 
 @allure.feature('CRM report')
 @allure.story('Test of creating CRM report')
-@pytest.xfail(f'Not suitable for CI')
+@pytest.skip(f'Not suitable for CI')
 def test_read_crm():
     read_ = CRMRepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMO.csv')
     a = read_._load_csv()
