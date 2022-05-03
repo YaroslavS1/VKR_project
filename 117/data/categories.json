@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 995.72 == 999.99\n +  where 995.72 = round(995.7199999999999, 2)\n +  and   999.99 = round(999.9900000000002, 2)",
+      "children" : [ {
+        "name" : "test_conformity[yandex-Test campain-400-999.99-25.10.2010-30.12.2010]",
+        "uid" : "6bc75bbe1535696c",
+        "parentUid" : "34056fb6f79c8d48fd0e3ff077eed9b4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651542874664,
+          "stop" : 1651542874691,
+          "duration" : 27
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "400", "'30.12.2010'", "'Test campain'", "999.99", "'yandex'", "'25.10.2010'" ]
+      } ],
+      "uid" : "34056fb6f79c8d48fd0e3ff077eed9b4"
+    }, {
+      "name" : "AssertionError: assert 1.95 == 2.0\n +  where 1.95 = round(1.950000000000001, 2)\n +  and   2.0 = round(2.000000000000001, 2)",
+      "children" : [ {
+        "name" : "test_conformity[yandex-Test campain-400-2-25.10.2010-30.12.2010]",
+        "uid" : "c1b3ea47466bcc9e",
+        "parentUid" : "40c9476028f04cdbe84a767e5c2cd910",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651542874855,
+          "stop" : 1651542874869,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ "400", "'30.12.2010'", "'Test campain'", "2", "'yandex'", "'25.10.2010'" ]
+      } ],
+      "uid" : "40c9476028f04cdbe84a767e5c2cd910"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

@@ -1,0 +1,97 @@
+{
+  "uid" : "7678e4650e6b5f2f",
+  "name" : "test_dummy_campaign_crm[8-25.05.2010-10.10.2010]",
+  "fullName" : "tests_vkr.generator.test_dummy_campaign_crm#test_dummy_campaign_crm",
+  "historyId" : "6f00c0cdfca24d85a26f78d0a83d0f30",
+  "time" : {
+    "start" : 1651542923898,
+    "stop" : 1651542924770,
+    "duration" : 872
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test of creating CRM report"
+  }, {
+    "name" : "feature",
+    "value" : "CRM report"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_dummy_campaign_crm"
+  }, {
+    "name" : "host",
+    "value" : "fv-az135-373"
+  }, {
+    "name" : "thread",
+    "value" : "2282-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests_vkr.generator.test_dummy_campaign_crm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'10.10.2010'"
+  }, {
+    "name" : "n",
+    "value" : "8"
+  }, {
+    "name" : "start_date",
+    "value" : "'25.05.2010'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "72894e7a99285c11",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/116//#testresult/72894e7a99285c11",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651542545555,
+          "stop" : 1651542546989,
+          "duration" : 1434
+        }
+      }, {
+        "uid" : "7572e95053cee9",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/115//#testresult/7572e95053cee9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651537799663,
+          "stop" : 1651537801003,
+          "duration" : 1340
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7678e4650e6b5f2f.json",
+  "parameterValues" : [ "'10.10.2010'", "8", "'25.05.2010'" ]
+}
