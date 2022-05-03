@@ -45,7 +45,7 @@ def test_create_adv_compaign(start_date, end_date, sum_cost):
     #
     # fig.show()
 
+    assert (sum(statistic_cost) - sum_cost) < 1e-4
     # temp = tempfile.NamedTemporaryFile()
     # fig.write_html(f'{temp.name}')
     # allure.attach.file(f'{temp.name}', attachment_type=allure.attachment_type.HTML)
-    assert (sum(statistic_cost) - sum_cost) < 1e-4

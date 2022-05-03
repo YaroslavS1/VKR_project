@@ -29,7 +29,7 @@ jobs:
           python -m pytest tests_vkr/generator/ --alluredir=allure-results
           python -m pytest tests_vkr/basic_functionality --alluredir=allure-results
           python -m pytest tests_vkr/visualization/ --alluredir=allure-results
-#          python -m pytest tests_vkr/visualization/tests_funnel_plot.py --alluredir=allure-results
+          python -m pytest tests_vkr/dump_data/ --alluredir=allure-results
 
       - name: Get Allure history
         uses: actions/checkout@v2

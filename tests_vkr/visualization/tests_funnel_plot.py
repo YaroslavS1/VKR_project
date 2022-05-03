@@ -19,7 +19,7 @@ def count_adv(adv: AdvCampaign):
         cost_campaign += i.cost
         impressions += i.impressions
         clicks += i.clicks
-    return {(adv.type_adv, name_campaign): (cost_campaign, impressions, clicks)}
+    return {(adv.source, name_campaign): (cost_campaign, impressions, clicks)}
 
 
 @allure.feature('ADV campaign')

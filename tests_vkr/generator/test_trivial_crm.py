@@ -12,7 +12,7 @@ def count_adv(adv: AdvCampaign):
     for i in adv.campaign:
         assert i.name == name_campaign
         cost_campaign += i.cost
-    return {(adv.type_adv, name_campaign): cost_campaign}
+    return {(adv.source, name_campaign): cost_campaign}
 
 
 @allure.feature('ADV campaign')

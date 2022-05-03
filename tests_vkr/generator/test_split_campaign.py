@@ -19,10 +19,10 @@ from ..tools.CRM import CrmReport
         # '25.05.2010',
         '01.01.2000',
     ])
-@pytest.mark.parametrize('profit1', [9873, 1, 1000000, 50.50, 0.1])
-@pytest.mark.parametrize('profit2', [8764, 0, 1000000, 50.50, 0.1])
-@pytest.mark.parametrize('clicks1', [8000, 1])
-@pytest.mark.parametrize('clicks2', [8000, 1])
+@pytest.mark.parametrize('profit1', [9873])
+@pytest.mark.parametrize('profit2', [8764])
+@pytest.mark.parametrize('clicks1', [8000])
+@pytest.mark.parametrize('clicks2', [8000])
 def test_split_campaign_crm(start_date, end_date, profit1, profit2, clicks1, clicks2):
     'сделать более гибкое количество рекламных компаний'
     camaign_1 = AdvContextCRM('yandex', 'test_campaign1', profit1, clicks1)
@@ -34,8 +34,11 @@ def test_split_campaign_crm(start_date, end_date, profit1, profit2, clicks1, cli
         start_date=start_date,
         end_date=end_date,
         config=(camaign_1, camaign_2))
-
     result = report_._split_by_company
+
+    assert sum(report_.allocation[(camaign_1.source, camaign_1.campaign)]) == camaign_1.clicks
+    assert sum(report_.allocation[(camaign_2.source, camaign_2.campaign)]) == camaign_2.clicks
+
     summary_profit = 0
     summary_clicks = 0
     for i in result:
