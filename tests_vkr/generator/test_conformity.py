@@ -10,7 +10,7 @@ from VKR_project.tests_vkr.tools.CRM import AdvContextCRM
 @pytest.mark.parametrize('end_date', ['30.12.2010', '30.11.2010'])
 @pytest.mark.parametrize('start_date', ['25.10.2010', '30.10.2010'])
 @pytest.mark.parametrize('profit', [999.99, 7777, 2, 1.5, 44.78])
-@pytest.mark.parametrize('clicks', [9999, 89898, 1400, 5432, 400])
+@pytest.mark.parametrize('clicks', [9999, 8998, 1400, 5432, 400])
 @pytest.mark.parametrize('name', ['Test campain'])
 @pytest.mark.parametrize('source', ['yandex'])
 def test_conformity(start_date, end_date, name, source, clicks, profit):
