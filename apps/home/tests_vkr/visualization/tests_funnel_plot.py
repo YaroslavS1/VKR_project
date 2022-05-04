@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.express as px
 import pytest
 
-from VKR_project.tests_vkr.tools.ADV import AdvCampaign
+from ..tools.ADV import AdvCampaign
 
 
 def count_adv(adv: AdvCampaign):
@@ -70,9 +70,9 @@ def test_tests_funnel(start_date, end_date, n_compaign):
     fig = px.funnel(df, x='количество', y='стадии', color='Рекламная кампания',)
     fig.show()
 
-    temp = tempfile.NamedTemporaryFile()
-    fig.write_html(f'{temp.name}')
-    allure.attach.file(f'{temp.name}', attachment_type=allure.attachment_type.HTML)
+    # temp = tempfile.NamedTemporaryFile()
+    # fig.write_html(f'{temp.name}')
+    # allure.attach.file(f'{temp.name}', attachment_type=allure.attachment_type.HTML)
 
     # for i, i_c, adv in zip(range(n_compaign), crm, adv_campaigns):
     #     concurrent_adv = count_adv(adv)

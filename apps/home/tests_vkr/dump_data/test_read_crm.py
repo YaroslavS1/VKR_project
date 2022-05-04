@@ -1,7 +1,7 @@
 import allure
 import pytest
 
-from ...apps.home.core_convert import CRMRepr
+from VKR_project.apps.home.core_convert import CRMRepr
 
 
 @allure.feature('CRM report')

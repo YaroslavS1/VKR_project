@@ -1,7 +1,7 @@
 import pytest
 import allure
 
-from VKR_project.tests_vkr.tools.base import get_random_floats_with_given_sum
+from VKR_project.apps.home.tests_vkr.tools.base import get_random_floats_with_given_sum
 
 
 @allure.feature('Basic functionality')

@@ -1,8 +1,8 @@
 import pytest
 import allure
-from VKR_project.tests_vkr.tools.ADV import AdvCampaign
-from VKR_project.tests_vkr.tools.CRM import CrmReport
-from VKR_project.tests_vkr.tools.CRM import AdvContextCRM
+from VKR_project.apps.home.tests_vkr.tools.ADV import AdvCampaign
+from VKR_project.apps.home.tests_vkr.tools.CRM import CrmReport
+from VKR_project.apps.home.tests_vkr.tools.CRM import AdvContextCRM
 
 
 @allure.feature('CRM_ADV')

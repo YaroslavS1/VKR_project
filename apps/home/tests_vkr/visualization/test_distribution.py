@@ -1,11 +1,7 @@
-import tempfile
-
 import allure
-import plotly.graph_objects as go
 import pytest
-from plotly.subplots import make_subplots
 
-from VKR_project.tests_vkr.tools.ADV import AdvCampaign
+from VKR_project.apps.home.tests_vkr.tools.ADV import AdvCampaign
 
 
 @allure.feature('Distributions')

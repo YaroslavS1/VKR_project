@@ -1,7 +1,7 @@
 import datetime
 from typing import Union, Dict, Tuple
 
-from VKR_project.tests_vkr.tools import BaseTime
+from VKR_project.apps.home.tests_vkr.tools import BaseTime
 
 
 class TrivialCrm(BaseTime):
