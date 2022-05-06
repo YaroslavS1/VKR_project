@@ -37,6 +37,6 @@ def test_conformity(start_date, end_date, name, source, clicks, profit):
         sum_cost += a.cost
         sum_profit += crm[c][4]
 
-    assert round(sum_cost, 2) == round(sum_profit, 2)
+    assert round(sum_cost) == round(sum_profit)
     assert sum_cost - profit < 1e-8
 
