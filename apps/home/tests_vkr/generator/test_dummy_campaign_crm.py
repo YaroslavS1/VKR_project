@@ -27,7 +27,7 @@ def test_dummy_campaign_crm(start_date, end_date, n):
     profits = []
     camaign = []
     for i in range(n):
-        click = random.randint(0, 10000)
+        click = random.randint(100, 10000)
         profit = random.randint(click, 10000)
         camaign.append(AdvContextCRM('yandex', f'test_campaign{i}', profit, click))
         clicks.append(click)
