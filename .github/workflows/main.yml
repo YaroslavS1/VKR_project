@@ -26,10 +26,10 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Mypy
         run: |
-          python -m pytest VKR_project/apps/home/tests_vkr/generator --alluredir=allure-results
-          python -m pytest VKR_project/apps/home/tests_vkr/basic_functionality --alluredir=allure-results
-          python -m pytest VKR_project/apps/home/tests_vkr/visualization --alluredir=allure-results
-          python -m pytest VKR_project/apps/home/tests_vkr/dump_data --alluredir=allure-results
+          python -m pytest apps/home/tests_vkr/generator --alluredir=allure-results
+          python -m pytest apps/home/tests_vkr/basic_functionality --alluredir=allure-results
+          python -m pytest apps/home/tests_vkr/visualization --alluredir=allure-results
+          python -m pytest apps/home/tests_vkr/dump_data --alluredir=allure-results
 
       - name: Get Allure history
         uses: actions/checkout@v2
