@@ -1,0 +1,70 @@
+{
+  "uid" : "8afee6a7d3fe6d19",
+  "name" : "test_create_adv_compaign[8000-30.05.2010-01.01.2010]",
+  "fullName" : "apps.home.tests_vkr.visualization.test_distribution#test_create_adv_compaign",
+  "historyId" : "1c930db461be78a67b0d0378e8f1c181",
+  "time" : {
+    "start" : 1651871471161,
+    "stop" : 1651871471164,
+    "duration" : 3
+  },
+  "description" : "draw a distribution schedule as part of an advertising campaign",
+  "descriptionHtml" : "<p>draw a distribution schedule as part of an advertising campaign</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test draws a graph with the main indicators of an advertising campaign"
+  }, {
+    "name" : "feature",
+    "value" : "Distributions"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.visualization"
+  }, {
+    "name" : "suite",
+    "value" : "test_distribution"
+  }, {
+    "name" : "host",
+    "value" : "fv-az131-207"
+  }, {
+    "name" : "thread",
+    "value" : "2455-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.visualization.test_distribution"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'30.05.2010'"
+  }, {
+    "name" : "start_date",
+    "value" : "'01.01.2010'"
+  }, {
+    "name" : "sum_cost",
+    "value" : "8000"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8afee6a7d3fe6d19.json",
+  "parameterValues" : [ "'30.05.2010'", "'01.01.2010'", "8000" ]
+}

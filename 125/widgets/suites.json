@@ -1,0 +1,48 @@
+{
+  "total" : 4,
+  "items" : [ {
+    "uid" : "c1342d9ec872e1b36a5e3ba35748b92f",
+    "name" : "apps.home.tests_vkr.generator",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 3,
+      "passed" : 317,
+      "unknown" : 0,
+      "total" : 320
+    }
+  }, {
+    "uid" : "33c4a32f6e6407102e0baadc6ecca6d4",
+    "name" : "apps.home.tests_vkr.basic_functionality",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 84,
+      "unknown" : 0,
+      "total" : 84
+    }
+  }, {
+    "uid" : "08dfc826db2163ac3ab2796c9eea3552",
+    "name" : "apps.home.tests_vkr.dump_data",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "75bc190e9cbeb5d2ddd7dbb52baca055",
+    "name" : "apps.home.tests_vkr.visualization",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

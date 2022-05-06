@@ -1,0 +1,61 @@
+{
+  "uid" : "7ec4fb21bf7b624a",
+  "name" : "test_read_crm",
+  "fullName" : "apps.home.tests_vkr.dump_data.test_read_crm#test_read_crm",
+  "historyId" : "761de9bddd02328fe053843ccef13c51",
+  "time" : {
+    "start" : 1651871471708,
+    "stop" : 1651871471708,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable for CI",
+  "statusTrace" : "('/home/runner/work/VKR_project/VKR_project/apps/home/tests_vkr/dump_data/test_read_crm.py', 10, 'Skipped: Not suitable for CI')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test of creating CRM report"
+  }, {
+    "name" : "feature",
+    "value" : "CRM report"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.dump_data"
+  }, {
+    "name" : "suite",
+    "value" : "test_read_crm"
+  }, {
+    "name" : "host",
+    "value" : "fv-az131-207"
+  }, {
+    "name" : "thread",
+    "value" : "2457-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.dump_data.test_read_crm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7ec4fb21bf7b624a.json",
+  "parameterValues" : [ ]
+}
