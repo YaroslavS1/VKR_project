@@ -1,0 +1,88 @@
+{
+  "uid" : "8ba279120cf7a3c6",
+  "name" : "test_trivial_crm[40-01.01.2000-25.11.2010]",
+  "fullName" : "apps.home.tests_vkr.generator.test_trivial_crm#test_trivial_crm",
+  "historyId" : "11995816425464fc6cede906d426cf70",
+  "time" : {
+    "start" : 1651870584626,
+    "stop" : 1651870585927,
+    "duration" : 1301
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "ADV campaign"
+  }, {
+    "name" : "story",
+    "value" : "Test of creating an advertising company with a given price"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_trivial_crm"
+  }, {
+    "name" : "host",
+    "value" : "fv-az131-867"
+  }, {
+    "name" : "thread",
+    "value" : "2301-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.generator.test_trivial_crm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'25.11.2010'"
+  }, {
+    "name" : "n_compaign",
+    "value" : "40"
+  }, {
+    "name" : "start_date",
+    "value" : "'01.01.2000'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "86dbee96fdc17b4c",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/122//#testresult/86dbee96fdc17b4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870219023,
+          "stop" : 1651870220298,
+          "duration" : 1275
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8ba279120cf7a3c6.json",
+  "parameterValues" : [ "'25.11.2010'", "40", "'01.01.2000'" ]
+}
