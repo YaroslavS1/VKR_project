@@ -1,0 +1,68 @@
+{
+  "uid" : "b8ca0997612090bf",
+  "name" : "test_dummy_campaign_crm[5-01.01.2000-10.10.2010]",
+  "fullName" : "apps.home.tests_vkr.generator.test_dummy_campaign_crm#test_dummy_campaign_crm",
+  "historyId" : "ea33cf6d534692884f891ce9b16fe16d",
+  "time" : {
+    "start" : 1651870138885,
+    "stop" : 1651870140020,
+    "duration" : 1135
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "CRM report"
+  }, {
+    "name" : "story",
+    "value" : "Test of creating CRM report"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_dummy_campaign_crm"
+  }, {
+    "name" : "host",
+    "value" : "fv-az453-924"
+  }, {
+    "name" : "thread",
+    "value" : "2269-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.generator.test_dummy_campaign_crm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'10.10.2010'"
+  }, {
+    "name" : "n",
+    "value" : "5"
+  }, {
+    "name" : "start_date",
+    "value" : "'01.01.2000'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b8ca0997612090bf.json",
+  "parameterValues" : [ "'10.10.2010'", "5", "'01.01.2000'" ]
+}

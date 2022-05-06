@@ -1,0 +1,68 @@
+{
+  "uid" : "825a947d4f7b327e",
+  "name" : "test_trivial_crm[49-24.05.2010-24.10.2010]",
+  "fullName" : "apps.home.tests_vkr.generator.test_trivial_crm#test_trivial_crm",
+  "historyId" : "c09b6bbcff57b12d2a6afb42bb4fdb19",
+  "time" : {
+    "start" : 1651870236777,
+    "stop" : 1651870236833,
+    "duration" : 56
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test of creating an advertising company with a given price"
+  }, {
+    "name" : "feature",
+    "value" : "ADV campaign"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_trivial_crm"
+  }, {
+    "name" : "host",
+    "value" : "fv-az453-924"
+  }, {
+    "name" : "thread",
+    "value" : "2269-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.generator.test_trivial_crm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'24.10.2010'"
+  }, {
+    "name" : "n_compaign",
+    "value" : "49"
+  }, {
+    "name" : "start_date",
+    "value" : "'24.05.2010'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "825a947d4f7b327e.json",
+  "parameterValues" : [ "'24.10.2010'", "49", "'24.05.2010'" ]
+}

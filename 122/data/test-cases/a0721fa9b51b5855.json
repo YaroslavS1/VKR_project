@@ -1,0 +1,83 @@
+{
+  "uid" : "a0721fa9b51b5855",
+  "name" : "test_conformity[yandex-Test campain-400-44.78-25.10.2010-30.12.2010]",
+  "fullName" : "apps.home.tests_vkr.generator.test_conformity#test_conformity",
+  "historyId" : "b7720027fb983d90fc8958a971561862",
+  "time" : {
+    "start" : 1651870114561,
+    "stop" : 1651870114576,
+    "duration" : 15
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 44.65 == 44.78\n +  where 44.65 = round(44.650000000000006, 2)\n +  and   44.78 = round(44.779999999999994, 2)",
+  "statusTrace" : "start_date = '25.10.2010', end_date = '30.12.2010', name = 'Test campain'\nsource = 'yandex', clicks = 400, profit = 44.78\n\n    @allure.feature('CRM_ADV')\n    @allure.story('Test compliance of the report and the advertising company')\n    @pytest.mark.parametrize('end_date', ['30.12.2010', '30.11.2010'])\n    @pytest.mark.parametrize('start_date', ['25.10.2010', '30.10.2010'])\n    @pytest.mark.parametrize('profit', [999.99, 7777, 2, 1.5, 44.78])\n    @pytest.mark.parametrize('clicks', [9999, 8998, 1400, 5432, 400])\n    @pytest.mark.parametrize('name', ['Test campain'])\n    @pytest.mark.parametrize('source', ['yandex'])\n    def test_conformity(start_date, end_date, name, source, clicks, profit):\n        crm_report = CrmReport(\n            start_date=start_date,\n            end_date=end_date,\n            config=(AdvContextCRM(source, name, profit, clicks), ))\n        adv_ = AdvCampaign(\n            name=name,\n            start_date=start_date,\n            end_date=end_date,\n            sum_cost=profit,\n            source=source,\n            allocation=crm_report.allocation[(source, name)])\n    \n        crm = crm_report.get_an_idea()\n        adv = adv_.campaign\n        sum_cost = 0\n        sum_profit = 0\n        for c, a in zip(crm, adv):\n            assert crm[c][0] == a.clicks\n            if a.clicks == 0:\n                assert crm[c][4] == 0\n            sum_cost += a.cost\n            sum_profit += crm[c][4]\n    \n>       assert round(sum_cost, 2) == round(sum_profit, 2)\nE       assert 44.65 == 44.78\nE        +  where 44.65 = round(44.650000000000006, 2)\nE        +  and   44.78 = round(44.779999999999994, 2)\n\napps/home/tests_vkr/generator/test_conformity.py:40: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "CRM_ADV"
+  }, {
+    "name" : "story",
+    "value" : "Test compliance of the report and the advertising company"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_conformity"
+  }, {
+    "name" : "host",
+    "value" : "fv-az453-924"
+  }, {
+    "name" : "thread",
+    "value" : "2269-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.generator.test_conformity"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "clicks",
+    "value" : "400"
+  }, {
+    "name" : "end_date",
+    "value" : "'30.12.2010'"
+  }, {
+    "name" : "name",
+    "value" : "'Test campain'"
+  }, {
+    "name" : "profit",
+    "value" : "44.78"
+  }, {
+    "name" : "source",
+    "value" : "'yandex'"
+  }, {
+    "name" : "start_date",
+    "value" : "'25.10.2010'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a0721fa9b51b5855.json",
+  "parameterValues" : [ "400", "'30.12.2010'", "'Test campain'", "44.78", "'yandex'", "'25.10.2010'" ]
+}

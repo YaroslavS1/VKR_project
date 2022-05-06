@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 44.65 == 44.78\n +  where 44.65 = round(44.650000000000006, 2)\n +  and   44.78 = round(44.779999999999994, 2)",
+      "children" : [ {
+        "name" : "test_conformity[yandex-Test campain-400-44.78-25.10.2010-30.12.2010]",
+        "uid" : "a0721fa9b51b5855",
+        "parentUid" : "47ccf065621be3c749362270418111a6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651870114561,
+          "stop" : 1651870114576,
+          "duration" : 15
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "400", "'30.12.2010'", "'Test campain'", "44.78", "'yandex'", "'25.10.2010'" ]
+      } ],
+      "uid" : "47ccf065621be3c749362270418111a6"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
