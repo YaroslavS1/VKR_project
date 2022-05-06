@@ -9,7 +9,7 @@ from VKR_project.apps.home.core_convert import CRMRepr
 def test_read_crm():
     pytest.skip(f'Not suitable for CI')
     read_ = CRMRepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMO.csv')
-    a = read_._load_csv()
+    a = read_.prepare_load_csv()
     summary_visit = []
     summary_addto_cart = []
     summary_pass = []

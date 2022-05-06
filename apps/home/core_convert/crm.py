@@ -31,10 +31,15 @@ class CRMRepr:
     def __init__(self, path):
         self.path = path
 
-    def _load_csv(self):
+    @property
+    def load_csv(self):
         df = pd.read_csv(self.path)
-
         df = df.drop(df.columns[0], axis=1)
+        return df
+
+    @property
+    def prepare_load_csv(self):
+        df = self.load_csv
         aa = dict()
         for day in df['date_time'].unique():
             df_day = df.loc[df['date_time'] == day]
@@ -67,3 +72,15 @@ class CRMRepr:
             aa[day] = s_
 
         return aa
+
+    @property
+    def adv(self):
+        a = self.prepare_load_csv
+        res = dict()
+        for i in a:
+            key = next(iter(a[i].keys()))
+            if len(res) == 0:
+                res[key] = a[i][key]
+            else:
+                res.update({key: tuple([x+y for x, y in zip(a[i][key], res.get(key, (0, 0, 0, 0, 0)))])})
+        return res

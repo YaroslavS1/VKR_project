@@ -1,234 +1,316 @@
-        <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
-            <a class="navbar-brand me-lg-5" href="/">
-                <img class="navbar-brand-dark" src="/static/assets/img/brand/light.svg" alt="Volt logo" /> <img class="navbar-brand-light" src="/static/assets/img/brand/dark.svg" alt="Volt logo" />
-            </a>
-            <div class="d-flex align-items-center">
-                <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
+<nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
+    <a class="navbar-brand me-lg-5" href="/">
+        <img class="navbar-brand-dark" src="/static/assets/img/brand/light.svg" alt="Volt logo"/> <img
+            class="navbar-brand-light" src="/static/assets/img/brand/dark.svg" alt="Volt logo"/>
+    </a>
+    <div class="d-flex align-items-center">
+        <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
 
-        <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
-          <div class="sidebar-inner px-4 pt-3">
-            <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
-              <div class="d-flex align-items-center">
+<nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
+    <div class="sidebar-inner px-4 pt-3">
+        <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
+            <div class="d-flex align-items-center">
+
                 <div class="avatar-lg me-4">
-                  <img src="/static/assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white"
-                    alt="Bonnie Green">
+                    <img src="/static/assets/img/team/profile-picture-3.jpg"
+                         class="card-img-top rounded-circle border-white"
+                         alt="Bonnie Green">
                 </div>
                 <div class="d-block">
-                  <h2 class="h5 mb-3">Hi, Jane</h2>
-                  <a href="/page-sign-in.html" class="btn btn-secondary btn-sm d-inline-flex align-items-center">
-                    <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
-                    Sign Out
-                  </a>
+                    <h2 class="h5 mb-3">Hi, Jane</h2>
+                    <a href="/page-sign-in.html" class="btn btn-secondary btn-sm d-inline-flex align-items-center">
+                        <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+                        </svg>
+                        Sign Out
+                    </a>
                 </div>
-              </div>
-              <div class="collapse-close d-md-none">
-                <a href="#sidebarMenu" data-bs-toggle="collapse"
-                    data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true"
-                    aria-label="Toggle navigation">
-                    <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </a>
-              </div>
             </div>
-            <ul class="nav flex-column pt-3 pt-md-0">
-<!--              <li class="nav-item">-->
-<!--                <a href="/" class="nav-link d-flex align-items-center">-->
-<!--                  <span class="sidebar-icon">-->
-<!--                    <img src="/static/assets/img/brand/light.svg" height="20" width="20" alt="Volt Logo">-->
-<!--                  </span>-->
-<!--                  <span class="mt-1 ms-1 sidebar-text">Сервис онлайн аналитики</span>-->
-<!--                </a>-->
-<!--              </li>-->
-              <li class="nav-item {% if 'Дашборд' in segment %} active {% endif %}">
+            <div class="collapse-close d-md-none">
+                <a href="#sidebarMenu" data-bs-toggle="collapse"
+                   data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true"
+                   aria-label="Toggle navigation">
+                    <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                              clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <ul class="nav flex-column pt-3 pt-md-0">
+            <!--              <li class="nav-item">-->
+            <!--                <a href="/" class="nav-link d-flex align-items-center">-->
+            <!--                  <span class="sidebar-icon">-->
+            <!--                    <img src="/static/assets/img/brand/light.svg" height="20" width="20" alt="Volt Logo">-->
+            <!--                  </span>-->
+            <!--                  <span class="mt-1 ms-1 sidebar-text">Сервис онлайн аналитики</span>-->
+            <!--                </a>-->
+            <!--              </li>-->
+            <li class="nav-item {% if 'Дашборд' in segment %} active {% endif %}">
                 <a href="{% url 'home' %}" class="nav-link">
                   <span class="sidebar-icon">
-                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
+                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                         xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path
+                            d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
                   </span>
-                  <span class="sidebar-text">Дашборд</span>
+                    <span class="sidebar-text">Дашборд</span>
                 </a>
-              </li>
-              <li class="nav-item {% if 'Рекламные кампании' in segment %} active {% endif %}">
+            </li>
+            <li class="nav-item {% if 'Рекламные кампании' in segment %} active {% endif %}">
                 <a href="{% url 'campaigns' %}" class="nav-link">
                   <span class="sidebar-icon">
-                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg"><path class="st0" d="M4.5,4.5c-0.6,0-1,0.4-1,1v16c0,0.6,0.4,1,1,1s1-0.4,1-1v-16C5.5,4.9,5.1,4.5,4.5,4.5z"/><path class="st0" d="M4.5,24.5c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1s1-0.4,1-1v-2C5.5,24.9,5.1,24.5,4.5,24.5z"/><path class="st0" d="M53.5,47.5c-0.6,0-1,0.4-1,1v11c0,0.6,0.4,1,1,1s1-0.4,1-1v-11C54.5,47.9,54.1,47.5,53.5,47.5z"/><path class="st0" d="M53.5,42.5c-0.6,0-1,0.4-1,1v1c0,0.6,0.4,1,1,1s1-0.4,1-1v-1C54.5,42.9,54.1,42.5,53.5,42.5z"/><path class="st0" d="M60.5,2.5h-1v-1c0-0.6-0.4-1-1-1s-1,0.4-1,1v1h-1c-0.6,0-1,0.4-1,1s0.4,1,1,1h1v1c0,0.6,0.4,1,1,1s1-0.4,1-1   v-1h1c0.6,0,1-0.4,1-1S61.1,2.5,60.5,2.5z"/><polygon class="st0" points="24.5,50.3 24.5,14.5 46.5,14.5 46.5,10.5 10.5,10.5 10.5,54.5 46.5,54.5 46.5,40.5 34.3,40.5  "/><path class="st0" d="M46.5,4.5c0-2.2-1.8-4-4-4h-28c-2.2,0-4,1.8-4,4v4h36V4.5z M34.5,6.5h-12c-0.6,0-1-0.4-1-1s0.4-1,1-1h12   c0.6,0,1,0.4,1,1S35.1,6.5,34.5,6.5z"/><path class="st0" d="M10.5,60.5c0,2.2,1.8,4,4,4h28c2.2,0,4-1.8,4-4v-4h-36V60.5z M26.6,59.5h3.8c0.6,0,1,0.4,1,1s-0.4,1-1,1h-3.8   c-0.6,0-1-0.4-1-1S26.1,59.5,26.6,59.5z"/><path class="st0" d="M37.6,26.5c-0.2-0.6-0.4-1.3-0.5-1.9h0c-0.1,0.6-0.3,1.3-0.5,1.9l-0.8,2.4h2.5L37.6,26.5z"/><path class="st0" d="M45.9,31.8c0.7,0,1.4-0.5,1.6-1.3c0-0.2,0.1-0.3,0.1-0.5v-1.1c0-0.1,0-0.3,0-0.5c-0.2-0.7-0.7-1.3-1.6-1.3   c-1.2,0-1.8,1-1.8,2.4C44.1,30.9,44.7,31.8,45.9,31.8z"/><path class="st0" d="M26.5,45.5l7-7h25v-22h-32V45.5z M54,33.3c-0.2-0.2-0.3-0.4-0.4-0.5c-0.1-0.1-0.1-0.2-0.1-0.4   c0-0.3,0.1-0.5,0.3-0.7c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3c0.2,0.2,0.3,0.5,0.3,0.8c0,0.5-0.2,1-0.6,1.5   c-0.4,0.5-1,0.9-1.8,1.2L53,35c0.6-0.4,1-0.6,1.2-0.8c0.1-0.1,0.2-0.3,0.2-0.4C54.4,33.6,54.2,33.4,54,33.3z M50.9,33.3   c-0.2-0.2-0.3-0.4-0.4-0.5c-0.1-0.1-0.1-0.2-0.1-0.4c0-0.3,0.1-0.5,0.3-0.7c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3   c0.2,0.2,0.3,0.5,0.3,0.8c0,0.5-0.2,1-0.6,1.5c-0.4,0.5-1,0.9-1.8,1.2L49.9,35c0.6-0.4,1-0.6,1.2-0.8c0.1-0.1,0.2-0.3,0.2-0.4   C51.2,33.6,51.1,33.4,50.9,33.3z M45.4,25.8c1,0,1.7,0.4,2,0.9h0v-4.1h1.8v8.4c0,0.7,0,1.5,0.1,2h-1.6L47.7,32h0   c-0.4,0.8-1.3,1.3-2.3,1.3c-1.7,0-3.1-1.5-3.1-3.7C42.2,27.2,43.7,25.8,45.4,25.8z M38.3,23.2l3.2,9.9h-1.9l-0.9-2.8h-3.2l-0.9,2.8   h-1.9l3.2-9.9H38.3z M32.8,21c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3s0.3,0.4,0.3,0.7c0,0.2,0,0.3-0.1,0.4   c-0.1,0.1-0.2,0.3-0.4,0.5c-0.2,0.2-0.3,0.4-0.3,0.5c0,0.1,0.1,0.3,0.2,0.4c0.1,0.2,0.5,0.4,1.2,0.8l-0.1,0.3   c-0.8-0.3-1.4-0.7-1.8-1.2c-0.4-0.5-0.6-1-0.6-1.5C32.5,21.5,32.6,21.3,32.8,21z M29.7,21c0.2-0.2,0.4-0.3,0.7-0.3   c0.3,0,0.5,0.1,0.7,0.3c0.2,0.2,0.3,0.4,0.3,0.7c0,0.2,0,0.3-0.1,0.4c-0.1,0.1-0.2,0.3-0.4,0.5s-0.3,0.4-0.3,0.5   c0,0.1,0.1,0.3,0.2,0.4c0.1,0.2,0.5,0.4,1.2,0.8l-0.1,0.3c-0.8-0.3-1.4-0.7-1.8-1.2c-0.4-0.5-0.6-1-0.6-1.5   C29.4,21.5,29.5,21.3,29.7,21z"/></svg>
+                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 65 65"
+                         xmlns="http://www.w3.org/2000/svg"><path class="st0"
+                                                                  d="M4.5,4.5c-0.6,0-1,0.4-1,1v16c0,0.6,0.4,1,1,1s1-0.4,1-1v-16C5.5,4.9,5.1,4.5,4.5,4.5z"/><path
+                            class="st0"
+                            d="M4.5,24.5c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1s1-0.4,1-1v-2C5.5,24.9,5.1,24.5,4.5,24.5z"/><path
+                            class="st0"
+                            d="M53.5,47.5c-0.6,0-1,0.4-1,1v11c0,0.6,0.4,1,1,1s1-0.4,1-1v-11C54.5,47.9,54.1,47.5,53.5,47.5z"/><path
+                            class="st0"
+                            d="M53.5,42.5c-0.6,0-1,0.4-1,1v1c0,0.6,0.4,1,1,1s1-0.4,1-1v-1C54.5,42.9,54.1,42.5,53.5,42.5z"/><path
+                            class="st0"
+                            d="M60.5,2.5h-1v-1c0-0.6-0.4-1-1-1s-1,0.4-1,1v1h-1c-0.6,0-1,0.4-1,1s0.4,1,1,1h1v1c0,0.6,0.4,1,1,1s1-0.4,1-1   v-1h1c0.6,0,1-0.4,1-1S61.1,2.5,60.5,2.5z"/><polygon
+                            class="st0"
+                            points="24.5,50.3 24.5,14.5 46.5,14.5 46.5,10.5 10.5,10.5 10.5,54.5 46.5,54.5 46.5,40.5 34.3,40.5  "/><path
+                            class="st0"
+                            d="M46.5,4.5c0-2.2-1.8-4-4-4h-28c-2.2,0-4,1.8-4,4v4h36V4.5z M34.5,6.5h-12c-0.6,0-1-0.4-1-1s0.4-1,1-1h12   c0.6,0,1,0.4,1,1S35.1,6.5,34.5,6.5z"/><path
+                            class="st0"
+                            d="M10.5,60.5c0,2.2,1.8,4,4,4h28c2.2,0,4-1.8,4-4v-4h-36V60.5z M26.6,59.5h3.8c0.6,0,1,0.4,1,1s-0.4,1-1,1h-3.8   c-0.6,0-1-0.4-1-1S26.1,59.5,26.6,59.5z"/><path
+                            class="st0"
+                            d="M37.6,26.5c-0.2-0.6-0.4-1.3-0.5-1.9h0c-0.1,0.6-0.3,1.3-0.5,1.9l-0.8,2.4h2.5L37.6,26.5z"/><path
+                            class="st0"
+                            d="M45.9,31.8c0.7,0,1.4-0.5,1.6-1.3c0-0.2,0.1-0.3,0.1-0.5v-1.1c0-0.1,0-0.3,0-0.5c-0.2-0.7-0.7-1.3-1.6-1.3   c-1.2,0-1.8,1-1.8,2.4C44.1,30.9,44.7,31.8,45.9,31.8z"/><path
+                            class="st0"
+                            d="M26.5,45.5l7-7h25v-22h-32V45.5z M54,33.3c-0.2-0.2-0.3-0.4-0.4-0.5c-0.1-0.1-0.1-0.2-0.1-0.4   c0-0.3,0.1-0.5,0.3-0.7c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3c0.2,0.2,0.3,0.5,0.3,0.8c0,0.5-0.2,1-0.6,1.5   c-0.4,0.5-1,0.9-1.8,1.2L53,35c0.6-0.4,1-0.6,1.2-0.8c0.1-0.1,0.2-0.3,0.2-0.4C54.4,33.6,54.2,33.4,54,33.3z M50.9,33.3   c-0.2-0.2-0.3-0.4-0.4-0.5c-0.1-0.1-0.1-0.2-0.1-0.4c0-0.3,0.1-0.5,0.3-0.7c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3   c0.2,0.2,0.3,0.5,0.3,0.8c0,0.5-0.2,1-0.6,1.5c-0.4,0.5-1,0.9-1.8,1.2L49.9,35c0.6-0.4,1-0.6,1.2-0.8c0.1-0.1,0.2-0.3,0.2-0.4   C51.2,33.6,51.1,33.4,50.9,33.3z M45.4,25.8c1,0,1.7,0.4,2,0.9h0v-4.1h1.8v8.4c0,0.7,0,1.5,0.1,2h-1.6L47.7,32h0   c-0.4,0.8-1.3,1.3-2.3,1.3c-1.7,0-3.1-1.5-3.1-3.7C42.2,27.2,43.7,25.8,45.4,25.8z M38.3,23.2l3.2,9.9h-1.9l-0.9-2.8h-3.2l-0.9,2.8   h-1.9l3.2-9.9H38.3z M32.8,21c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3s0.3,0.4,0.3,0.7c0,0.2,0,0.3-0.1,0.4   c-0.1,0.1-0.2,0.3-0.4,0.5c-0.2,0.2-0.3,0.4-0.3,0.5c0,0.1,0.1,0.3,0.2,0.4c0.1,0.2,0.5,0.4,1.2,0.8l-0.1,0.3   c-0.8-0.3-1.4-0.7-1.8-1.2c-0.4-0.5-0.6-1-0.6-1.5C32.5,21.5,32.6,21.3,32.8,21z M29.7,21c0.2-0.2,0.4-0.3,0.7-0.3   c0.3,0,0.5,0.1,0.7,0.3c0.2,0.2,0.3,0.4,0.3,0.7c0,0.2,0,0.3-0.1,0.4c-0.1,0.1-0.2,0.3-0.4,0.5s-0.3,0.4-0.3,0.5   c0,0.1,0.1,0.3,0.2,0.4c0.1,0.2,0.5,0.4,1.2,0.8l-0.1,0.3c-0.8-0.3-1.4-0.7-1.8-1.2c-0.4-0.5-0.6-1-0.6-1.5   C29.4,21.5,29.5,21.3,29.7,21z"/></svg>
                   </span>
-                  <span class="sidebar-text">Рекламные кампании</span>
+                    <span class="sidebar-text">Рекламные кампании</span>
                 </a>
-              </li>
-              <li class="nav-item {% if 'Воронка продаж' in segment %} active {% endif %}">
+            </li>
+            <li class="nav-item {% if 'KPI' in segment %} active {% endif %}">
+                <a href="{% url 'kpi' %}" class="nav-link">
+                  <span class="sidebar-icon">
+                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 512 512"
+                         xmlns="http://www.w3.org/2000/svg"><path
+                            d="M230.7843,318.5234a21.0094,21.0094,0,0,0-20.9024-18.707h-29.26V273.5928a45.6919,45.6919,0,1,0-91.3838,0v26.2236h-29.26a21.0078,21.0078,0,0,0-20.9014,18.707L24.4815,449.7441a35.0092,35.0092,0,0,0,34.7949,38.88h150.795a35.467,35.467,0,0,0,35.2509-39.3886ZM101.2384,273.5928a33.6919,33.6919,0,1,1,67.3838,0v26.2236H101.2384ZM227.5606,468.8057a23.4968,23.4968,0,0,1-17.4892,7.8183H59.2764A23.0112,23.0112,0,0,1,36.4073,451.07L51.003,319.8486a9.0214,9.0214,0,0,1,8.9756-8.0322h29.26V336.69h12V311.8164h67.3838V336.69h12V311.8164h29.26a9.0239,9.0239,0,0,1,8.9766,8.0332l14.5381,130.7119A23.4966,23.4966,0,0,1,227.5606,468.8057Z"/><path
+                            d="M134.6807,348.7537a50.1675,50.1675,0,1,0,50.1674,50.1674A50.2242,50.2242,0,0,0,134.6807,348.7537Zm3.6728,69.36v7.2337h-9V418.23h-9.4424v-9h16.7617a4.5659,4.5659,0,1,0,0-9.1318H132.999a12.58,12.58,0,0,1-2.6758-24.8731v-7.4121h9v7.1191h10.4131v9H132.999a3.5831,3.5831,0,0,0,0,7.1661h3.6738a13.56,13.56,0,0,1,1.6807,27.0163Z"/><path
+                            d="M489.609,449.2354l-14.5381-130.712a21.0094,21.0094,0,0,0-20.9024-18.707h-29.26V273.5928a45.6919,45.6919,0,1,0-91.3838,0v26.2236h-29.26a21.0076,21.0076,0,0,0-20.9013,18.707L268.7681,449.7441a35.0092,35.0092,0,0,0,34.795,38.88H454.358a35.4672,35.4672,0,0,0,35.251-39.3886ZM345.525,273.5928a33.6919,33.6919,0,1,1,67.3838,0v26.2236H345.525ZM471.8472,468.8057a23.4965,23.4965,0,0,1-17.4892,7.8183H303.5631A23.0113,23.0113,0,0,1,280.6939,451.07L295.29,319.8486a9.0214,9.0214,0,0,1,8.9756-8.0322h29.26V336.69h12V311.8164h67.3838V336.69h12V311.8164h29.26a9.0239,9.0239,0,0,1,8.9766,8.0332l14.5381,130.7119A23.4963,23.4963,0,0,1,471.8472,468.8057Z"/><path
+                            d="M378.9673,348.7537a50.1675,50.1675,0,1,0,50.1675,50.1674A50.2242,50.2242,0,0,0,378.9673,348.7537Zm3.6728,69.36v7.2337h-9V418.23h-9.4423v-9H380.96a4.5659,4.5659,0,1,0,0-9.1318h-3.6739a12.58,12.58,0,0,1-2.6757-24.8731v-7.4121h9v7.1191h10.413v9H377.2856a3.5831,3.5831,0,0,0,0,7.1661H380.96A13.56,13.56,0,0,1,382.64,418.114Z"/><path
+                            d="M340.7627,115.2312c-2.9829-2.3994-6.6953-5.3855-7.3286-7.3392-.7041-2.1673.5722-6.9357,1.5981-10.767,1.8482-6.903,3.9424-14.7271-.393-20.6843-4.3731-6.0083-12.5088-6.4256-19.6871-6.794-3.9272-.2014-8.8134-.4519-10.6-1.7514-1.7343-1.2624-3.4565-5.7874-4.8413-9.4229-2.5752-6.7659-5.4951-14.4342-12.6465-16.7558-6.91-2.2442-13.6357,2.1259-19.57,5.9821-3.5547,2.3085-7.582,4.9248-9.9633,4.9248s-6.4087-2.6163-9.962-4.9248c-5.936-3.8552-12.6626-8.2278-19.5708-5.9821-7.1508,2.3216-10.0708,9.99-12.6464,16.7553-1.3843,3.6355-3.107,8.1605-4.8414,9.4224-1.7861,1.3-6.6723,1.5506-10.6,1.7519-7.1782.3684-15.3139.7857-19.687,6.794-4.3354,5.9573-2.2412,13.781-.393,20.6838,1.0258,3.8318,2.3022,8.6,1.5986,10.7675-.6338,1.9532-4.3457,4.9393-7.3286,7.3388-5.6851,4.5733-12.1284,9.7568-12.1284,17.3893s6.4433,12.8159,12.1284,17.3893c2.9829,2.3995,6.6948,5.3856,7.3286,7.3388.7036,2.1667-.5728,6.9353-1.5986,10.767-1.8482,6.9029-3.9429,14.7266.392,20.6834,4.3731,6.0093,12.51,6.4265,19.688,6.7949,3.9263.2013,8.8125.4519,10.5987,1.7514,1.7343,1.2623,3.457,5.7873,4.8413,9.4229,2.5757,6.7654,5.4956,14.4336,12.6465,16.7558,6.9072,2.2423,13.6352-2.1269,19.5708-5.9821,3.5542-2.3086,7.582-4.9248,9.9629-4.9248s6.4086,2.6162,9.9633,4.9248c4.815,3.1278,10.15,6.5935,15.6812,6.5935a12.4968,12.4968,0,0,0,3.8891-.6114c7.1514-2.3217,10.0713-9.99,12.6465-16.7553,1.3848-3.6361,3.107-8.1606,4.8413-9.423,1.7862-1.2994,6.6724-1.55,10.5987-1.7513,7.1782-.3684,15.3149-.7856,19.688-6.7941,4.3354-5.9567,2.24-13.78.393-20.6832-1.0259-3.8318-2.3022-8.6-1.5981-10.7685.6333-1.9532,4.3457-4.9393,7.3286-7.3388,5.6841-4.5734,12.1274-9.7567,12.1274-17.3893S346.4468,119.8041,340.7627,115.2312Zm-96.499,44.6433a5.4994,5.4994,0,0,1-5.21,3.7383h-6.6309a5.4981,5.4981,0,0,1-5.2041-3.7217l-16.7807-49.11h11.6235l13.667,39.9954,13.5254-39.9954h11.6113Zm42.26,3.7383H265.5859v-11h20.9375a5.8235,5.8235,0,0,0,0-11.647h-4.5888a15.5962,15.5962,0,1,1,0-31.1924H302.84v11H281.9346a4.5962,4.5962,0,1,0,0,9.1924h4.5888a16.8235,16.8235,0,0,1,0,33.647Z"/></svg>
+                        <span class="sidebar-text">KPI</span>
+                </a>
+            </li>
+            <li class="nav-item {% if 'Воронка продаж' in segment %} active {% endif %}">
                 <a href="{% url 'funnel' %}" class="nav-link">
                   <span class="sidebar-icon">
-                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M225.75488,66.7627,160,139.09375v56.625a15.96822,15.96822,0,0,1-7.12549,13.31348l-31.99951,21.332A15.99954,15.99954,0,0,1,96,217.05176v-77.959L30.24561,66.76367A16.00043,16.00043,0,0,1,42.08447,40H213.91553a16.00019,16.00019,0,0,1,11.83935,26.7627Z"/>
+                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 256 256"
+                         xmlns="http://www.w3.org/2000/svg"><path
+                            d="M225.75488,66.7627,160,139.09375v56.625a15.96822,15.96822,0,0,1-7.12549,13.31348l-31.99951,21.332A15.99954,15.99954,0,0,1,96,217.05176v-77.959L30.24561,66.76367A16.00043,16.00043,0,0,1,42.08447,40H213.91553a16.00019,16.00019,0,0,1,11.83935,26.7627Z"/></svg>
                   </span>
-                  <span class="sidebar-text">Воронка продаж</span>
+                    <span class="sidebar-text">Воронка продаж</span>
                 </a>
-              </li>
-              <li class="nav-item {% if 'settings' in segment %} active {% endif %}">
-                <a href="/settings.html" class="nav-link">
-                  <span class="sidebar-icon">
-                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
-                  </span>
-                  <span class="sidebar-text">Settings</span>
-                </a>
-              </li>
-              <li class="nav-item {% if 'tables-bootstrap-' in segment %} active {% endif %}">
-                <span
-                  class="nav-link  collapsed  d-flex justify-content-between align-items-center"
-                  data-bs-toggle="collapse" data-bs-target="#submenu-app">
-                  <span>
-                    <span class="sidebar-icon">
-                      <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd"></path></svg>
-                    </span>
-                    <span class="sidebar-text">Tables</span>
-                  </span>
-                  <span class="link-arrow">
-                    <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                  </span>
-                </span>
-                <div class="multi-level collapse {% if 'tables-bootstrap-' in segment %} show {% endif %}"
-                  role="list" id="submenu-app" aria-expanded="false">
-                  <ul class="flex-column nav">
-                    <li class="nav-item {% if 'bootstrap-tables' in segment %} active {% endif %}">
-                      <a class="nav-link" href="/tables-bootstrap-tables.html">
-                        <span class="sidebar-text">Bootstrap Tables</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item {% if 'page-' in segment %} active {% endif %}">
-                <span
-                  class="nav-link  collapsed  d-flex justify-content-between align-items-center"
-                  data-bs-toggle="collapse" data-bs-target="#submenu-pages">
-                  <span>
-                    <span class="sidebar-icon">
-                      <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
-                    </span>
-                    <span class="sidebar-text">Page examples</span>
-                  </span>
-                  <span class="link-arrow">
-                    <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                  </span>
-                </span>
-                <div class="multi-level collapse {% if 'page-' in segment %} show {% endif %} " role="list"
-                  id="submenu-pages" aria-expanded="false">
-                  <ul class="flex-column nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="/page-sign-in.html">
-                        <span class="sidebar-text">Sign In</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/page-sign-up.html">
-                        <span class="sidebar-text">Sign Up</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/page-forgot-password.html">
-                        <span class="sidebar-text">Forgot password</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/page-reset-password.html">
-                        <span class="sidebar-text">Reset password</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/page-lock.html">
-                        <span class="sidebar-text">Lock</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/page-404.html">
-                        <span class="sidebar-text">404 Not Found</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/page-500.html">
-                        <span class="sidebar-text">500 Not Found</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item {% if 'components-' in segment %} active {% endif %}">
-                <span
-                  class="nav-link  collapsed  d-flex justify-content-between align-items-center"
-                  data-bs-toggle="collapse" data-bs-target="#submenu-components">
-                  <span>
-                    <span class="sidebar-icon">
-                      <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"></path><path fill-rule="evenodd" d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                    </span>
-                    <span class="sidebar-text">Components</span>
-                  </span>
-                  <span class="link-arrow">
-                    <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                  </span>
-                </span>
-                <div class="multi-level collapse {% if 'components-' in segment %} show {% endif %}" role="list"
-                  id="submenu-components" aria-expanded="false">
-                  <ul class="flex-column nav">
-                    <li class="nav-item {% if 'components-buttons' in segment %} active {% endif %}">
-                      <a class="nav-link" href="/components-buttons.html">
-                        <span class="sidebar-text">Buttons</span>
-                      </a>
-                    </li>
-                    <li class="nav-item {% if 'components-notifications' in segment %} active {% endif %}">
-                      <a class="nav-link" href="/components-notifications.html">
-                        <span class="sidebar-text">Notifications</span>
-                      </a>
-                    </li>
-                    <li class="nav-item {% if 'components-forms' in segment %} active {% endif %}">
-                      <a class="nav-link" href="/components-forms.html">
-                        <span class="sidebar-text">Forms</span>
-                      </a>
-                    </li>
-                    <li class="nav-item {% if 'components-modals' in segment %} active {% endif %}">
-                      <a class="nav-link" href="/components-modals.html">
-                        <span class="sidebar-text">Modals</span>
-                      </a>
-                    </li>
-                    <li class="nav-item {% if 'components-typography' in segment %} active {% endif %}">
-                      <a class="nav-link" href="/components-typography.html">
-                        <span class="sidebar-text">Typography</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
-              <li class="nav-item">
-                <a href="https://appseed.us/admin-dashboards/django-dashboard-volt" target="_blank"
-                  class="nav-link d-flex align-items-center">
-                  <span class="sidebar-icon">
-                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                  </span>
-                  <span class="sidebar-text">Product Page</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a target="_blank"
-                   href="https://appseed.us/support"
-                   class="nav-link d-flex align-items-center">
-                  <span class="sidebar-icon">
-                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
-                  </span>
-                  <span class="sidebar-text">Support</span>
-                </a>
-              </li>
-              <li class="nav-item">
-<!--                <a target="_blank" -->
-<!--                   href="https://appseed.us/admin-dashboards/django-dashboard-volt-pro"-->
-<!--                  class="btn btn-secondary d-flex align-items-center justify-content-center btn-upgrade-pro">-->
-<!--                  <span class="sidebar-icon d-inline-flex align-items-center justify-content-center">-->
-<!--                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path></svg>-->
-<!--                  </span> -->
-<!--                  <span>Upgrade to Pro</span>-->
+            </li>
+<!--            <li class="nav-item {% if 'settings' in segment %} active {% endif %}">-->
+<!--                <a href="/settings.html" class="nav-link">-->
+<!--                  <span class="sidebar-icon">-->
+<!--                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"-->
+<!--                         xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"-->
+<!--                                                                  d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"-->
+<!--                                                                  clip-rule="evenodd"></path></svg>-->
+<!--                  </span>-->
+<!--                    <span class="sidebar-text">Settings</span>-->
 <!--                </a>-->
-              </li>
-            </ul>
-          </div>
-        </nav>
+<!--            </li>-->
+<!--            <li class="nav-item {% if 'tables-bootstrap-' in segment %} active {% endif %}">-->
+<!--                <span-->
+<!--                        class="nav-link  collapsed  d-flex justify-content-between align-items-center"-->
+<!--                        data-bs-toggle="collapse" data-bs-target="#submenu-app">-->
+<!--                  <span>-->
+<!--                    <span class="sidebar-icon">-->
+<!--                      <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"-->
+<!--                           xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"-->
+<!--                                                                    d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"-->
+<!--                                                                    clip-rule="evenodd"></path></svg>-->
+<!--                    </span>-->
+<!--                    <span class="sidebar-text">Tables</span>-->
+<!--                  </span>-->
+<!--                  <span class="link-arrow">-->
+<!--                    <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"-->
+<!--                         xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"-->
+<!--                                                                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"-->
+<!--                                                                  clip-rule="evenodd"></path></svg>-->
+<!--                  </span>-->
+<!--                </span>-->
+<!--                <div class="multi-level collapse {% if 'tables-bootstrap-' in segment %} show {% endif %}"-->
+<!--                     role="list" id="submenu-app" aria-expanded="false">-->
+<!--                    <ul class="flex-column nav">-->
+<!--                        <li class="nav-item {% if 'bootstrap-tables' in segment %} active {% endif %}">-->
+<!--                            <a class="nav-link" href="/tables-bootstrap-tables.html">-->
+<!--                                <span class="sidebar-text">Bootstrap Tables</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </li>-->
+<!--            <li class="nav-item {% if 'page-' in segment %} active {% endif %}">-->
+<!--                <span-->
+<!--                        class="nav-link  collapsed  d-flex justify-content-between align-items-center"-->
+<!--                        data-bs-toggle="collapse" data-bs-target="#submenu-pages">-->
+<!--                  <span>-->
+<!--                    <span class="sidebar-icon">-->
+<!--                      <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"-->
+<!--                           xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"-->
+<!--                                                                    d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"-->
+<!--                                                                    clip-rule="evenodd"></path><path-->
+<!--                              d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>-->
+<!--                    </span>-->
+<!--                    <span class="sidebar-text">Page examples</span>-->
+<!--                  </span>-->
+<!--                  <span class="link-arrow">-->
+<!--                    <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"-->
+<!--                         xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"-->
+<!--                                                                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"-->
+<!--                                                                  clip-rule="evenodd"></path></svg>-->
+<!--                  </span>-->
+<!--                </span>-->
+<!--                <div class="multi-level collapse {% if 'page-' in segment %} show {% endif %} " role="list"-->
+<!--                     id="submenu-pages" aria-expanded="false">-->
+<!--                    <ul class="flex-column nav">-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href="/page-sign-in.html">-->
+<!--                                <span class="sidebar-text">Sign In</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href="/page-sign-up.html">-->
+<!--                                <span class="sidebar-text">Sign Up</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href="/page-forgot-password.html">-->
+<!--                                <span class="sidebar-text">Forgot password</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href="/page-reset-password.html">-->
+<!--                                <span class="sidebar-text">Reset password</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href="/page-lock.html">-->
+<!--                                <span class="sidebar-text">Lock</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href="/page-404.html">-->
+<!--                                <span class="sidebar-text">404 Not Found</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href="/page-500.html">-->
+<!--                                <span class="sidebar-text">500 Not Found</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </li>-->
+<!--            <li class="nav-item {% if 'components-' in segment %} active {% endif %}">-->
+<!--                <span-->
+<!--                        class="nav-link  collapsed  d-flex justify-content-between align-items-center"-->
+<!--                        data-bs-toggle="collapse" data-bs-target="#submenu-components">-->
+<!--                  <span>-->
+<!--                    <span class="sidebar-icon">-->
+<!--                      <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"-->
+<!--                           xmlns="http://www.w3.org/2000/svg"><path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"></path><path-->
+<!--                              fill-rule="evenodd"-->
+<!--                              d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"-->
+<!--                              clip-rule="evenodd"></path></svg>-->
+<!--                    </span>-->
+<!--                    <span class="sidebar-text">Components</span>-->
+<!--                  </span>-->
+<!--                  <span class="link-arrow">-->
+<!--                    <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"-->
+<!--                         xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"-->
+<!--                                                                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"-->
+<!--                                                                  clip-rule="evenodd"></path></svg>-->
+<!--                  </span>-->
+<!--                </span>-->
+<!--                <div class="multi-level collapse {% if 'components-' in segment %} show {% endif %}" role="list"-->
+<!--                     id="submenu-components" aria-expanded="false">-->
+<!--                    <ul class="flex-column nav">-->
+<!--                        <li class="nav-item {% if 'components-buttons' in segment %} active {% endif %}">-->
+<!--                            <a class="nav-link" href="/components-buttons.html">-->
+<!--                                <span class="sidebar-text">Buttons</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item {% if 'components-notifications' in segment %} active {% endif %}">-->
+<!--                            <a class="nav-link" href="/components-notifications.html">-->
+<!--                                <span class="sidebar-text">Notifications</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item {% if 'components-forms' in segment %} active {% endif %}">-->
+<!--                            <a class="nav-link" href="/components-forms.html">-->
+<!--                                <span class="sidebar-text">Forms</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item {% if 'components-modals' in segment %} active {% endif %}">-->
+<!--                            <a class="nav-link" href="/components-modals.html">-->
+<!--                                <span class="sidebar-text">Modals</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item {% if 'components-typography' in segment %} active {% endif %}">-->
+<!--                            <a class="nav-link" href="/components-typography.html">-->
+<!--                                <span class="sidebar-text">Typography</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </li>-->
+<!--            <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>-->
+<!--            <li class="nav-item">-->
+<!--                <a href="https://appseed.us/admin-dashboards/django-dashboard-volt" target="_blank"-->
+<!--                   class="nav-link d-flex align-items-center">-->
+<!--                  <span class="sidebar-icon">-->
+<!--                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"-->
+<!--                         xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"-->
+<!--                                                                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"-->
+<!--                                                                  clip-rule="evenodd"></path></svg>-->
+<!--                  </span>-->
+<!--                    <span class="sidebar-text">Product Page</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a target="_blank"-->
+<!--                   href="https://appseed.us/support"-->
+<!--                   class="nav-link d-flex align-items-center">-->
+<!--                  <span class="sidebar-icon">-->
+<!--                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"-->
+<!--                         xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"-->
+<!--                                                                  d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"-->
+<!--                                                                  clip-rule="evenodd"></path></svg>-->
+<!--                  </span>-->
+<!--                    <span class="sidebar-text">Support</span>-->
+<!--                </a>-->
+<!--            </li>-->
+            <li class="nav-item">
+                <!--                <a target="_blank" -->
+                <!--                   href="https://appseed.us/admin-dashboards/django-dashboard-volt-pro"-->
+                <!--                  class="btn btn-secondary d-flex align-items-center justify-content-center btn-upgrade-pro">-->
+                <!--                  <span class="sidebar-icon d-inline-flex align-items-center justify-content-center">-->
+                <!--                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path></svg>-->
+                <!--                  </span> -->
+                <!--                  <span>Upgrade to Pro</span>-->
+                <!--                </a>-->
+            </li>
+        </ul>
+    </div>
+</nav>

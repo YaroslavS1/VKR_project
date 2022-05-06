@@ -70,7 +70,7 @@ def test_end_to_end_crm(start_date, end_date, profit1: float, profit2: float, cl
     data_frame.to_csv('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMO.csv')
 
     read_ = CRMRepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMO.csv')
-    a = read_._load_csv()
+    a = read_.prepare_load_csv()
     summary_visit = {}
     summary_profit = {}
     for i in a:

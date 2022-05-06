@@ -19,7 +19,7 @@ def count_adv(adv: AdvCampaign):
         cost_campaign += i.cost
         impressions += i.impressions
         clicks += i.clicks
-    return {(adv.source, name_campaign): (cost_campaign, impressions, clicks)}
+    return {(adv.source, name_campaign): (impressions, clicks, cost_campaign)}
 
 
 @allure.feature('ADV campaign')
@@ -58,7 +58,7 @@ def test_tests_funnel(start_date, end_date, n_compaign):
     df_s = []
     for i, i_c, adv in zip(range(n_compaign), crm, adv_campaigns):
         concurrent_adv = count_adv(adv)
-        df_ = pd.DataFrame(dict(количество=[concurrent_adv[i_c][2] if i_c == ('yandex', 'Test_campain1') else concurrent_adv[i_c][1], concurrent_adv[i_c][2],
+        df_ = pd.DataFrame(dict(количество=[concurrent_adv[i_c][2], concurrent_adv[i_c][2],
                                         # concurrent_adv[i_c][2],
                                         crm[i_c][2]], стадии=stages))
         # print(i_c)

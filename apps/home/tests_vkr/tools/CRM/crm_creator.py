@@ -128,7 +128,7 @@ class Event:
                     for event_ in EVENT_LIST:
                         daily_events.append(self._get_dummy_event(self.date, event_, current_id, current_session))
                     if _current_price == 0.:
-                        if random.randint(0, 1):
+                        if random.randint(0, 2):
                             daily_events.append(RecordCrm(
                                 date_time=self.date,
                                 crm_id=None,
@@ -137,6 +137,15 @@ class Event:
                                 mapped_event='AddTo_Cart',
                                 utm_source=None,
                                 utm_campaign=None))
+                            if random.randint(0, 1):
+                                daily_events.append(RecordCrm(
+                                    date_time=self.date,
+                                    crm_id=None,
+                                    user_id=current_id,
+                                    session=current_session,
+                                    mapped_event='pass',
+                                    utm_source=None,
+                                    utm_campaign=None))
                     else:
                         daily_events.append(RecordCrm(
                             date_time=self.date,
@@ -147,15 +156,16 @@ class Event:
                             utm_source=None,
                             utm_campaign=None))
                     if _current_price == 0.:
-                        if random.randint(0, 1):
-                            daily_events.append(RecordCrm(
-                                date_time=self.date,
-                                crm_id=None,
-                                user_id=current_id,
-                                session=current_session,
-                                mapped_event='pass',
-                                utm_source=None,
-                                utm_campaign=None))
+                        pass
+                        # if random.randint(0, 1):
+                        #     daily_events.append(RecordCrm(
+                        #         date_time=self.date,
+                        #         crm_id=None,
+                        #         user_id=current_id,
+                        #         session=current_session,
+                        #         mapped_event='pass',
+                        #         utm_source=None,
+                        #         utm_campaign=None))
                     else:
                         daily_events.append(RecordCrm(
                             date_time=self.date,
@@ -176,26 +186,27 @@ class Event:
                             utm_campaign=None,
                             profit=_current_price))
             elif i is Rec.ADDTOCART:
-                current_id = next(pseudo_id)
-                current_session = next(pseudo_session)
-                daily_events.append(RecordCrm(
-                    date_time=self.date,
-                    crm_id=None,
-                    user_id=current_id,
-                    session=current_session,
-                    mapped_event='session_start',
-                    utm_source=None,
-                    utm_campaign=None))
-                for event_ in EVENT_LIST:
-                    daily_events.append(self._get_dummy_event(self.date, event_, current_id, current_session))
-                daily_events.append(RecordCrm(
-                    date_time=self.date,
-                    crm_id=None,
-                    user_id=current_id,
-                    session=current_session,
-                    mapped_event='AddTo_Cart',
-                    utm_source=None,
-                    utm_campaign=None))
+                pass
+                # current_id = next(pseudo_id)
+                # current_session = next(pseudo_session)
+                # daily_events.append(RecordCrm(
+                #     date_time=self.date,
+                #     crm_id=None,
+                #     user_id=current_id,
+                #     session=current_session,
+                #     mapped_event='session_start',
+                #     utm_source=None,
+                #     utm_campaign=None))
+                # for event_ in EVENT_LIST:
+                #     daily_events.append(self._get_dummy_event(self.date, event_, current_id, current_session))
+                # daily_events.append(RecordCrm(
+                #     date_time=self.date,
+                #     crm_id=None,
+                #     user_id=current_id,
+                #     session=current_session,
+                #     mapped_event='AddTo_Cart',
+                #     utm_source=None,
+                #     utm_campaign=None))
             elif i is Rec.MINOR:
                 current_id = next(pseudo_id)
                 current_session = next(pseudo_session)
@@ -302,6 +313,35 @@ class CrmReport(BaseTime):
         for k in data:
             slice_[k] = data[k][0][index], data[k][1][index]
         return slice_
+
+    @property
+    def as_dict(self):
+        date_time = []
+        crm_id = []
+        user_id = []
+        session = []
+        mapped_event = []
+        utm_source = []
+        utm_campaign = []
+        profit = []
+        for i in self.records:
+            date_time.append(i.date_time)
+            crm_id.append(i.crm_id)
+            user_id.append(i.user_id)
+            session.append(i.session)
+            mapped_event.append(i.mapped_event)
+            utm_source.append(i.utm_source)
+            utm_campaign.append(i.utm_campaign)
+            profit.append(i.profit)
+        return {
+            'date_time': date_time,
+            'crm_id': crm_id,
+            'user_id': user_id,
+            'session': session,
+            'mapped_event': mapped_event,
+            'utm_source': utm_source,
+            'utm_campaign': utm_campaign,
+            'profit': profit}
 
     def create_records(self) -> Tuple[RecordCrm]:
         data = self._split_by_company
