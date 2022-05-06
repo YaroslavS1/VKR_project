@@ -17,19 +17,20 @@ from VKR_project.apps.home.tests_vkr.tools.CRM import CrmReport
 @pytest.mark.parametrize('clicks1', [200])
 @pytest.mark.parametrize('profit2', [5678])
 @pytest.mark.parametrize('clicks2', [450])
-@pytest.mark.parametrize('profit3', [9876])
-@pytest.mark.parametrize('clicks3', [200])
-@pytest.mark.parametrize('profit4', [5678])
-@pytest.mark.parametrize('clicks4', [450])
-@pytest.mark.parametrize('profit5', [9876])
-@pytest.mark.parametrize('clicks5', [200])
-@pytest.mark.parametrize('profit6', [5678])
-@pytest.mark.parametrize('clicks6', [450])
+# @pytest.mark.parametrize('profit3', [9876])
+# @pytest.mark.parametrize('clicks3', [200])
+# @pytest.mark.parametrize('profit4', [5678])
+# @pytest.mark.parametrize('clicks4', [450])
+# @pytest.mark.parametrize('profit5', [9876])
+# @pytest.mark.parametrize('clicks5', [200])
+# @pytest.mark.parametrize('profit6', [5678])
+# @pytest.mark.parametrize('clicks6', [450])
 @pytest.mark.parametrize('name1', ['Test campain1'])
 @pytest.mark.parametrize('source1', ['yandex'])
 @pytest.mark.parametrize('name2', ['Test campain2'])
 @pytest.mark.parametrize('source2', ['yandex'])
-def test_conformity(start_date, end_date, name1, source1, name2, source2, clicks1, profit1, clicks2, profit2):
+def test_conformity_many(start_date, end_date, name1, source1, name2, source2, clicks1, profit1, clicks2, profit2):
+    pytest.skip(f'Not suitable for CI')
     crm_report = CrmReport(
         start_date=start_date,
         end_date=end_date,

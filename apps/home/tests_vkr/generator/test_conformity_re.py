@@ -22,6 +22,7 @@ from VKR_project.apps.home.tests_vkr.tools.CRM import CrmReport
 @pytest.mark.parametrize('name2', ['Test campain2'])
 @pytest.mark.parametrize('source2', ['yandex'])
 def test_conformity(start_date, end_date, name1, source1, name2, source2, clicks1, profit1, clicks2, profit2):
+    pytest.skip(f'Not suitable for CI')
     crm_report = CrmReport(
         start_date=start_date,
         end_date=end_date,
@@ -49,23 +50,3 @@ def test_conformity(start_date, end_date, name1, source1, name2, source2, clicks
 
     data_frame_2 = pd.DataFrame(adv_2.as_dict)
     data_frame_2.to_csv('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_2.csv')
-
-    # read_ = ADVrepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_1.csv')
-    # a = read_.load_csv
-    # print(a.info())
-    # print(a)
-    # print(read_.adv)
-    # crm = crm_report.get_an_idea()
-    # adv = adv_.campaign
-    # sum_cost = 0
-    # sum_profit = 0
-    # for c, a in zip(crm, adv):
-    #     assert crm[c][0] == a.clicks
-    #     if a.clicks == 0:
-    #         assert crm[c][4] == 0
-    #     sum_cost += a.cost
-    #     sum_profit += crm[c][4]
-    #
-    # assert round(sum_cost, 2) == round(sum_profit, 2)
-    # assert sum_cost - profit < 1e-8
-

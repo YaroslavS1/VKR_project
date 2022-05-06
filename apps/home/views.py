@@ -12,6 +12,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
+import plotly.graph_objects as go
 
 from .core_convert import CRMRepr
 from .core_convert.adv import ADVrepr
@@ -29,14 +30,26 @@ crm = _crm.prepare_load_csv
 
 @login_required(login_url="/login/")
 def index(request):
+    crm_ = _crm.load_csv
     context = {'segment': 'Дашборд'}
     buffer = io.StringIO()
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=a1['date'], y=a1['cost'], name=a1['source'].unique()[0]+' '+a1['name'].unique()[0]))
+    fig.add_trace(go.Scatter(x=a2['date'], y=a2['cost'], name=a2['source'].unique()[0]+' '+a2['name'].unique()[0]))
+    # fig.add_trace(go.Scatter(x=crm_['date'], y=crm_['cost'], name='Прибыль'))
+    context.update({'cost': a1['cost'].sum() + a2['cost'].sum()})
+    context.update({'profit': crm_['profit'].sum()})
+    context.update({'сustomers': a1['clicks'].sum() + a2['clicks'].sum()})
+    context.update({'registr': a1['cost'].sum() + a2['cost'].sum()})
 
-    df = px.data.iris()  # replace with your own data source
-    fig = px.scatter(
-        df, x="sepal_width", y="sepal_length",
-        color="species")
-    fig.update_layout(paper_bgcolor='#F2F4F6')
+
+
+    # go.Scatter(x=df['Date'], y=df['AAPL.High'])
+    # df = px.data.iris()  # replace with your own data source
+    # fig = px.scatter(
+    #     df, x="sepal_width", y="sepal_length",
+    #     color="species")
+    fig.update_layout(paper_bgcolor='#ffeed6')
     fig.write_html(buffer, config={'displaylogo': False})
     html_bytes = buffer.getvalue()
     context.update({'plot1': html_bytes})

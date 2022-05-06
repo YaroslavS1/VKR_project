@@ -1,13 +1,15 @@
 import allure
 import pytest
-
+import plotly.graph_objects as go
+import pytest
+from plotly.subplots import make_subplots
 from VKR_project.apps.home.tests_vkr.tools.ADV import AdvCampaign
 
 
 @allure.feature('Distributions')
 @allure.story('Test draws a graph with the main indicators of an advertising campaign')
 @pytest.mark.parametrize('start_date', ['01.01.2010'])
-@pytest.mark.parametrize('end_date', ['30.01.2010'])
+@pytest.mark.parametrize('end_date', ['30.05.2010'])
 @pytest.mark.parametrize('sum_cost', [8000])
 def test_create_adv_compaign(start_date, end_date, sum_cost):
     """draw a distribution schedule as part of an advertising campaign"""
