@@ -16,15 +16,16 @@ SECRET_KEY = config('SECRET_KEY', default='S#perS3crEt_1122')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
-
+# SERVER = 'onlytics.ru'
 # load production server from .env
-ALLOWED_HOSTS        = ['localhost', 'localhost:85', '127.0.0.1', config('SERVER', default='127.0.0.1')]
-CSRF_TRUSTED_ORIGINS = ['http://localhost:85', 'http://127.0.0.1', 'https://' + config('SERVER', default='127.0.0.1')]
+ALLOWED_HOSTS = ['localhost', 'localhost:85', '127.0.0.1', config('SERVER', default='127.0.0.1')]
+CSRF_TRUSTED_ORIGINS = ['https://localhost:85', 'https://127.0.0.1', 'https://' + config('SERVER', default='127.0.0.1')]
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'django.contrib.sites',
+    'registration',  # should be immediately above 'django.contrib.admin'
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -33,6 +34,8 @@ INSTALLED_APPS = [
     'django_plotly_dash.apps.DjangoPlotlyDashConfig',
     'channels',
     'channels_redis',
+    'django_extensions',
+    'apps.authentication',
     'apps.home'  # Enable the inner home (home)
 ]
 
@@ -123,7 +126,27 @@ CHANNEL_LAYERS = {
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 X_FRAME_OPTIONS = 'ALLOWALL'
 
-XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
+XS_SHARING_ALLOWED_METHODS = ['POST', 'GET', 'OPTIONS', 'PUT', 'DELETE']
+AUTH_USER_MODEL = 'authentication.CustomUser'
+
+
+REGISTRATION_OPEN = True  # If True, users can register
+ACCOUNT_ACTIVATION_DAYS = 7  # One-week activation window; you may, of course, use a different value.
+REGISTRATION_EMAIL_HTML = False
+REGISTRATION_AUTO_LOGIN = True  # If True, the user will be automatically logged in.
+# LOGIN_REDIRECT_URL = '/rango/'  # The page you want users to arrive at after they successful log in
+LOGIN_URL = '/login/'  # The page users are directed to if they are not logged in,
+SITE_ID = 1
+# email settings
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.yandex.ru"
+EMAIL_HOST_USER = "Iaro5laI3@yandex.ru"
+EMAIL_HOST_PASSWORD = "199822827qw"
+EMAIL_PORT = 465
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+DEFAULT_FROM_EMAIL = "Iaro5laI3@yandex.ru"
 
 #############################################################
 # SRC: https://devcenter.heroku.com/articles/django-assets
@@ -137,7 +160,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(CORE_DIR, 'apps/static'),
 )
-
 
 #############################################################
 #############################################################

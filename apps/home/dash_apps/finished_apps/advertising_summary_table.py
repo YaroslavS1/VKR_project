@@ -1,13 +1,12 @@
 import pandas as pd
-from apps.home.views import a1, a2
+from apps.home.views import advs
 from dash import dash_table, dcc, html
 from dash.dependencies import Input, Output
 from django_plotly_dash import DjangoDash
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-
-df = a1.append(a2)
+df = advs
 app = DjangoDash('ADVSummaryTable', external_stylesheets=external_stylesheets)
 app.layout = html.Div([
     dash_table.DataTable(
@@ -41,7 +40,6 @@ app.layout = html.Div([
     Input('datatable-interactivity', "derived_virtual_data"),
     Input('datatable-interactivity', "derived_virtual_selected_rows"))
 def update_graphs(rows, derived_virtual_selected_rows):
-
     if derived_virtual_selected_rows is None:
         derived_virtual_selected_rows = []
 

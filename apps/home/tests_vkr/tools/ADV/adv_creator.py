@@ -93,13 +93,14 @@ class AdvCampaign(BaseTime):
         """campaign creation method"""
         campaign = list()
         number_days = int((self.end_date - self.start_date).days) + 1
+
         cost_allocation = get_random_floats_with_given_sum(
-            number_days if self.allocation is None else len(self.allocation), self.sum_cost)
+            number_days if self.allocation is None else len([i for i in self.allocation if i != 0]), self.sum_cost)
+
         if self.allocation is not None:
             al_it = iter(self.allocation)
             for date in self.daterange:
                 cur_al_it = next(al_it)
-                cost_al = next(cost_allocation)
                 campaign.append(
                     RecordAdv(
                         date=date,
@@ -107,7 +108,7 @@ class AdvCampaign(BaseTime):
                         source=self.source,
                         impressions=random.randint(cur_al_it, cur_al_it*random.randint(2, 5)),
                         clicks=cur_al_it,
-                        cost=0 if cur_al_it == 0 else cost_al))
+                        cost=0 if cur_al_it == 0 else next(cost_allocation)))
         else:
             for date in self.daterange:
                 campaign.append(
@@ -118,4 +119,5 @@ class AdvCampaign(BaseTime):
                         impressions=random.randint(100, 1000),
                         clicks=random.randint(100, 200),
                         cost=next(cost_allocation)))
+
         return tuple(campaign)

@@ -16,46 +16,77 @@ import plotly.graph_objects as go
 
 from .core_convert import CRMRepr
 from .core_convert.adv import ADVrepr
+from .core_convert.crm import CRMext
 from .tests_vkr.tools.ADV import AdvCampaign
 from .tests_vkr.visualization.tests_funnel_plot import count_adv
 
 _a1 = ADVrepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_1.csv')
 _a2 = ADVrepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_2.csv')
+_a3 = ADVrepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_3.csv')
+_a4 = ADVrepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_4.csv')
+_a5 = ADVrepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_5.csv')
+_a6 = ADVrepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_6.csv')
 a1 = _a1.load_csv
 a2 = _a2.load_csv
+a3 = _a3.load_csv
+a4 = _a4.load_csv
+a5 = _a5.load_csv
+a6 = _a6.load_csv
+adv = (a1, a2, a3, a4, a5, a6)
+advs = pd.concat(adv)
 
-_crm = CRMRepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMO.csv')
-crm = _crm.prepare_load_csv
+_crm = CRMext('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/crm.csv')
+crm = _crm.load_csv
 
 
 @login_required(login_url="/login/")
 def index(request):
-    crm_ = _crm.load_csv
     context = {'segment': 'Дашборд'}
+
     buffer = io.StringIO()
+
+    summary_cost = round(sum([i['cost'].sum() for i in adv]), 2)
+    summary_profit = round(crm['profit'].sum(), 2)
+    customers = sum([i['clicks'].sum() for i in adv])
+    payment = round(crm['payment'].sum(), 2)
+    addto_cart = round(crm['addto_cart'].sum(), 2)
+
+    context.update({'cost': summary_cost})
+    context.update({'profit': summary_profit})
+    context.update({'cpc': 0 if customers == 0 else round(summary_cost / customers, 2)})
+    context.update({'customers': customers})
+    context.update({'payment': payment})
+    context.update({'conversion': customers / payment})
+    context.update({'CAR': round((1 - payment / addto_cart) * 100, 2)})
+    context.update({'aov': round(summary_profit / customers, 2)})
+    context.update({'addto_cart': addto_cart})
+    context.update({'roi': round(((summary_profit - summary_cost) / summary_cost) * 100, 2)})
+
+    ll = [(i['source'].unique()[0], i['name'].unique()[0]) for i in adv]
+    costs = [i['cost'].sum() for i in adv]
+    profits = [crm.loc[crm['name'] == i[1]]['profit'].sum() for i in ll]
+    _roi = [round((profit - cost) / cost * 100, 2) for cost, profit in zip(costs, profits)]
+    _roi_rep = [(n[0] + ' ' + n[1], i) for i, n in zip(_roi, ll) if i <= 0]
+
+    context.update({'roi_rep': _roi_rep})
+
+    labels = [i[0] + ' ' + i[1] for i in ll]
+    values = [crm.loc[crm['name'] == i[1]]['profit'].sum() for i in ll]
+    # fig = go.Figure(data=[go.Pie(labels=labels, values=values)])
+
+    fig.write_html(buffer, config={'displaylogo': False})
+    html_bytes1 = buffer.getvalue()
+    context.update({'plot1': html_bytes1})
+
     fig = go.Figure()
-    fig.add_trace(go.Scatter(x=a1['date'], y=a1['cost'], name=a1['source'].unique()[0]+' '+a1['name'].unique()[0]))
-    fig.add_trace(go.Scatter(x=a2['date'], y=a2['cost'], name=a2['source'].unique()[0]+' '+a2['name'].unique()[0]))
-    # fig.add_trace(go.Scatter(x=crm_['date'], y=crm_['cost'], name='Прибыль'))
-    context.update({'cost': a1['cost'].sum() + a2['cost'].sum()})
-    context.update({'profit': crm_['profit'].sum()})
-    context.update({'сustomers': a1['clicks'].sum() + a2['clicks'].sum()})
-    context.update({'registr': a1['cost'].sum() + a2['cost'].sum()})
-
-
-
-    # go.Scatter(x=df['Date'], y=df['AAPL.High'])
-    # df = px.data.iris()  # replace with your own data source
-    # fig = px.scatter(
-    #     df, x="sepal_width", y="sepal_length",
-    #     color="species")
-    fig.update_layout(paper_bgcolor='#ffeed6')
+    for i in adv:
+        fig.add_trace(go.Scatter(x=i['date'], y=i['cost'], name=i['source'].unique()[0] + ' ' + i['name'].unique()[0]))
+    fig.update_xaxes(rangeslider_visible=True)
     fig.write_html(buffer, config={'displaylogo': False})
     html_bytes = buffer.getvalue()
-    context.update({'plot1': html_bytes})
+    context.update({'plot2': html_bytes})
 
     html_template = loader.get_template('home/dashboard.html')
-
     return HttpResponse(html_template.render(context, request))
 
 
@@ -63,6 +94,13 @@ def index(request):
 def campaigns(request):
     context = {'segment': 'Рекламные кампании'}
     html_template = loader.get_template('home/campaigns.html')
+    return HttpResponse(html_template.render(context, request))
+
+
+@login_required(login_url="/login/")
+def sdash(request):
+    context = {'segment': 'Dash'}
+    html_template = loader.get_template('home/sdash.html')
     return HttpResponse(html_template.render(context, request))
 
 
@@ -76,17 +114,21 @@ def kpi(request):
 @login_required(login_url="/login/")
 def funnel(request):
     buffer = io.StringIO()
-    stages = ["Количество показов рекламы", "Клики по рекламным обьявлениям", "Добавления в корзину", "Оформление заказов", "Покупки"]
+    stages = ["Количество показов рекламы", "Клики по рекламным обьявлениям", "Добавления в корзину",
+              "Оформление заказов", "Покупки"]
     df_s = []
-    crm_adv_inf = _crm.adv
-    for i, i_c, adv in zip(range(2), crm_adv_inf, (_a1, _a2)):
+    # crm_adv_inf = _crm.adv
+    label = [(i['source'].unique()[0], i['name'].unique()[0]) for i in adv]
+    impressions = [i['impressions'].sum() for i in adv]
+    visit = [i['clicks'].sum() for i in adv]
+    addto_cart = [crm.loc[crm['name'] == i[1]]['addto_cart'].sum() for i in label]
+    pass_ = [crm.loc[crm['name'] == i[1]]['pass'].sum() for i in label]
+    payment = [crm.loc[crm['name'] == i[1]]['payment'].sum() for i in label]
+
+    for i in zip(label, impressions, visit, addto_cart, pass_, payment):
         df_ = pd.DataFrame(dict(
-            количество=[adv.info_[0],
-                        adv.info_[1],
-                        crm_adv_inf[i_c][1],
-                        crm_adv_inf[i_c][2],
-                        crm_adv_inf[i_c][3]], стадии=stages))
-        df_['Рекламная кампания'] = i_c[0] + '' + i_c[1]
+            количество=i[1:], стадии=stages))
+        df_['Рекламная кампания'] = i[:1][0][0] + ' ' + i[:1][0][1]
         df_s.append(df_)
     df = pd.concat(df_s, axis=0)
     fig = px.funnel(df, x='количество', y='стадии', color='Рекламная кампания', height=800)

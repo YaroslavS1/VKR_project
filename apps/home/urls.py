@@ -9,6 +9,7 @@ from django.urls import path
 from django.urls import include  # add this
 from apps.home.dash_apps.finished_apps import advertising_summary_table
 from apps.home.dash_apps.finished_apps import campaign
+from apps.home.dash_apps.finished_apps import summary_dashboard
 
 urlpatterns = [
 
@@ -17,8 +18,11 @@ urlpatterns = [
     path('campaigns/', views.campaigns, name='campaigns'),
     path('funnel/', views.funnel, name='funnel'),
     path('kpi/', views.kpi, name='kpi'),
+    path('SDash/', views.sdash, name='sdash'),
     path('django_plotly_dash/', include('django_plotly_dash.urls')),
+    path('password/reset/', include('django.contrib.auth.urls')),
     # Matches any html file
+    # path('accounts/', include('registration.backends.default.urls')),
     re_path(r'^.*\.*', views.pages, name='pages'),
 
 ]

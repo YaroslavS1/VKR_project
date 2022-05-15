@@ -22,7 +22,7 @@ from VKR_project.apps.home.tests_vkr.tools.CRM import CrmReport
 @pytest.mark.parametrize('name2', ['Test campain2'])
 @pytest.mark.parametrize('source2', ['yandex'])
 def test_conformity(start_date, end_date, name1, source1, name2, source2, clicks1, profit1, clicks2, profit2):
-    pytest.skip(f'Not suitable for CI')
+    # pytest.skip(f'Not suitable for CI')
     crm_report = CrmReport(
         start_date=start_date,
         end_date=end_date,

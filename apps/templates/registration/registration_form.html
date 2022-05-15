@@ -1,6 +1,6 @@
 {% extends "layouts/base-fullscreen.html" %}
 
-{% block title %} Sign UP {% endblock %} 
+{% block title %} Sign UP {% endblock %}
 
 <!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}{% endblock stylesheets %}
@@ -28,10 +28,10 @@
                                     {% else %}
                                         Введите данные для регистрации
                                     {% endif %}
-                                </p> 
+                                </p>
                             </div>
                             <form method="post" action="" class="mt-4">
-                                
+
                                 {% csrf_token %}
 
                                 <div class="form-group mb-4">
@@ -40,9 +40,13 @@
                                         <span class="input-group-text" id="basic-addon1">
                                             <span class="fas fa-user-circle"></span>
                                         </span>
-                                        {{ form.username }}
-
-                                    </div>  
+<!--                                        {{ form.username }}-->
+                                        <input class="form-control" id="{{ form.username.auto_id }}"
+                                           name="{{ form.username.name }}"
+                                           autocomplete="{{ form.username.name }}"
+                                           type="text"
+                                           placeholder="Логин">
+                                    </div>
                                     <span class="text-error">{{ form.username.errors }}</span>
                                 </div>
 
@@ -53,13 +57,18 @@
                                         <span class="input-group-text" id="basic-addon1">
                                             <span class="fas fa-envelope"></span>
                                         </span>
-                                        {{ form.email }}
-                                    </div>  
+                                        <input class="form-control" id="{{ form.email.auto_id }}"
+                                           name="{{ form.email.name }}"
+                                           autocomplete="{{ form.email.name }}"
+                                           type="email"
+                                           placeholder="Email">
+<!--                                        {{ form.email }}-->
+                                    </div>
                                     <span class="text-error">{{ form.email.errors }}</span>
                                 </div>
                                 <!-- End of Form -->
                                 <div class="form-group">
-                                    
+
                                     <!-- Form -->
                                     <div class="form-group mb-4">
                                         <label for="password">Пароль</label>
@@ -67,8 +76,13 @@
                                             <span class="input-group-text" id="basic-addon2">
                                                 <span class="fas fa-unlock-alt"></span>
                                             </span>
-                                            {{ form.password1 }}
-                                        </div>  
+                                            <input class="form-control" id="{{ form.password1.auto_id }}"
+                                               name="{{ form.password1.name }}"
+                                               autocomplete="{{ form.password1.name }}"
+                                               type="password"
+                                               placeholder="Пароль">
+<!--                                            {{ form.password1 }}-->
+                                        </div>
                                         <span class="text-error">{{ form.password1.errors }}</span>
                                     </div>
                                     <div class="form-group mb-4">
@@ -77,23 +91,28 @@
                                             <span class="input-group-text" id="basic-addon2">
                                                 <span class="fas fa-unlock-alt"></span>
                                             </span>
-                                            {{ form.password2 }}
-                                        </div>  
+                                            <input class="form-control" id="{{ form.password2.auto_id }}"
+                                               name="{{ form.password2.name }}"
+                                               autocomplete="{{ form.password2.name }}"
+                                               type="password"
+                                               placeholder="Повторите пароль">
+<!--                                            {{ form.password2 }}-->
+                                        </div>
                                         <span class="text-error">{{ form.password2.errors }}</span>
                                     </div>
 
                                     <!-- End of Form -->
-                                    <div class="mb-4">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="remember">
-                                            <label class="form-check-label fw-normal mb-0" for="remember">
-                                                я ознакомлен с <a href="#" class="fw-bold">условиями и правилами</a>
-                                            </label>
-                                        </div>
-                                    </div>
+<!--                                    <div class="mb-4">-->
+<!--                                        <div class="form-check">-->
+<!--                                            <input class="form-check-input" type="checkbox" value="" id="remember">-->
+<!--                                            <label class="form-check-label fw-normal mb-0" for="remember">-->
+<!--                                                я ознакомлен с <a href="#" class="fw-bold">условиями и правилами</a>-->
+<!--                                            </label>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
                                 </div>
                                 <div class="d-grid">
-                                    <button type="submit" name="register" class="btn btn-gray-800">Sign UP</button>
+                                    <button type="submit" name="register" class="btn btn-gray-800">Зарегистрироваться</button>
                                 </div>
                             </form>
                             <br />
@@ -116,7 +135,7 @@
                             <div class="d-flex justify-content-center align-items-center mt-4">
                                 <span class="fw-normal">
                                     У вас уже есть аккаунт?
-                                    <a href="{% url 'login' %}" class="fw-bold">Войти</a>
+                                    <a href="{% url 'auth_login' %}" class="fw-bold">Войти</a>
                                 </span>
                             </div>
                         </div>
@@ -125,6 +144,7 @@
             </div>
         </section>
     </main>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpbh-mt'},{'server':'p3plmcpnl487010'},{'id':'8437534'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
 
 {% endblock content %}
 

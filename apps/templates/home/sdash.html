@@ -1,0 +1,35 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Transactions {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+<!--{% block stylesheets %}{% endblock stylesheets %}-->
+
+{% block content %}
+{% load plotly_dash %}
+
+  <div class="table-settings mb-4">
+      <div class="row align-items-center justify-content-between">
+          <div class="col-4 col-md-2 col-xl-1 ps-md-0 text-end">
+              <div class="dropdown">
+                  <div class="dropdown-menu dropdown-menu-xs dropdown-menu-end pb-0">
+                      <span class="small ps-3 fw-bold text-dark">Show</span>
+                      <a class="dropdown-item d-flex align-items-center fw-bold" href="#">10 <svg class="icon icon-xxs ms-auto" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></a>
+                      <a class="dropdown-item fw-bold" href="#">20</a>
+                      <a class="dropdown-item fw-bold rounded-bottom" href="#">30</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="card card-body border-0 shadow table-wrapper table-responsive">
+<!--<div class="{% plotly_class name='ADVSummaryTable' %} card" style="height: 100%; width: 100%">-->
+                    {% plotly_app name='SummaryDashboard' ratio=1.16%}
+<!--                </div>-->
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

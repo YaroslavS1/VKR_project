@@ -1,3 +1,4 @@
+from collections import OrderedDict
 from typing import Tuple
 
 import pandas as pd
@@ -82,5 +83,48 @@ class CRMRepr:
             if len(res) == 0:
                 res[key] = a[i][key]
             else:
-                res.update({key: tuple([x+y for x, y in zip(a[i][key], res.get(key, (0, 0, 0, 0, 0)))])})
+                res.update({key: tuple([x + y for x, y in zip(a[i][key], res.get(key, (0, 0, 0, 0, 0)))])})
         return res
+
+    @property
+    def slice_by_day(self):
+        crm = self.prepare_load_csv
+        date = []
+        source = []
+        name = []
+        profit = []
+        addto_cart = []
+        pass_ = []
+        payment = []
+        for i in crm:
+            for j in crm[i]:
+                date.append(i)
+                source.append(j[0])
+                name.append(j[1])
+                profit.append(crm[i][j][-1])
+                addto_cart.append(crm[i][j][1])
+                pass_.append(crm[i][j][2])
+                payment.append(crm[i][j][3])
+
+        return pd.DataFrame(OrderedDict(
+            [
+                ('date', date),
+                ('source', source),
+                ('name', name),
+                ('profit', profit),
+                ('addto_cart', addto_cart),
+                ('pass', pass_),
+                ('payment', payment)
+            ]
+        ))
+
+
+class CRMext:
+    def __init__(self, path):
+        self.path = path
+
+    @property
+    def load_csv(self):
+        df = pd.read_csv(self.path)
+        df = df.drop(df.columns[0], axis=1)
+        return df
