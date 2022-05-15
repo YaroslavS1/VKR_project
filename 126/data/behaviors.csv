@@ -1,0 +1,5 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"","CRM_ADV","Test compliance of the report and the advertising company","0","2","100","0","0"
+"","ADV campaign","Test of creating an advertising company with a given price","0","0","126","0","0"
+"","CRM report","Test of creating CRM report","0","0","91","0","0"
+"","CRM report","Test dump read CRM report","0","0","0","1","0"

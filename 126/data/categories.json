@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "OSError: Cannot save file into a non-existent directory: '/home/y_sukhorukov/VKR/VKR_PROJECT/tests'",
+      "children" : [ {
+        "name" : "test_conformity[yandex-Test campain2-yandex-Test campain1-450-5678-200-9876-25.10.2021-30.11.2021]",
+        "uid" : "9c1dbb1a92b1586",
+        "parentUid" : "8b21a320306391223fdf8e0909907bfe",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652576372784,
+          "stop" : 1652576372812,
+          "duration" : 28
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "200", "450", "'30.11.2021'", "'Test campain1'", "'Test campain2'", "9876", "5678", "'yandex'", "'yandex'", "'25.10.2021'" ]
+      }, {
+        "name" : "test_conformity_many[rambler-rambler_1-avito-avito_1-vk-vk_2-vk-vk_1-yandex-yandex_direct2-yandex-yandex_direct1-450-profit60-700-profit50-900-profit40-6000-profit30-450-profit20-200-profit10-25.05.2020-30.10.2021]",
+        "uid" : "a2388d36b580e86",
+        "parentUid" : "8b21a320306391223fdf8e0909907bfe",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652576373035,
+          "stop" : 1652576373491,
+          "duration" : 456
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "200", "450", "6000", "900", "700", "450", "'30.10.2021'", "'yandex_direct1'", "'yandex_direct2'", "'vk_1'", "'vk_2'", "'avito_1'", "'rambler_1'", "(1876, 5000)", "(5678, 9090)", "(10876, 90000)", "(1800, 1800)", "(98760, 5000)", "(56798, 78000)", "'yandex'", "'yandex'", "'vk'", "'vk'", "'avito'", "'rambler'", "'25.05.2020'" ]
+      } ],
+      "uid" : "8b21a320306391223fdf8e0909907bfe"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
