@@ -99,14 +99,20 @@
                         </div>-->
 
                         <div class="d-flex justify-content-center align-items-center mt-4">
-                                <span class="fw-normal">
-<!--                                    Not registered?-->
-                                    <a href="{% url 'registration_register' %}" class="fw-bold">Создать аккаунт</a>
-                                </span>
+                            <span class="fw-normal">
+                            <a href="{% url 'password_reset' %}" class="fw-bold">Востановить пароль</a>
+                            </span>
                         </div>
+                        <div class="d-flex justify-content-center align-items-center mt-4">
+                            <span class="fw-normal">
+                                <a href="{% url 'registration_register' %}" class="fw-bold">Создать аккаунт</a>
+                            </span>
+                        </div>
+
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 </main>

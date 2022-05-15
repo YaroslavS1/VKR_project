@@ -1,8 +1,5 @@
 <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
-    <a class="navbar-brand me-lg-5" href="/">
-        <img class="navbar-brand-dark" src="/static/assets/img/brand/light.svg" alt="Volt logo"/> <img
-            class="navbar-brand-light" src="/static/assets/img/brand/dark.svg" alt="Volt logo"/>
-    </a>
+
     <div class="d-flex align-items-center">
         <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
@@ -15,25 +12,6 @@
 <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
     <div class="sidebar-inner px-4 pt-3">
         <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
-            <div class="d-flex align-items-center">
-
-                <div class="avatar-lg me-4">
-                    <img src="/static/assets/img/team/profile-picture-3.jpg"
-                         class="card-img-top rounded-circle border-white"
-                         alt="Bonnie Green">
-                </div>
-                <div class="d-block">
-                    <h2 class="h5 mb-3">Hi, Jane</h2>
-                    <a href="{% url 'auth_logout' %}" class="btn btn-secondary btn-sm d-inline-flex align-items-center">
-                        <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
-                        </svg>
-                        Sign Out
-                    </a>
-                </div>
-            </div>
             <div class="collapse-close d-md-none">
                 <a href="#sidebarMenu" data-bs-toggle="collapse"
                    data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true"
@@ -48,16 +26,19 @@
             </div>
         </div>
         <ul class="nav flex-column pt-3 pt-md-0">
-            <!--              <li class="nav-item">-->
-            <!--                <a href="/" class="nav-link d-flex align-items-center">-->
-            <!--                  <span class="sidebar-icon">-->
-            <!--                    <img src="/static/assets/img/brand/light.svg" height="20" width="20" alt="Volt Logo">-->
-            <!--                  </span>-->
-            <!--                  <span class="mt-1 ms-1 sidebar-text">Сервис онлайн аналитики</span>-->
-            <!--                </a>-->
-            <!--              </li>-->
-            <li class="nav-item {% if 'Дашборд' in segment %} active {% endif %}">
+            <li class="nav-item {% if 'Главная' in segment %} active {% endif %}">
                 <a href="{% url 'home' %}" class="nav-link">
+                  <span class="sidebar-icon">
+                      <svg class="icon icon-xs me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 32 32"> <path
+                              style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans"
+                              d="M 2 8 L 2 9 L 2 13 L 2 14 L 3 14 L 7 14 L 8 14 L 8 13 L 8 9 L 8 8 L 7 8 L 3 8 L 2 8 z M 10 8 L 10 10 L 30 10 L 30 8 L 10 8 z M 4 10 L 6 10 L 6 12 L 4 12 L 4 10 z M 10 12 L 10 14 L 26 14 L 26 12 L 10 12 z M 2 18 L 2 19 L 2 23 L 2 24 L 3 24 L 7 24 L 8 24 L 8 23 L 8 19 L 8 18 L 7 18 L 3 18 L 2 18 z M 10 18 L 10 20 L 30 20 L 30 18 L 10 18 z M 4 20 L 6 20 L 6 22 L 4 22 L 4 20 z M 10 22 L 10 24 L 26 24 L 26 22 L 10 22 z"/></svg>
+                  </span>
+                    <span class="sidebar-text">Гланая</span>
+                </a>
+            </li>
+            <li class="nav-item {% if 'Дашборд' in segment %} active {% endif %}">
+                <a href="{% url 'dashboard' %}" class="nav-link">
                   <span class="sidebar-icon">
                     <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
                          xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path
@@ -107,7 +88,7 @@
                             d="M378.9673,348.7537a50.1675,50.1675,0,1,0,50.1675,50.1674A50.2242,50.2242,0,0,0,378.9673,348.7537Zm3.6728,69.36v7.2337h-9V418.23h-9.4423v-9H380.96a4.5659,4.5659,0,1,0,0-9.1318h-3.6739a12.58,12.58,0,0,1-2.6757-24.8731v-7.4121h9v7.1191h10.413v9H377.2856a3.5831,3.5831,0,0,0,0,7.1661H380.96A13.56,13.56,0,0,1,382.64,418.114Z"/><path
                             d="M340.7627,115.2312c-2.9829-2.3994-6.6953-5.3855-7.3286-7.3392-.7041-2.1673.5722-6.9357,1.5981-10.767,1.8482-6.903,3.9424-14.7271-.393-20.6843-4.3731-6.0083-12.5088-6.4256-19.6871-6.794-3.9272-.2014-8.8134-.4519-10.6-1.7514-1.7343-1.2624-3.4565-5.7874-4.8413-9.4229-2.5752-6.7659-5.4951-14.4342-12.6465-16.7558-6.91-2.2442-13.6357,2.1259-19.57,5.9821-3.5547,2.3085-7.582,4.9248-9.9633,4.9248s-6.4087-2.6163-9.962-4.9248c-5.936-3.8552-12.6626-8.2278-19.5708-5.9821-7.1508,2.3216-10.0708,9.99-12.6464,16.7553-1.3843,3.6355-3.107,8.1605-4.8414,9.4224-1.7861,1.3-6.6723,1.5506-10.6,1.7519-7.1782.3684-15.3139.7857-19.687,6.794-4.3354,5.9573-2.2412,13.781-.393,20.6838,1.0258,3.8318,2.3022,8.6,1.5986,10.7675-.6338,1.9532-4.3457,4.9393-7.3286,7.3388-5.6851,4.5733-12.1284,9.7568-12.1284,17.3893s6.4433,12.8159,12.1284,17.3893c2.9829,2.3995,6.6948,5.3856,7.3286,7.3388.7036,2.1667-.5728,6.9353-1.5986,10.767-1.8482,6.9029-3.9429,14.7266.392,20.6834,4.3731,6.0093,12.51,6.4265,19.688,6.7949,3.9263.2013,8.8125.4519,10.5987,1.7514,1.7343,1.2623,3.457,5.7873,4.8413,9.4229,2.5757,6.7654,5.4956,14.4336,12.6465,16.7558,6.9072,2.2423,13.6352-2.1269,19.5708-5.9821,3.5542-2.3086,7.582-4.9248,9.9629-4.9248s6.4086,2.6162,9.9633,4.9248c4.815,3.1278,10.15,6.5935,15.6812,6.5935a12.4968,12.4968,0,0,0,3.8891-.6114c7.1514-2.3217,10.0713-9.99,12.6465-16.7553,1.3848-3.6361,3.107-8.1606,4.8413-9.423,1.7862-1.2994,6.6724-1.55,10.5987-1.7513,7.1782-.3684,15.3149-.7856,19.688-6.7941,4.3354-5.9567,2.24-13.78.393-20.6832-1.0259-3.8318-2.3022-8.6-1.5981-10.7685.6333-1.9532,4.3457-4.9393,7.3286-7.3388,5.6841-4.5734,12.1274-9.7567,12.1274-17.3893S346.4468,119.8041,340.7627,115.2312Zm-96.499,44.6433a5.4994,5.4994,0,0,1-5.21,3.7383h-6.6309a5.4981,5.4981,0,0,1-5.2041-3.7217l-16.7807-49.11h11.6235l13.667,39.9954,13.5254-39.9954h11.6113Zm42.26,3.7383H265.5859v-11h20.9375a5.8235,5.8235,0,0,0,0-11.647h-4.5888a15.5962,15.5962,0,1,1,0-31.1924H302.84v11H281.9346a4.5962,4.5962,0,1,0,0,9.1924h4.5888a16.8235,16.8235,0,0,1,0,33.647Z"/></svg>
                       </span>
-                      <span class="sidebar-text">KPI</span>
+                    <span class="sidebar-text">KPI</span>
                 </a>
             </li>
             <li class="nav-item {% if 'Воронка продаж' in segment %} active {% endif %}">
@@ -120,6 +101,29 @@
                     <span class="sidebar-text">Воронка продаж</span>
                 </a>
             </li>
+
+            <li class="nav-item {% if 'Добавить данные' in segment %} active {% endif %}">
+                <a href="{% url 'add' %}" class="nav-link">
+                  <span class="sidebar-icon">
+<!--                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 256 256"-->
+                      <!--                                               xmlns="http://www.w3.org/2000/svg"><path-->
+                      <!--                                                  d="M225.75488,66.7627,160,139.09375v56.625a15.96822,15.96822,0,0,1-7.12549,13.31348l-31.99951,21.332A15.99954,15.99954,0,0,1,96,217.05176v-77.959L30.24561,66.76367A16.00043,16.00043,0,0,1,42.08447,40H213.91553a16.00019,16.00019,0,0,1,11.83935,26.7627Z"/></svg>-->
+                 <svg class="icon icon-xs me-2" fill="currentColor" version="1.1" id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+
+		<path d="M24,14.059V5.584L18.414,0H0v32h24v-0.059c4.499-0.5,7.998-4.309,8-8.941
+			C31.998,18.366,28.499,14.556,24,14.059z M17.998,2.413L21.586,6h-3.588C17.998,6,17.998,2.413,17.998,2.413z M2,30V1.998h14
+			v6.001h6v6.06c-4.501,0.498-8,4.308-8,8.941c0,2.829,1.308,5.352,3.35,7H2z M23,29.883c-3.801-0.009-6.876-3.084-6.885-6.883
+			c0.009-3.801,3.084-6.876,6.885-6.885c3.799,0.009,6.874,3.084,6.883,6.885C29.874,26.799,26.799,29.874,23,29.883z"/>
+		<polygon points="24.002,22 24.002,18 22,18 22,22 18,22 18,24 22,24 22,28 24.002,28 24.002,24 28,24
+			28,22"/>
+</svg>
+                  </span>
+                    <span class="sidebar-text">Добавить данные</span>
+                </a>
+            </li>
+
             <li class="nav-item {% if 'settings' in segment %} active {% endif %}">
                 <a href="/settings.html" class="nav-link">
                   <span class="sidebar-icon">

@@ -256,7 +256,7 @@ sales = html.Div([
                         #     style={'text-align': 'left', 'color': corporate_colors['medium-blue-grey']}
                         # ),
                         # Date range picker
-                        html.Div(['Select a date range: ',
+                        html.Div(['Выберите даты: ',
                                   dcc.DatePickerRange(
                                       id='date-picker-sales',
                                       start_date=min_dt_str,
@@ -297,8 +297,7 @@ sales = html.Div([
                                          options=repo_groups_l1_all,
                                          value=[''],
                                          multi=True,
-                                         placeholder="Select " + sales_fields[
-                                             'reporting_group_l1'] + " (leave blank to include all)",
+                                         placeholder="Выберите " + "источник" + " (оставьте пустым, чтобы включить все)",
                                          style={'font-size': '13px', 'color': corporate_colors['medium-blue-grey'],
                                                 'white-space': 'nowrap', 'text-overflow': 'ellipsis'}
                                          )
@@ -310,8 +309,7 @@ sales = html.Div([
                                          options=repo_groups_l2_all,
                                          value=[''],
                                          multi=True,
-                                         placeholder="Select " + sales_fields[
-                                             'reporting_group_l2'] + " (leave blank to include all)",
+                                         placeholder="Выберите " + "рекламную кампанию" + " (оставьте пустым, чтобы включить все)",
                                          style={'font-size': '13px', 'color': corporate_colors['medium-blue-grey'],
                                                 'white-space': 'nowrap', 'text-overflow': 'ellipsis'}
                                          )

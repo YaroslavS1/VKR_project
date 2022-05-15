@@ -9,6 +9,7 @@ from dash_table.Format import Format, Group, Scheme
 import dash_table.FormatTemplate as FormatTemplate
 from datetime import datetime as dt
 from .app import app
+from plotly.subplots import make_subplots
 
 ####################################################################################################
 # 000 - FORMATTING INFO
@@ -477,34 +478,100 @@ def update_chart(start_date, end_date, reporting_l1_dropdown, reporting_l2_dropd
         sales_df = sales_df_1.copy()
     del sales_df_1
 
-    # Aggregate df
-    val_cols = [sales_fields['sales'], sales_fields['sales target']]
-    sales_df = sales_df.groupby(sales_fields['date'])[val_cols].agg('sum')
-    sales_df.reset_index(inplace=True)
-
-    # Filter based on the date filters
     df = sales_df.loc[(sales_df[sales_fields['date']] >= start) & (sales_df[sales_fields['date']] <= end), :].copy()
     del sales_df
+
+    # Aggregate df
+    val_cols = [sales_fields['reporting_group_l1'], sales_fields['reporting_group_l2'], sales_fields['revenues'],
+                sales_fields['rev target'], sales_fields['sales target']]
+    sales_df = df.groupby(sales_fields['reporting_group_l2'])[val_cols].agg('sum')
+    sales_df.reset_index(inplace=True)
+    # print(sales_df)
+
+    labels = sales_df['name'].unique()
+    profits = sales_df['cost'].tolist()
+    costs = sales_df['cost'].tolist()
+    impressions = sales_df['impressions'].tolist()
+
+    # Filter based on the date filters
 
     # Build graph
     hovertemplate_xy = (
             "<i>Day</i>: %{x|%a, %d-%b-%Y}<br>" +
             "<i>Sales</i>: %{y:,d}" +
             "<extra></extra>")  # Remove trace info
-    data = go.Scatter(
-        x=df[sales_fields['date']],
-        y=df[sales_fields['sales']],
-        line={'color': corporate_colors['light-green'], 'width': 0.5},
-        hovertemplate=hovertemplate_xy)
-    fig = go.Figure(data=data, layout=corporate_layout)
+    # data = go.Scatter(
+    #     x=df[sales_fields['date']],
+    #     y=df[sales_fields['sales']],
+    #     line={'color': corporate_colors['light-green'], 'width': 0.5},
+    #     hovertemplate=hovertemplate_xy)
+    # fig = go.Figure(data=data, layout=corporate_layout)
+
+    fig = make_subplots(rows=1, cols=3, specs=[[{'type': 'domain'}, {'type': 'domain'}, {'type': 'domain'}]])
+    fig.add_trace(go.Pie(labels=labels, values=costs,
+                         name="Затраты",
+                         textfont=dict(size=14, color='white'),
+                         title={
+                             'font': dict(
+                                 size=16, color='white'),
+                             'text': 'Затраты'
+                         }), 1, 1)
+    fig.add_trace(go.Pie(labels=labels, values=profits,
+                         name="Выручка",
+                         textfont=dict(size=14, color='white'),
+                         title={
+                             'font': dict(
+                                 size=16, color='white'),
+                             'text': 'Выручка'
+                         }), 1, 2)
+    fig.add_trace(go.Pie(labels=labels, values=impressions,
+                         name="Показы",
+                         textfont=dict(size=14, color='white'),
+                         title={
+                             'font': dict(
+                                 size=16, color='white'),
+                             'text': 'Показы'
+                         }), 1, 3)
+    # fig.add_trace(
+    #     go.Table(
+    #         header=dict(
+    #             values=["Кампания"],
+    #             font=dict(size=10),
+    #             align="left"
+    #         ),
+    #         cells=dict(
+    #             values=[labels],
+    #             align="left")
+    #     ),
+    #     row=1, col=4
+    # )
+    #
     fig.update_layout(
-        title={'text': "Sales per Day"},
-        xaxis={
-            'title': "Day",
-            'tickformat': "%d-%m-%y"},
-        yaxis={
-            'title': "Sales (units)"},
-        showlegend=False)
+        # title={'text': "Sales per Day"},
+        # xaxis={
+        #     'title': "Day",
+        #     'tickformat': "%d-%m-%y"},
+        # yaxis={
+        #     'title': "Sales (units)"},
+        showlegend=False,
+        font={'family': corporate_font_family},
+        title_x=0.5,  # Align chart title to center
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
+        # xaxis=corporate_xaxis,
+        # yaxis=corporate_yaxis,
+        height=270,
+
+        legend={
+            'orientation': 'h',
+            'yanchor': 'bottom',
+            'y': 1.01,
+            'xanchor': 'right',
+            'x': 1.05,
+            'font': {'size': 9, 'color': 'white'}},
+        margin=corporate_margins
+
+    )
 
     return fig
 
@@ -678,6 +745,9 @@ def update_chart(start_date, end_date, reporting_l1_dropdown, reporting_l2_dropd
     df = df1.groupby(['week', 'weekday'])[val_cols].agg('sum')
     df.reset_index(inplace=True)
     del df1
+
+
+
 
     # Build graph
     hovertemplate_here = (

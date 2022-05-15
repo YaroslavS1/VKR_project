@@ -18,7 +18,8 @@ urlpatterns = [
     path('campaigns/', views.campaigns, name='campaigns'),
     path('funnel/', views.funnel, name='funnel'),
     path('kpi/', views.kpi, name='kpi'),
-    path('SDash/', views.sdash, name='sdash'),
+    path('dashboard/', views.sdash, name='dashboard'),
+    path('add/', views.add, name='add'),
     path('django_plotly_dash/', include('django_plotly_dash.urls')),
     path('password/reset/', include('django.contrib.auth.urls')),
     # Matches any html file

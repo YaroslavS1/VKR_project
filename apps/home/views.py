@@ -3,22 +3,19 @@
 Copyright (c) 2019 - present AppSeed.us
 """
 import io
-import random
 
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 from django import template
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
-import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
-from .core_convert import CRMRepr
 from .core_convert.adv import ADVrepr
 from .core_convert.crm import CRMext
-from .tests_vkr.tools.ADV import AdvCampaign
-from .tests_vkr.visualization.tests_funnel_plot import count_adv
 
 _a1 = ADVrepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_1.csv')
 _a2 = ADVrepr('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_2.csv')
@@ -41,7 +38,7 @@ crm = _crm.load_csv
 
 @login_required(login_url="/login/")
 def index(request):
-    context = {'segment': 'Дашборд'}
+    context = {'segment': 'Главная'}
 
     buffer = io.StringIO()
 
@@ -70,10 +67,22 @@ def index(request):
 
     context.update({'roi_rep': _roi_rep})
 
-    labels = [i[0] + ' ' + i[1] for i in ll]
-    values = [crm.loc[crm['name'] == i[1]]['profit'].sum() for i in ll]
+    # labels = [i[0] + ' ' + i[1] for i in ll]
+    # values = [crm.loc[crm['name'] == i[1]]['profit'].sum() for i in ll]
     # fig = go.Figure(data=[go.Pie(labels=labels, values=values)])
+    ll = [(i['source'].unique()[0], i['name'].unique()[0]) for i in adv]
+    labels = [l[0] + ' ' + l[1] for l in ll]
+    costs = [i['cost'].sum() for i in adv]
+    impression = [i['impressions'].sum() for i in adv]
+    profits = [crm.loc[crm['name'] == i[1]]['profit'].sum() for i in ll]
 
+    fig = make_subplots(rows=1, cols=3, specs=[[{'type': 'domain'}, {'type': 'domain'}, {'type': 'domain'}]])
+    fig.add_trace(go.Pie(labels=labels, values=costs,
+                         name="Затраты", title_text='Затраты'), 1, 1)
+    fig.add_trace(go.Pie(labels=labels, values=profits,
+                         name="Выручка", title_text='Выручка'), 1, 2)
+    fig.add_trace(go.Pie(labels=labels, values=impression,
+                         name="Показы", title_text='Показы'), 1, 3)
     fig.write_html(buffer, config={'displaylogo': False})
     html_bytes1 = buffer.getvalue()
     context.update({'plot1': html_bytes1})
@@ -98,8 +107,14 @@ def campaigns(request):
 
 
 @login_required(login_url="/login/")
+def add(request):
+    context = {'segment': 'Добавить данные'}
+    html_template = loader.get_template('home/add.html')
+    return HttpResponse(html_template.render(context, request))
+
+@login_required(login_url="/login/")
 def sdash(request):
-    context = {'segment': 'Dash'}
+    context = {'segment': 'Дашборд'}
     html_template = loader.get_template('home/sdash.html')
     return HttpResponse(html_template.render(context, request))
 
