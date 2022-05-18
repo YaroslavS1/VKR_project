@@ -1,3 +1,5 @@
+import tempfile
+
 import allure
 import pytest
 import plotly.graph_objects as go
