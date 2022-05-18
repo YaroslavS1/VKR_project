@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "NameError: name 'tempfile' is not defined",
+      "children" : [ {
+        "name" : "test_create_adv_compaign[8000-30.05.2010-01.01.2010]",
+        "uid" : "c2ffafe4cb10e02a",
+        "parentUid" : "7ffae6dabda43cf27695fb19adc827b0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652893600737,
+          "stop" : 1652893600830,
+          "duration" : 93
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'30.05.2010'", "'01.01.2010'", "8000" ]
+      } ],
+      "uid" : "7ffae6dabda43cf27695fb19adc827b0"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
