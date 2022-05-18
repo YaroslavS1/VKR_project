@@ -156,7 +156,7 @@ jobs:
       - name: Unittest
         run: |
           time sleep 178
-          python -m pytest -v vkr_project_tests/test_attach.py
+          python -m pytest apps/home/tests_vkr/fast_
 
   Models-and-basic-functions:
     runs-on: ubuntu-latest
@@ -183,7 +183,7 @@ jobs:
       - name: Unittest
         run: |
           time sleep 190
-          python -m pytest -v vkr_project_tests/test_generator.py
+          python -m pytest apps/home/tests_vkr/fast_
 
 #  Synthetic-test:
 #    runs-on: ubuntu-latest
@@ -219,7 +219,7 @@ jobs:
   KPI-calculation-test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs: [mypy, flake8, Models-and-basic-functions]
+    needs: [mypy, flake8, Advanced-crm-test-case-creation]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -241,7 +241,7 @@ jobs:
       - name: Unittest
         run: |
           time sleep 140
-          python -m pytest -v vkr_project_tests/test_generator.py
+          python -m pytest apps/home/tests_vkr/fast_
 
 #  Sphinx:
 #    runs-on: ubuntu-latest
