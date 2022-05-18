@@ -42,11 +42,11 @@ def test_conformity_rebase(start_date, end_date, name1, source1, name2, source2,
         source=source2,
         allocation=crm_report.allocation[(source2, name2)])
 
-    data_frame = pd.DataFrame(crm_report.as_dict)
-    data_frame.to_csv('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMO.csv')
-
-    data_frame_1 = pd.DataFrame(adv_1.as_dict)
-    data_frame_1.to_csv('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_1.csv')
-
-    data_frame_2 = pd.DataFrame(adv_2.as_dict)
-    data_frame_2.to_csv('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_2.csv')
+    # data_frame = pd.DataFrame(crm_report.as_dict)
+    # data_frame.to_csv('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMO.csv')
+    #
+    # data_frame_1 = pd.DataFrame(adv_1.as_dict)
+    # data_frame_1.to_csv('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_1.csv')
+    #
+    # data_frame_2 = pd.DataFrame(adv_2.as_dict)
+    # data_frame_2.to_csv('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMOA_2.csv')
