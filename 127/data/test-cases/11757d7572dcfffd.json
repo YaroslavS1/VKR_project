@@ -1,0 +1,135 @@
+{
+  "uid" : "11757d7572dcfffd",
+  "name" : "test_conformity[yandex-Test campain-5432-44.78-30.10.2010-30.12.2010]",
+  "fullName" : "apps.home.tests_vkr.generator.test_conformity#test_conformity",
+  "historyId" : "3f60219f801ab94ddfc33793c6fb0136",
+  "time" : {
+    "start" : 1652880723703,
+    "stop" : 1652880723703,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Not suitable for CI",
+  "statusTrace" : "('/home/runner/work/VKR_project/VKR_project/apps/home/tests_vkr/generator/test_conformity.py', 17, 'Skipped: Not suitable for CI')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test compliance of the report and the advertising company"
+  }, {
+    "name" : "feature",
+    "value" : "CRM_ADV"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_conformity"
+  }, {
+    "name" : "host",
+    "value" : "fv-az191-369"
+  }, {
+    "name" : "thread",
+    "value" : "2286-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.generator.test_conformity"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "clicks",
+    "value" : "5432"
+  }, {
+    "name" : "end_date",
+    "value" : "'30.12.2010'"
+  }, {
+    "name" : "name",
+    "value" : "'Test campain'"
+  }, {
+    "name" : "profit",
+    "value" : "44.78"
+  }, {
+    "name" : "source",
+    "value" : "'yandex'"
+  }, {
+    "name" : "start_date",
+    "value" : "'30.10.2010'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 1,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "6078ff55b5bc4c4c",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/126//#testresult/6078ff55b5bc4c4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652576372119,
+          "stop" : 1652576372264,
+          "duration" : 145
+        }
+      }, {
+        "uid" : "3a5d32b5e0c82d57",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/125//#testresult/3a5d32b5e0c82d57",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651871340290,
+          "stop" : 1651871340429,
+          "duration" : 139
+        }
+      }, {
+        "uid" : "b290da65c5a550ad",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/124//#testresult/b290da65c5a550ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870895651,
+          "stop" : 1651870895823,
+          "duration" : 172
+        }
+      }, {
+        "uid" : "b188c8746b88ff05",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/123//#testresult/b188c8746b88ff05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870482180,
+          "stop" : 1651870482303,
+          "duration" : 123
+        }
+      }, {
+        "uid" : "788d8313fb86066d",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/122//#testresult/788d8313fb86066d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870113987,
+          "stop" : 1651870114111,
+          "duration" : 124
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "11757d7572dcfffd.json",
+  "parameterValues" : [ "5432", "'30.12.2010'", "'Test campain'", "44.78", "'yandex'", "'30.10.2010'" ]
+}

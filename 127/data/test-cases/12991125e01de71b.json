@@ -1,0 +1,56 @@
+{
+  "uid" : "12991125e01de71b",
+  "name" : "test_campaign[11]",
+  "fullName" : "apps.home.tests_vkr.Internal_API.test_dash_app_campaign#test_campaign",
+  "historyId" : "6e4a2b58e51105d0befc37deb81d2e6e",
+  "time" : {
+    "start" : 1652880936146,
+    "stop" : 1652880941151,
+    "duration" : 5005
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.Internal_API"
+  }, {
+    "name" : "suite",
+    "value" : "test_dash_app_campaign"
+  }, {
+    "name" : "host",
+    "value" : "fv-az191-369"
+  }, {
+    "name" : "thread",
+    "value" : "2410-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.Internal_API.test_dash_app_campaign"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "n_compaign",
+    "value" : "11"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "12991125e01de71b.json",
+  "parameterValues" : [ "11" ]
+}
