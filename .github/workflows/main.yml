@@ -31,7 +31,7 @@ jobs:
           python -m pytest apps/home/tests_vkr/visualization --alluredir=allure-results
           python -m pytest apps/home/tests_vkr/models --alluredir=allure-results
           python -m pytest apps/home/tests_vkr/Internal_API --alluredir=allure-results
-
+          python -m pytest apps/home/tests_vkr/core --alluredir=allure-results
 
       - name: Get Allure history
         uses: actions/checkout@v2
@@ -155,7 +155,7 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Unittest
         run: |
-          time sleep 178
+          time sleep 200
           python -m pytest apps/home/tests_vkr/fast_
 
   Models-and-basic-functions:
@@ -182,7 +182,7 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Unittest
         run: |
-          time sleep 190
+          time sleep 360
           python -m pytest apps/home/tests_vkr/fast_
 
 #  Synthetic-test:
@@ -240,7 +240,7 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Unittest
         run: |
-          time sleep 140
+          time sleep 380
           python -m pytest apps/home/tests_vkr/fast_
 
 #  Sphinx:

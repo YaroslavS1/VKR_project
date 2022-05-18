@@ -33,14 +33,17 @@ class CRMRepr:
         self.path = path
 
     @property
-    def load_csv(self):
+    def load_csv(self) -> pd.DataFrame:
         df = pd.read_csv(self.path)
         df = df.drop(df.columns[0], axis=1)
         return df
 
-    @property
+    # @property
     def prepare_load_csv(self):
-        df = self.load_csv
+        if isinstance(self, pd.DataFrame):
+            df = self
+        else:
+            df = self.load_csv
         aa = dict()
         for day in df['date_time'].unique():
             df_day = df.loc[df['date_time'] == day]
@@ -76,7 +79,7 @@ class CRMRepr:
 
     @property
     def adv(self):
-        a = self.prepare_load_csv
+        a = self.prepare_load_csv()
         res = dict()
         for i in a:
             key = next(iter(a[i].keys()))
@@ -86,9 +89,11 @@ class CRMRepr:
                 res.update({key: tuple([x + y for x, y in zip(a[i][key], res.get(key, (0, 0, 0, 0, 0)))])})
         return res
 
-    @property
     def slice_by_day(self):
-        crm = self.prepare_load_csv
+        if not isinstance(self, pd.DataFrame):
+            crm = self.prepare_load_csv()
+        else:
+            crm = CRMRepr.prepare_load_csv(self)
         date = []
         source = []
         name = []
