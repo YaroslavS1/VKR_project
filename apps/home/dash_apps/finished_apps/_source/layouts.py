@@ -155,11 +155,11 @@ sales_fields = {
     'date': 'date',
     'reporting_group_l1': 'source',
     'reporting_group_l2': 'name',
-    'sales': 'clicks',
+    'sales': 'payment',
     'revenues': 'profit',
     'sales target': 'impressions',
     'rev target': 'cost',
-    'num clients': 'clicks'
+    'num clients': 'clicks',
 }
 sales_formats = {
     sales_fields['date']: '%Y-%m-%d'
@@ -390,7 +390,11 @@ sales = html.Div([
             # ),  # Internal row - RECAPS
 
             html.Div([  # Internal row
-
+                html.Div([
+                    dcc.Graph(
+                        id='sales-weekly-heatmap')
+                ],
+                    className='col-4'),
                 # Chart Column
                 html.Div([
                     dcc.Graph(
@@ -401,16 +405,11 @@ sales = html.Div([
                 # Chart Column
                 html.Div([
                     dcc.Graph(
-                        id='sales-count-month')
+                        id='sales-count-country')
                 ],
                     className='col-4'),
 
                 # Chart Column
-                html.Div([
-                    dcc.Graph(
-                        id='sales-weekly-heatmap')
-                ],
-                    className='col-4')
 
             ],
                 className='row'),  # Internal row
@@ -420,23 +419,24 @@ sales = html.Div([
                 # Chart Column
                 html.Div([
                     dcc.Graph(
-                        id='sales-count-country')
+                        id='sales-count-month')
+
                 ],
                     className='col-4'),
 
                 # Chart Column
-                html.Div([
-                    dcc.Graph(
-                        id='sales-bubble-county')
-                ],
-                    className='col-4'),
+                # html.Div([
+                #     dcc.Graph(
+                #         id='sales-bubble-county')
+                # ],
+                #     className='col-4'),
 
                 # Chart Column
-                html.Div([
-                    dcc.Graph(
-                        id='sales-count-city')
-                ],
-                    className='col-4')
+                # html.Div([
+                #     dcc.Graph(
+                #         id='sales-count-city')
+                # ],
+                #     className='col-4')
 
             ],
                 className='row')  # Internal row

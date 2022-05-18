@@ -155,11 +155,11 @@ sales_fields = {
     'date': 'date',
     'reporting_group_l1': 'source',
     'reporting_group_l2': 'name',
-    'sales': 'clicks',
+    'sales': 'payment',
     'revenues': 'profit',
     'sales target': 'impressions',
     'rev target': 'cost',
-    'num clients': 'clicks'
+    'num clients': 'clicks',
 }
 sales_formats = {
     sales_fields['date']: '%Y-%m-%d'
@@ -489,7 +489,7 @@ def update_chart(start_date, end_date, reporting_l1_dropdown, reporting_l2_dropd
     # print(sales_df)
 
     labels = sales_df['name'].unique()
-    profits = sales_df['cost'].tolist()
+    profits = sales_df['profit'].tolist()
     costs = sales_df['cost'].tolist()
     impressions = sales_df['impressions'].tolist()
 
@@ -507,7 +507,7 @@ def update_chart(start_date, end_date, reporting_l1_dropdown, reporting_l2_dropd
     #     hovertemplate=hovertemplate_xy)
     # fig = go.Figure(data=data, layout=corporate_layout)
 
-    fig = make_subplots(rows=1, cols=3, specs=[[{'type': 'domain'}, {'type': 'domain'}, {'type': 'domain'}]])
+    fig = make_subplots(rows=1, cols=2, specs=[[{'type': 'domain'}, {'type': 'domain'}]])
     fig.add_trace(go.Pie(labels=labels, values=costs,
                          name="Затраты",
                          textfont=dict(size=14, color='white'),
@@ -524,14 +524,14 @@ def update_chart(start_date, end_date, reporting_l1_dropdown, reporting_l2_dropd
                                  size=16, color='white'),
                              'text': 'Выручка'
                          }), 1, 2)
-    fig.add_trace(go.Pie(labels=labels, values=impressions,
-                         name="Показы",
-                         textfont=dict(size=14, color='white'),
-                         title={
-                             'font': dict(
-                                 size=16, color='white'),
-                             'text': 'Показы'
-                         }), 1, 3)
+    # fig.add_trace(go.Pie(labels=labels, values=impressions,
+    #                      name="Показы",
+    #                      textfont=dict(size=14, color='white'),
+    #                      title={
+    #                          'font': dict(
+    #                              size=16, color='white'),
+    #                          'text': 'Показы'
+    #                      }), 1, 3)
     # fig.add_trace(
     #     go.Table(
     #         header=dict(
@@ -734,20 +734,43 @@ def update_chart(start_date, end_date, reporting_l1_dropdown, reporting_l2_dropd
         sales_df = sales_df_1.copy()
     del sales_df_1
 
-    # Filter based on the date filters
-    df1 = sales_df.loc[(sales_df[sales_fields['date']] >= start) & (sales_df[sales_fields['date']] <= end), :].copy()
-    df1['week'] = df1[sales_fields['date']].dt.strftime("%V")
-    df1['weekday'] = df1[sales_fields['date']].dt.weekday
+    df = sales_df.loc[(sales_df[sales_fields['date']] >= start) & (sales_df[sales_fields['date']] <= end), :].copy()
     del sales_df
 
     # Aggregate df
-    val_cols = [sales_fields['sales']]
-    df = df1.groupby(['week', 'weekday'])[val_cols].agg('sum')
-    df.reset_index(inplace=True)
-    del df1
+    val_cols = [sales_fields['reporting_group_l1'], sales_fields['reporting_group_l2'], sales_fields['revenues'],
+                sales_fields['rev target'], sales_fields['sales target'], sales_fields['sales'], sales_fields['num clients']]
+    sales_df = df.groupby(sales_fields['reporting_group_l2'])[val_cols].agg('sum')
+    sales_df.reset_index(inplace=True)
 
+    labels = sales_df['name'].unique()
+    profits = sales_df['profit'].tolist()
+    costs = sales_df['cost'].tolist()
+    impressions = sales_df['impressions'].tolist()
+    payments = sales_df['payment'].tolist()
+    visits = sales_df['clicks'].tolist()
 
+    roi = [round((profit - cost) / cost * 100, 2) for cost, profit in zip(costs, profits)]
+    conv = [round((payment / vizit) * 100, 2) for payment, vizit in zip(payments, visits)]
+    avg_cpc = [round((cost / vizit), 2) for cost, vizit in zip(costs, visits)]
+    AOV = [round((profit / payment), 2) for profit, payment in zip(profits, payments)]
+    CPО = [round((costs / payment), 2) for costs, payment in zip(costs, payments)]
+    ctr = [round((vizit / impression) * 100, 2) for impression, vizit in zip(impressions, visits)]
+    # print(costs, profits)
 
+    data = go.Table(
+        header=dict(
+            values=["Кампания", "Стоимость",  "Приыбль", "Показы", "Визиты", "ROI", "Число покупок", "Конверсия", "AVG CPC", "AOV", "CPО", "CTR"],
+            font=dict(size=10),
+            align="left"
+        ),
+        cells=dict(
+            values=[labels, costs, profits, impressions, visits, roi,  payments, conv, avg_cpc, AOV, CPО, ctr],
+            align="left")
+    #     colorscale=corporate_colorscale,
+
+    )
+    fig = go.Figure(data=data, layout=corporate_layout)
 
     # Build graph
     hovertemplate_here = (
@@ -755,19 +778,9 @@ def update_chart(start_date, end_date, reporting_l1_dropdown, reporting_l2_dropd
             "<i>Weekday</i>: %{y}<br>" +
             "<i>Sales</i>: %{z}" +
             "<extra></extra>")  # Remove trace info
-    data = go.Heatmap(
-        x=df['weekday'],
-        y=df['week'],
-        z=df[sales_fields['sales']],
-        hovertemplate=hovertemplate_here,
-        hoverongaps=False,
-        colorscale=corporate_colorscale,
-        showscale=False,
-        xgap=1,
-        ygap=1)
-    fig = go.Figure(data=data, layout=corporate_layout)
+
     fig.update_layout(
-        title={'text': "Heatmap: Sales by week and weekeday"},
+        # title={'text': "Heatmap: Sales by week and weekeday"},
         xaxis={
             'title': "Weekday",
             'tickvals': [0, 1, 2, 3, 4, 5, 6],  # Display x values with different labels
@@ -826,54 +839,39 @@ def update_chart(start_date, end_date, reporting_l1_dropdown, reporting_l2_dropd
         sales_df = sales_df_1.copy()
     del sales_df_1
 
-    # Filter based on the date filters
-    df1 = sales_df.loc[(sales_df[sales_fields['date']] >= start) & (sales_df[sales_fields['date']] <= end), :].copy()
+    df = sales_df.loc[(sales_df[sales_fields['date']] >= start) & (sales_df[sales_fields['date']] <= end), :].copy()
     del sales_df
 
     # Aggregate df
-    val_cols = [sales_fields['sales']]
-    df = df1.groupby(sales_fields['reporting_group_l1'])[val_cols].agg('sum')
-    df.reset_index(inplace=True)
-    df.sort_values(sales_fields['reporting_group_l1'], axis=0, ascending=True, inplace=True, na_position='last')
-    del df1
+    val_cols = [sales_fields['reporting_group_l1'], sales_fields['reporting_group_l2'], sales_fields['revenues'],
+                sales_fields['rev target'], sales_fields['sales target'], sales_fields['sales'], sales_fields['num clients']]
+    sales_df = df.groupby(sales_fields['reporting_group_l2'])[val_cols].agg('sum')
+    sales_df.reset_index(inplace=True)
 
-    # Prepare incr % data
-    hover_text = []
-    sale_perc = []
-    sale_base = [0]
-    sale_b = 0
-    sales_tot = df[sales_fields['sales']].sum()
-    for index, row in df.iterrows():
-        sale_p = row[sales_fields['sales']] / sales_tot
-        hover_text.append(("<i>Country</i>: {}<br>" +
-                           "<i>Sales</i>: {:.2%}" +
-                           "<extra></extra>").format(row[sales_fields['reporting_group_l1']],
-                                                     sale_p))
-        sale_b = sale_b + sale_p
-        sale_perc.append(sale_p)
-        sale_base.append(sale_b)
-    sale_base = sale_base[:-1]
-    df['sale_p'] = sale_perc
-    df['hovertext'] = hover_text
+    labels = sales_df['name'].unique()
+    impressions = sales_df['impressions'].tolist()
+    payments = sales_df['payment'].tolist()
+    visits = sales_df['clicks'].tolist()
 
-    # Build graph
-    data = go.Bar(
-        x=df[sales_fields['reporting_group_l1']],
-        y=df['sale_p'],
-        base=sale_base,
-        marker={'color': corporate_colors['light-green'],
-                'opacity': 0.75},
-        hovertemplate=df['hovertext'])
+    data = [
+        go.Bar(name='Показы', x=labels, y=impressions),
+        go.Bar(name='Клики', x=labels, y=visits),
+        go.Bar(name='Покупки', x=labels, y=payments),
+    ]
     fig = go.Figure(data=data, layout=corporate_layout)
+
     fig.update_layout(
-        title={'text': "Sales Percentage by Country"},
-        xaxis={'title': "Country", 'tickangle': 0},
+        title={'text': "Клиенты"},
+        xaxis={'title': "Кампания", 'tickangle': 0},
         yaxis={
-            'title': "Sales Percentage",
-            'tickformat': ".0%",
-            'range': [0, 1]},
+            'title': "Клиенты",
+            # 'tickformat': ".0%",
+            # 'range': [0, 1]
+            },
         barmode='group',
-        showlegend=False)
+        # barmode='stack',
+        # showlegend=False
+    )
 
     return fig
 

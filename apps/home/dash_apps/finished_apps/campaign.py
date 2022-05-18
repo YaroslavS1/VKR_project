@@ -11,17 +11,25 @@ labels = [(i['source'].unique()[0], i['name'].unique()[0]) for i in adv]
 costs = [i['cost'].sum() for i in adv]
 profits = [crm.loc[crm['name'] == i[1]]['profit'].sum() for i in labels]
 visits = [i['clicks'].sum() for i in adv]
+impressions = [i['impressions'].sum() for i in adv]
 payments = [crm.loc[crm['name'] == i[1]]['payment'].sum() for i in labels]
+
 
 data = OrderedDict(
     [
         ("Источник", [i[0] for i in labels]),
         ("Рекламная кампания", [i[1] for i in labels]),
-        ('ROI', [round((profit - cost) / cost * 100, 2) for cost, profit in zip(costs, profits)]),
+        ("Стоимость", costs),
+        ("Показы", impressions),
         ("Визиты", visits),
+        ('ROI', [round((profit - cost) / cost * 100, 2) for cost, profit in zip(costs, profits)]),
+        ('Число покупок', payments),
         ("Конверсия", [round((payment / vizit) * 100, 2) for payment, vizit in zip(payments, visits)]),
         ("AVG CPC", [round((cost / vizit), 2) for cost, vizit in zip(costs, visits)]),
-        ("AOV", [round((profit / payment), 2) for profit, payment in zip(profits, payments)])
+        ("AOV", [round((profit / payment), 2) for profit, payment in zip(profits, payments)]),
+        ("CPО", [round((costs / payment), 2) for costs, payment in zip(costs, payments)]),
+        ("CTR", [round((vizit / impression) * 100, 2) for impression, vizit in zip(impressions, visits)]),
+        ("Приыбль", [round(i, 2) for i in profits])
     ]
 )
 # advertising_summary_table

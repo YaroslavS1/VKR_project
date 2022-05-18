@@ -30,7 +30,7 @@ a4 = _a4.load_csv
 a5 = _a5.load_csv
 a6 = _a6.load_csv
 adv = (a1, a2, a3, a4, a5, a6)
-advs = pd.concat(adv)
+advs = pd.concat((a1, a2, a3, a4, a5, a6))
 
 _crm = CRMext('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/crm.csv')
 crm = _crm.load_csv
@@ -108,7 +108,7 @@ def campaigns(request):
 
 @login_required(login_url="/login/")
 def add(request):
-    context = {'segment': 'Добавить данные'}
+    context = {'segment': 'Данные'}
     html_template = loader.get_template('home/add.html')
     return HttpResponse(html_template.render(context, request))
 

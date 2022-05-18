@@ -27,7 +27,7 @@ class RecordAdv:
         self.impressions = impressions
         self.clicks = clicks
 
-        self.ctr = round(impressions / clicks, 2)
+        self.ctr = round(clicks / impressions, 2)
         '''Эталонное значение как правило на ~3 больше'''
 
         self.cost = cost

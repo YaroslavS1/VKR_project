@@ -16,8 +16,10 @@ from django.db import models
 
 
 class CustomUser(AbstractUser):
-    business = models.URLField(max_length=100, default=None, blank=True, null=True)
+    # business = models.URLField(max_length=100, default=None, blank=True, null=True)
     # add additional fields in here
 
     def __str__(self):
         return self.username
+
+    app_label = 'apps.home'

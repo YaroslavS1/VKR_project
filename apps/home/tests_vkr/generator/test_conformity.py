@@ -14,6 +14,7 @@ from VKR_project.apps.home.tests_vkr.tools.CRM import AdvContextCRM
 @pytest.mark.parametrize('name', ['Test campain'])
 @pytest.mark.parametrize('source', ['yandex'])
 def test_conformity(start_date, end_date, name, source, clicks, profit):
+    pytest.skip(f'Not suitable for CI')
     crm_report = CrmReport(
         start_date=start_date,
         end_date=end_date,

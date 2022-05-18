@@ -45,7 +45,7 @@ def test_conformity_many(start_date, end_date,
                          source5, name5, profit5, clicks5,
                          source6, name6, profit6, clicks6,
                          ):
-    # pytest.skip(f'Not suitable for CI')
+    pytest.skip(f'Not suitable for CI')
     adv_list = (
         AdvContextCRM(source1, name1, profit1[1], clicks1),
         AdvContextCRM(source2, name2, profit2[1], clicks2),

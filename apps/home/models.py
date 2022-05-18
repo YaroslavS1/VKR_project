@@ -4,10 +4,15 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from django.db import models
-from ..authentication.models import CustomUser
-
+from apps.authentication.models import CustomUser
+from rest_framework import routers, serializers, viewsets
+import pgcrypto
+_ = routers
+_ = serializers
+_ = viewsets
 
 # Create your models here.
+
 
 class Campaign(models.Model):
     business = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
@@ -25,6 +30,8 @@ class LikeCRM(models.Model):
     payment = models.IntegerField(max_length=None)
     profit = models.DecimalField(max_digits=1000, decimal_places=2)
 
+    # def get(self):
+
 
 class LikeADV(models.Model):
     campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE)
@@ -32,3 +39,9 @@ class LikeADV(models.Model):
     impressions = models.IntegerField(max_length=None)
     clicks = models.IntegerField(max_length=None)
     cost = models.DecimalField(max_digits=1000, decimal_places=2)
+
+
+class CampaignToken(models.Model):
+    source = models.CharField(max_length=100)
+    token = pgcrypto.EncryptedCharField()
+    campaign = models.OneToOneField(Campaign, on_delete=models.CASCADE, primary_key=True)

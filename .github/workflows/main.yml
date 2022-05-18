@@ -24,12 +24,14 @@ jobs:
         with:
           path: ~/.local/share/virtualenvs
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
-      - name: Mypy
+      - name: Smoke test
         run: |
           python -m pytest apps/home/tests_vkr/generator --alluredir=allure-results
           python -m pytest apps/home/tests_vkr/basic_functionality --alluredir=allure-results
           python -m pytest apps/home/tests_vkr/visualization --alluredir=allure-results
-          python -m pytest apps/home/tests_vkr/dump_data --alluredir=allure-results
+          python -m pytest apps/home/tests_vkr/models --alluredir=allure-results
+          python -m pytest apps/home/tests_vkr/Internal_API --alluredir=allure-results
+
 
       - name: Get Allure history
         uses: actions/checkout@v2
@@ -101,8 +103,7 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Mypy
         run: |
-            time sleep 30
-            python -m mypy vkr_project/generator.py
+            python -m pytest apps/home/tests_vkr/fast_
 
   flake8:
     runs-on: ubuntu-latest
@@ -128,10 +129,9 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Flake8
         run: |
-          time sleep 30
-          python -m flake8 vkr_project/generator.py
+          python -m pytest apps/home/tests_vkr/fast_
 
-  Add-data-test:
+  Advanced-crm-test-case-creation:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     needs: [mypy, flake8]
@@ -158,10 +158,10 @@ jobs:
           time sleep 178
           python -m pytest -v vkr_project_tests/test_attach.py
 
-  Data-preparation-test:
+  Models-and-basic-functions:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs: [mypy, flake8]
+    needs: [mypy, flake8, Advanced-crm-test-case-creation]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -185,41 +185,41 @@ jobs:
           time sleep 190
           python -m pytest -v vkr_project_tests/test_generator.py
 
-  Synthetic-test:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    needs: [mypy, flake8]
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v2
-
-      # Setup Python (faster than using Python container)
-      - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.x"
-
-      - name: Install requirements
-        run: |
-          python -m pip install -r requirements.txt
-      - id: cache-pipenv
-        uses: actions/cache@v1
-        with:
-          path: ~/.local/share/virtualenvs
-          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
-      - name: Unittest
-        run: |
-          time sleep 220
-          python -m pytest -v vkr_project_tests/test_generator.py
-      - name: coverage
-        run: |
-          pytest vkr_project_tests/test_generator.py --cov=vkr_project
+#  Synthetic-test:
+#    runs-on: ubuntu-latest
+#    timeout-minutes: 10
+#    needs: [mypy, flake8, Models-and-basic-functions]
+#    steps:
+#      - name: Check out repository code
+#        uses: actions/checkout@v2
+#
+#      # Setup Python (faster than using Python container)
+#      - name: Setup Python
+#        uses: actions/setup-python@v2
+#        with:
+#          python-version: "3.x"
+#
+#      - name: Install requirements
+#        run: |
+#          python -m pip install -r requirements.txt
+#      - id: cache-pipenv
+#        uses: actions/cache@v1
+#        with:
+#          path: ~/.local/share/virtualenvs
+#          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+#      - name: Unittest
+#        run: |
+#          time sleep 220
+#          python -m pytest -v vkr_project_tests/test_generator.py
+#      - name: coverage
+#        run: |
+#          pytest vkr_project_tests/test_generator.py --cov=vkr_project
           
 
   KPI-calculation-test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs: [mypy, flake8]
+    needs: [mypy, flake8, Models-and-basic-functions]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -243,28 +243,28 @@ jobs:
           time sleep 140
           python -m pytest -v vkr_project_tests/test_generator.py
 
-  Sphinx:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v2
-
-      # Setup Python (faster than using Python container)
-      - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.x"
-
-      - name: Install requirements
-        run: |
-          python -m pip install -r requirements.txt
-      - id: cache-pipenv
-        uses: actions/cache@v1
-        with:
-          path: ~/.local/share/virtualenvs
-          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
-      - name: Unittest
-        run: |
-          time sleep 40
-          python -m pytest -v vkr_project_tests/test_generator.py
+#  Sphinx:
+#    runs-on: ubuntu-latest
+#    timeout-minutes: 10
+#    steps:
+#      - name: Check out repository code
+#        uses: actions/checkout@v2
+#
+#      # Setup Python (faster than using Python container)
+#      - name: Setup Python
+#        uses: actions/setup-python@v2
+#        with:
+#          python-version: "3.x"
+#
+#      - name: Install requirements
+#        run: |
+#          python -m pip install -r requirements.txt
+#      - id: cache-pipenv
+#        uses: actions/cache@v1
+#        with:
+#          path: ~/.local/share/virtualenvs
+#          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+#      - name: Unittest
+#        run: |
+#          time sleep 40
+#          python -m pytest -v vkr_project_tests/test_generator.py
