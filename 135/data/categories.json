@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "OSError: Cannot save file into a non-existent directory: '/home/y_sukhorukov/VKR/VKR_PROJECT/tests'",
+      "children" : [ {
+        "name" : "test_conformity_rebase[yandex-Test campain2-yandex-Test campain1-450-5678-200-9876-25.10.2021-30.11.2021]",
+        "uid" : "30e26968366f38d0",
+        "parentUid" : "8b21a320306391223fdf8e0909907bfe",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652893664175,
+          "stop" : 1652893664211,
+          "duration" : 36
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "200", "450", "'30.11.2021'", "'Test campain1'", "'Test campain2'", "9876", "5678", "'yandex'", "'yandex'", "'25.10.2021'" ]
+      } ],
+      "uid" : "8b21a320306391223fdf8e0909907bfe"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

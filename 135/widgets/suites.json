@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "c1342d9ec872e1b36a5e3ba35748b92f",
+    "name" : "apps.home.tests_vkr.generator",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 2,
+      "passed" : 317,
+      "unknown" : 0,
+      "total" : 320
+    }
+  } ]
+}

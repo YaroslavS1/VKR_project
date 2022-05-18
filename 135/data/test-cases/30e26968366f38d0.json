@@ -1,0 +1,95 @@
+{
+  "uid" : "30e26968366f38d0",
+  "name" : "test_conformity_rebase[yandex-Test campain2-yandex-Test campain1-450-5678-200-9876-25.10.2021-30.11.2021]",
+  "fullName" : "apps.home.tests_vkr.generator.test_conformity_re#test_conformity_rebase",
+  "historyId" : "b75d646be4eff357058698679fcc6ac9",
+  "time" : {
+    "start" : 1652893664175,
+    "stop" : 1652893664211,
+    "duration" : 36
+  },
+  "status" : "broken",
+  "statusMessage" : "OSError: Cannot save file into a non-existent directory: '/home/y_sukhorukov/VKR/VKR_PROJECT/tests'",
+  "statusTrace" : "start_date = '25.10.2021', end_date = '30.11.2021', name1 = 'Test campain1'\nsource1 = 'yandex', name2 = 'Test campain2', source2 = 'yandex', clicks1 = 200\nprofit1 = 9876, clicks2 = 450, profit2 = 5678\n\n    @allure.feature('CRM_ADV')\n    @allure.story('Test compliance of the report and the advertising company')\n    @pytest.mark.parametrize('end_date', ['30.11.2021'])\n    @pytest.mark.parametrize('start_date', ['25.10.2021'])\n    @pytest.mark.parametrize('profit1', [9876])\n    @pytest.mark.parametrize('clicks1', [200])\n    @pytest.mark.parametrize('profit2', [5678])\n    @pytest.mark.parametrize('clicks2', [450])\n    @pytest.mark.parametrize('name1', ['Test campain1'])\n    @pytest.mark.parametrize('source1', ['yandex'])\n    @pytest.mark.parametrize('name2', ['Test campain2'])\n    @pytest.mark.parametrize('source2', ['yandex'])\n    def test_conformity_rebase(start_date, end_date, name1, source1, name2, source2, clicks1, profit1, clicks2, profit2):\n        # pytest.skip(f'Not suitable for CI')\n        crm_report = CrmReport(\n            start_date=start_date,\n            end_date=end_date,\n            config=(AdvContextCRM(source1, name1, profit1+100, clicks1), AdvContextCRM(source2, name2, profit2+10000, clicks2)))\n        adv_1 = AdvCampaign(\n            name=name1,\n            start_date=start_date,\n            end_date=end_date,\n            sum_cost=profit1,\n            source=source1,\n            allocation=crm_report.allocation[(source1, name1)])\n        adv_2 = AdvCampaign(\n            name=name2,\n            start_date=start_date,\n            end_date=end_date,\n            sum_cost=profit2,\n            source=source2,\n            allocation=crm_report.allocation[(source2, name2)])\n    \n        data_frame = pd.DataFrame(crm_report.as_dict)\n>       data_frame.to_csv('/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMO.csv')\n\napps/home/tests_vkr/generator/test_conformity_re.py:46: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/pandas/core/generic.py:3551: in to_csv\n    return DataFrameRenderer(formatter).to_csv(\n/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/pandas/io/formats/format.py:1180: in to_csv\n    csv_formatter.save()\n/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/pandas/io/formats/csvs.py:241: in save\n    with get_handle(\n/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/pandas/io/common.py:697: in get_handle\n    check_parent_directory(str(handle))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = '/home/y_sukhorukov/VKR/VKR_PROJECT/tests/DEMO.csv'\n\n    def check_parent_directory(path: Path | str) -> None:\n        \"\"\"\n        Check if parent directory of a file exists, raise OSError if it does not\n    \n        Parameters\n        ----------\n        path: Path or str\n            Path to check parent directory of\n    \n        \"\"\"\n        parent = Path(path).parent\n        if not parent.is_dir():\n>           raise OSError(rf\"Cannot save file into a non-existent directory: '{parent}'\")\nE           OSError: Cannot save file into a non-existent directory: '/home/y_sukhorukov/VKR/VKR_PROJECT/tests'\n\n/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/pandas/io/common.py:571: OSError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test compliance of the report and the advertising company"
+  }, {
+    "name" : "feature",
+    "value" : "CRM_ADV"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_conformity_re"
+  }, {
+    "name" : "host",
+    "value" : "fv-az198-689"
+  }, {
+    "name" : "thread",
+    "value" : "2298-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.generator.test_conformity_re"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "clicks1",
+    "value" : "200"
+  }, {
+    "name" : "clicks2",
+    "value" : "450"
+  }, {
+    "name" : "end_date",
+    "value" : "'30.11.2021'"
+  }, {
+    "name" : "name1",
+    "value" : "'Test campain1'"
+  }, {
+    "name" : "name2",
+    "value" : "'Test campain2'"
+  }, {
+    "name" : "profit1",
+    "value" : "9876"
+  }, {
+    "name" : "profit2",
+    "value" : "5678"
+  }, {
+    "name" : "source1",
+    "value" : "'yandex'"
+  }, {
+    "name" : "source2",
+    "value" : "'yandex'"
+  }, {
+    "name" : "start_date",
+    "value" : "'25.10.2021'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "30e26968366f38d0.json",
+  "parameterValues" : [ "200", "450", "'30.11.2021'", "'Test campain1'", "'Test campain2'", "9876", "5678", "'yandex'", "'yandex'", "'25.10.2021'" ]
+}
