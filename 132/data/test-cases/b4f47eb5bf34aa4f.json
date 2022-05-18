@@ -1,0 +1,130 @@
+{
+  "uid" : "b4f47eb5bf34aa4f",
+  "name" : "test_random_ints[1-11]",
+  "fullName" : "apps.home.tests_vkr.basic_functionality.test_random_ints#test_random_ints",
+  "historyId" : "b9207587555ea6f55a3834e88f73c37a",
+  "time" : {
+    "start" : 1652891600186,
+    "stop" : 1652891600186,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test function for getting an iterable object of random int with a given sum"
+  }, {
+    "name" : "feature",
+    "value" : "Basic functionality"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.basic_functionality"
+  }, {
+    "name" : "suite",
+    "value" : "test_random_ints"
+  }, {
+    "name" : "host",
+    "value" : "fv-az198-637"
+  }, {
+    "name" : "thread",
+    "value" : "2481-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.basic_functionality.test_random_ints"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "n",
+    "value" : "11"
+  }, {
+    "name" : "total",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "cfa7b26f11708d9e",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/131//#testresult/cfa7b26f11708d9e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652888100153,
+          "stop" : 1652888100153,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "f7bcb9cb4d97d23c",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/130//#testresult/f7bcb9cb4d97d23c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652887986213,
+          "stop" : 1652887986213,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "9063c16ede6b3216",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/129//#testresult/9063c16ede6b3216",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652885580910,
+          "stop" : 1652885580910,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "1bbb1efdacee6e2a",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/128//#testresult/1bbb1efdacee6e2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652881946579,
+          "stop" : 1652881946579,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "3f1b4d7858d7d1fd",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/127//#testresult/3f1b4d7858d7d1fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652880881786,
+          "stop" : 1652880881786,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "f43821f0f0b0003b",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/125//#testresult/f43821f0f0b0003b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651871470807,
+          "stop" : 1651871470807,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b4f47eb5bf34aa4f.json",
+  "parameterValues" : [ "11", "1" ]
+}
