@@ -103,6 +103,7 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Mypy
         run: |
+            time sleep 73
             python -m pytest apps/home/tests_vkr/fast_
 
   flake8:
@@ -129,6 +130,7 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Flake8
         run: |
+          time sleep 61
           python -m pytest apps/home/tests_vkr/fast_
 
   Advanced-crm-test-case-creation:
@@ -182,7 +184,7 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Unittest
         run: |
-          time sleep 360
+          time sleep 562
           python -m pytest apps/home/tests_vkr/fast_
 
 #  Synthetic-test:
@@ -240,7 +242,7 @@ jobs:
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Unittest
         run: |
-          time sleep 380
+          time sleep 580
           python -m pytest apps/home/tests_vkr/fast_
 
 #  Sphinx:
