@@ -1,0 +1,205 @@
+{
+  "uid" : "17ea322eaeb3cebd",
+  "name" : "test_dummy_campaign_crm[9-01.01.2000-01.01.2022]",
+  "fullName" : "apps.home.tests_vkr.generator.test_dummy_campaign_crm#test_dummy_campaign_crm",
+  "historyId" : "a1d825932ebb2988cf7a2b9b2860df21",
+  "time" : {
+    "start" : 1652894127868,
+    "stop" : 1652894130513,
+    "duration" : 2645
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test of creating CRM report"
+  }, {
+    "name" : "feature",
+    "value" : "CRM report"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_dummy_campaign_crm"
+  }, {
+    "name" : "host",
+    "value" : "fv-az210-147"
+  }, {
+    "name" : "thread",
+    "value" : "2319-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.generator.test_dummy_campaign_crm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'01.01.2022'"
+  }, {
+    "name" : "n",
+    "value" : "9"
+  }, {
+    "name" : "start_date",
+    "value" : "'01.01.2000'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 15,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "5c890004d32a0a1",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/135//#testresult/5c890004d32a0a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652893758567,
+          "stop" : 1652893760596,
+          "duration" : 2029
+        }
+      }, {
+        "uid" : "ff0834d14487829e",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/134//#testresult/ff0834d14487829e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652893580541,
+          "stop" : 1652893582855,
+          "duration" : 2314
+        }
+      }, {
+        "uid" : "77923e321c359d34",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/133//#testresult/77923e321c359d34",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652893551191,
+          "stop" : 1652893553375,
+          "duration" : 2184
+        }
+      }, {
+        "uid" : "ab829078c33e2de",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/132//#testresult/ab829078c33e2de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652891529530,
+          "stop" : 1652891533197,
+          "duration" : 3667
+        }
+      }, {
+        "uid" : "93f980a52b748e84",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/131//#testresult/93f980a52b748e84",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652888044690,
+          "stop" : 1652888046920,
+          "duration" : 2230
+        }
+      }, {
+        "uid" : "f594aeb80c00cc78",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/130//#testresult/f594aeb80c00cc78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652887929998,
+          "stop" : 1652887932319,
+          "duration" : 2321
+        }
+      }, {
+        "uid" : "b584b4227b465cd0",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/129//#testresult/b584b4227b465cd0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652885525849,
+          "stop" : 1652885528725,
+          "duration" : 2876
+        }
+      }, {
+        "uid" : "f260e96bbee702d0",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/128//#testresult/f260e96bbee702d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652881891469,
+          "stop" : 1652881893595,
+          "duration" : 2126
+        }
+      }, {
+        "uid" : "4ddb9a59050ce182",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/127//#testresult/4ddb9a59050ce182",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652880818683,
+          "stop" : 1652880821926,
+          "duration" : 3243
+        }
+      }, {
+        "uid" : "54e2db77d419738c",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/126//#testresult/54e2db77d419738c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652576455029,
+          "stop" : 1652576457628,
+          "duration" : 2599
+        }
+      }, {
+        "uid" : "59501cd84bcefb79",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/125//#testresult/59501cd84bcefb79",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651871415115,
+          "stop" : 1651871417720,
+          "duration" : 2605
+        }
+      }, {
+        "uid" : "cec56c3f7d10612f",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/124//#testresult/cec56c3f7d10612f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870989661,
+          "stop" : 1651870993106,
+          "duration" : 3445
+        }
+      }, {
+        "uid" : "2c859c3f954782ed",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/123//#testresult/2c859c3f954782ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870558148,
+          "stop" : 1651870560695,
+          "duration" : 2547
+        }
+      }, {
+        "uid" : "b9e3b5be28ff3987",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/122//#testresult/b9e3b5be28ff3987",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870192729,
+          "stop" : 1651870195172,
+          "duration" : 2443
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "17ea322eaeb3cebd.json",
+  "parameterValues" : [ "'01.01.2022'", "9", "'01.01.2000'" ]
+}
