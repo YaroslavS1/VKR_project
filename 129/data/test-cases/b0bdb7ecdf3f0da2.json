@@ -1,0 +1,68 @@
+{
+  "uid" : "b0bdb7ecdf3f0da2",
+  "name" : "test_slyce_by_day[1200-01.01.2000-01.01.2022]",
+  "fullName" : "apps.home.tests_vkr.core.test_slyce_by_day#test_slyce_by_day",
+  "historyId" : "a62282eefc03b470f20230730181c3fd",
+  "time" : {
+    "start" : 1652885741227,
+    "stop" : 1652885741289,
+    "duration" : 62
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "CRM report preprocessing test"
+  }, {
+    "name" : "feature",
+    "value" : "CRM"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.core"
+  }, {
+    "name" : "suite",
+    "value" : "test_slyce_by_day"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-55"
+  }, {
+    "name" : "thread",
+    "value" : "2418-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.core.test_slyce_by_day"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'01.01.2022'"
+  }, {
+    "name" : "start_date",
+    "value" : "'01.01.2000'"
+  }, {
+    "name" : "sum_cost",
+    "value" : "1200"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b0bdb7ecdf3f0da2.json",
+  "parameterValues" : [ "'01.01.2022'", "'01.01.2000'", "1200" ]
+}

@@ -1,0 +1,70 @@
+{
+  "total" : 6,
+  "items" : [ {
+    "uid" : "c1342d9ec872e1b36a5e3ba35748b92f",
+    "name" : "apps.home.tests_vkr.generator",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 103,
+      "passed" : 217,
+      "unknown" : 0,
+      "total" : 320
+    }
+  }, {
+    "uid" : "be160c38de918876b95a58d73b50b148",
+    "name" : "apps.home.tests_vkr.core",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 145,
+      "unknown" : 0,
+      "total" : 145
+    }
+  }, {
+    "uid" : "33c4a32f6e6407102e0baadc6ecca6d4",
+    "name" : "apps.home.tests_vkr.basic_functionality",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 84,
+      "unknown" : 0,
+      "total" : 84
+    }
+  }, {
+    "uid" : "e45d44e7ec08c9433af848ecd9a69ebd",
+    "name" : "apps.home.tests_vkr.models",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "bd2af9e6b93de2e67bce4f3355a6ff08",
+    "name" : "apps.home.tests_vkr.Internal_API",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "75bc190e9cbeb5d2ddd7dbb52baca055",
+    "name" : "apps.home.tests_vkr.visualization",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

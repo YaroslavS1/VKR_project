@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://YaroslavS1.github.io/VKR_project",
+  "buildOrder" : 129,
+  "buildName" : "GitHub Actions Run #2346308854",
+  "buildUrl" : "https://github.com/YaroslavS1/VKR_project/actions/runs/2346308854",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://YaroslavS1.github.io/VKR_project/129/"
+} ]
