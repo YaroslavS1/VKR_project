@@ -1,0 +1,151 @@
+{
+  "uid" : "3fac52bc9fe18159",
+  "name" : "test_create_adv_campaign[1200-01.01.2000-24.10.2010]",
+  "fullName" : "apps.home.tests_vkr.generator.test_adv_creator#test_create_adv_campaign",
+  "historyId" : "857cc4b20b250d13b5824e89ecf0a79b",
+  "time" : {
+    "start" : 1652887851667,
+    "stop" : 1652887851694,
+    "duration" : 27
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test of creating an advertising company with a given price"
+  }, {
+    "name" : "feature",
+    "value" : "ADV campaign"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_adv_creator"
+  }, {
+    "name" : "host",
+    "value" : "fv-az206-158"
+  }, {
+    "name" : "thread",
+    "value" : "2267-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.generator.test_adv_creator"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'24.10.2010'"
+  }, {
+    "name" : "start_date",
+    "value" : "'01.01.2000'"
+  }, {
+    "name" : "sum_cost",
+    "value" : "1200"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "1b70a9c23a165733",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/129//#testresult/1b70a9c23a165733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652885450505,
+          "stop" : 1652885450535,
+          "duration" : 30
+        }
+      }, {
+        "uid" : "11bf31693e4c8b1f",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/128//#testresult/11bf31693e4c8b1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652881816190,
+          "stop" : 1652881816220,
+          "duration" : 30
+        }
+      }, {
+        "uid" : "2f6315048a7b52c7",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/127//#testresult/2f6315048a7b52c7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652880721904,
+          "stop" : 1652880721934,
+          "duration" : 30
+        }
+      }, {
+        "uid" : "1916587a65ce42e",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/126//#testresult/1916587a65ce42e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652576357104,
+          "stop" : 1652576357131,
+          "duration" : 27
+        }
+      }, {
+        "uid" : "b587c73536d8581",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/125//#testresult/b587c73536d8581",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651871325999,
+          "stop" : 1651871326029,
+          "duration" : 30
+        }
+      }, {
+        "uid" : "d1dc73de8697cf85",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/124//#testresult/d1dc73de8697cf85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870878162,
+          "stop" : 1651870878196,
+          "duration" : 34
+        }
+      }, {
+        "uid" : "687e6a2a07dbe137",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/123//#testresult/687e6a2a07dbe137",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870467573,
+          "stop" : 1651870467602,
+          "duration" : 29
+        }
+      }, {
+        "uid" : "9db9b26492b8370",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/122//#testresult/9db9b26492b8370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870099050,
+          "stop" : 1651870099078,
+          "duration" : 28
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3fac52bc9fe18159.json",
+  "parameterValues" : [ "'24.10.2010'", "'01.01.2000'", "1200" ]
+}

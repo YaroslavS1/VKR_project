@@ -1,0 +1,151 @@
+{
+  "uid" : "332e426dadec02eb",
+  "name" : "test_dummy_campaign_crm[1-01.01.2000-25.11.2010]",
+  "fullName" : "apps.home.tests_vkr.generator.test_dummy_campaign_crm#test_dummy_campaign_crm",
+  "historyId" : "dcd47c5047a174b52b9f90f6aab1a5fc",
+  "time" : {
+    "start" : 1652887854957,
+    "stop" : 1652887855295,
+    "duration" : 338
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test of creating CRM report"
+  }, {
+    "name" : "feature",
+    "value" : "CRM report"
+  }, {
+    "name" : "parentSuite",
+    "value" : "apps.home.tests_vkr.generator"
+  }, {
+    "name" : "suite",
+    "value" : "test_dummy_campaign_crm"
+  }, {
+    "name" : "host",
+    "value" : "fv-az206-158"
+  }, {
+    "name" : "thread",
+    "value" : "2267-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "apps.home.tests_vkr.generator.test_dummy_campaign_crm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "end_date",
+    "value" : "'25.11.2010'"
+  }, {
+    "name" : "n",
+    "value" : "1"
+  }, {
+    "name" : "start_date",
+    "value" : "'01.01.2000'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "7a20719e9386d022",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/129//#testresult/7a20719e9386d022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652885454030,
+          "stop" : 1652885454255,
+          "duration" : 225
+        }
+      }, {
+        "uid" : "15adbf68cbc168f9",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/128//#testresult/15adbf68cbc168f9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652881819331,
+          "stop" : 1652881819713,
+          "duration" : 382
+        }
+      }, {
+        "uid" : "bae07e3405aec791",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/127//#testresult/bae07e3405aec791",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652880725483,
+          "stop" : 1652880725978,
+          "duration" : 495
+        }
+      }, {
+        "uid" : "939c1a6c1ad312bd",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/126//#testresult/939c1a6c1ad312bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652576375392,
+          "stop" : 1652576375787,
+          "duration" : 395
+        }
+      }, {
+        "uid" : "d0fd22d0f4d007ce",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/125//#testresult/d0fd22d0f4d007ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651871342299,
+          "stop" : 1651871342675,
+          "duration" : 376
+        }
+      }, {
+        "uid" : "49ec26e34b02e4ac",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/124//#testresult/49ec26e34b02e4ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870898067,
+          "stop" : 1651870898400,
+          "duration" : 333
+        }
+      }, {
+        "uid" : "2839841eb33dcd40",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/123//#testresult/2839841eb33dcd40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870484162,
+          "stop" : 1651870484427,
+          "duration" : 265
+        }
+      }, {
+        "uid" : "2d395e0e9f8f6375",
+        "reportUrl" : "https://YaroslavS1.github.io/VKR_project/122//#testresult/2d395e0e9f8f6375",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651870116218,
+          "stop" : 1651870116411,
+          "duration" : 193
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "332e426dadec02eb.json",
+  "parameterValues" : [ "'25.11.2010'", "1", "'01.01.2000'" ]
+}
